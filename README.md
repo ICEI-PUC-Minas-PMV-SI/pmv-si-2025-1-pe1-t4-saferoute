@@ -1,4 +1,4 @@
-# Título do Projeto
+# SafeRoute
 
 `CURSO: Sistemas de Informação`
 
@@ -6,7 +6,10 @@
 
 `SEMESTRE: 1º`
 
-Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo desenvolvido.
+O projeto de Rotas de Fuga tem como objetivo garantir a segurança das pessoas em ambientes fechados, facilitando a evacuação rápida e organizada em situações de emergência, como incêndios, vazamentos de gases ou outros riscos. Ele envolve a elaboração e implementação de sinalizações visíveis e normatizadas, a definição dos caminhos mais eficientes para a saída, além da instalação de iluminação de emergência e treinamento dos ocupantes para família
+
+Além disso, esse projeto deve atender às normas de segurança vigentes, como a NBR 13434 no Brasil, que regulamenta a sinalização de segurança contra incêndios e pânico. A adequação das rotas inclui a eliminação de obstáculos, portas corta-fogo, dimensionamento correto das saídas e estratégias para atender pessoas com mobilidade reduzida. Dessa forma, o planejamento e
+
 
 ## Integrantes
 
