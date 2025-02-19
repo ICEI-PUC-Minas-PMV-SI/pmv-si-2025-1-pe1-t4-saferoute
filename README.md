@@ -18,6 +18,7 @@ Além disso, esse projeto deve atender às normas de segurança vigentes, como a
 * Yuri Jose Drumond
 * Roberto Rodrigues Guimarãis
 * Victor Gabriel Rodrigues da Silva
+* Igor Fernando Costa Cecílio
 
 
 ## Orientador
