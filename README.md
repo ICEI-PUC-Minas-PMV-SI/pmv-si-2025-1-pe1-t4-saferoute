@@ -6,9 +6,10 @@
 
 `SEMESTRE: 1º`
 
-O projeto de Rotas de Fuga tem como objetivo garantir a segurança das pessoas em ambientes fechados, facilitando a evacuação rápida e organizada em situações de emergência, como incêndios, vazamentos de gases ou outros riscos. Ele envolve a elaboração e implementação de sinalizações visíveis e normatizadas, a definição dos caminhos mais eficientes para a saída, além da instalação de iluminação de emergência e treinamento dos ocupantes para família
+Em muitas comunidades sujeitas a inundações, a necessidade de rotas seguras é essencial para garantir a mobilidade e a segurança dos moradores. Durante períodos de chuvas intensas, ruas, pontes e passagens podem ser rapidamente tomadas pela água, tornando o deslocamento um grande desafio. A falta de planejamento adequado e de informações acessíveis sobre caminhos alternativos agrava ainda mais a situação, deixando a população exposta a riscos como correntezas, buracos ocultos e contaminação da água.
 
-Além disso, esse projeto deve atender às normas de segurança vigentes, como a NBR 13434 no Brasil, que regulamenta a sinalização de segurança contra incêndios e pânico. A adequação das rotas inclui a eliminação de obstáculos, portas corta-fogo, dimensionamento correto das saídas e estratégias para atender pessoas com mobilidade reduzida. Dessa forma, o planejamento.
+Diante desse cenário, é fundamental implementar estratégias que garantam rotas seguras e bem sinalizadas, além de fornecer alertas em tempo real sobre as condições das vias. Medidas como sistemas de monitoramento, sinalização adequada e ações de conscientização comunitária podem reduzir significativamente os riscos e minimizar atrasos no deslocamento. Ao investir na segurança da mobilidade em áreas de risco, não apenas protegemos vidas, mas também fortalecemos a resiliência da comunidade, permitindo que as pessoas transitem com mais confiança e segurança, mesmo em situações adversas.
+
 
 
 ## Integrantes
