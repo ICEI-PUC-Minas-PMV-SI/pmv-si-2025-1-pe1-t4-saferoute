@@ -4,18 +4,21 @@ Em muitas comunidades sujeitas a inundações, a necessidade de rotas seguras é
 
 Diante desse cenário, é fundamental implementar estratégias que garantam rotas seguras e bem sinalizadas, além de fornecer alertas em tempo real sobre as condições das vias. Medidas como sistemas de monitoramento, sinalização adequada e ações de conscientização comunitária podem reduzir significativamente os riscos e minimizar atrasos no deslocamento. Ao investir na segurança da mobilidade em áreas de risco, não apenas protegemos vidas, mas também fortalecemos a resiliência da comunidade, permitindo que as pessoas transitem com mais confiança e segurança, mesmo em situações adversas.
 
+
 ## Problema
 
-Nesse momento você deve apresentar o problema que a sua aplicação deve resolver. No entanto, **não** é a hora de comentar sobre a solução/aplicação.
+No ocaso do século XIX, a cidade de Ouro Preto apresentava dificuldades ao paulatino progresso demandado pela capital do estado de Minas Gerais. A diminuição na mineração de ouro, aliada à topografia montanhosa, dificultava o acesso de pessoas e mercadorias ao município, bem como levantava óbices ao crescimento urbano que se fazia mister à capital do estado.
 
-Descreva também o contexto em que essa aplicação será usada, se  houver: empresa, tecnologias, etc. Novamente, descreva apenas o que de fato existir, pois ainda não é a hora de apresentar requisitos detalhados ou projetos.
+Neste diapasão, o engenheiro Aarão Reis ficou encarregado de projetar a nova capital mineira, a atual Belo Horizonte. Foi a primeira cidade do país a ser modernamente planejada. Seu planejamento continha a supressão de alguns rios, bem como, com supedâneo nas teorias higienistas da época, a canalização de córregos com o fito de prevenir a proliferação de doenças.
 
-Nesse momento, o grupo pode optar por fazer uso  de ferramentas como Design Thinking, que permite um olhar de ponta a ponta para o problema.
+Neste contexto, o processo de urbanização da capital trouxe consigo o aumento potencial de enchentes ou inundações. A transformação do solo em superfícies impermeáveis como a asfáltica, reduz a infiltração e aumenta a velocidade do escoamento da água na superfície. Como consectário, há a alteração do ciclo hidrológico e o favorecimento da poluição de rios e córregos.
 
-> **Links Úteis**:
-> - [Objetivos, Problema de pesquisa e Justificativa](https://medium.com/@versioparole/objetivos-problema-de-pesquisa-e-justificativa-c98c8233b9c3)
-> - [Matriz Certezas, Suposições e Dúvidas](https://medium.com/educa%C3%A7%C3%A3o-fora-da-caixa/matriz-certezas-suposi%C3%A7%C3%B5es-e-d%C3%BAvidas-fa2263633655)
-> - [Brainstorming](https://www.euax.com.br/2018/09/brainstorming/)
+Anota-se também, que o relevo sobremodo íngreme da capital mineira majora os riscos de alagamentos nas partes mais planas da cidade. Outrossim, a existência de pequenas bacias hidrográficas de cabeceiras, que apresentam um diminuto tempo de resposta, aumentam a probabilidade de ocorrências de inundações.
+
+Destarte, ante as circunstâncias hidrográficas e topográficas comentadas, bem como as alterações que o processo de urbanização implementou, as ocorrências de pontos inundações e alagamentos na capital mineira são relativamente frequentes. 
+
+Não obstante os esforços da Defesa Civil de Belo Horizonte na divulgação de alertas preventivos com foco na mitigação dos riscos, o município de Belo Horizonte carece de ferramentas que proporcionem rotas seguras de tráfego para população belo-horizontina.
+
 
 ## Objetivos
 
