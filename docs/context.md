@@ -21,7 +21,7 @@ Não obstante os esforços da Defesa Civil de Belo Horizonte na divulgação de 
 
 
 ## Objetivos
-Objetivo Geral Desenvolver um software que auxilie na identificação e indicação de rotas seguras para a população de Belo Horizonte durante períodos de chuvas intensas, contribuindo para a mobilidade urbana e a redução de riscos associados a inundações e alagamentos.
+Desenvolver um software que auxilie na identificação e indicação de rotas seguras para a população de Belo Horizonte durante períodos de chuvas intensas, contribuindo para a mobilidade urbana e a redução de riscos associados a inundações e alagamentos.
 
 Objetivos Específico:
 1.	Mapear áreas de risco: Identificar e categorizar pontos críticos de alagamento e inundações na cidade, utilizando dados históricos, informações geográficas e estatísticas da Defesa Civil.
