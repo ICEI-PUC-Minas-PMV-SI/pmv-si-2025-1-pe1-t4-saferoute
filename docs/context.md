@@ -21,10 +21,14 @@ Não obstante os esforços da Defesa Civil de Belo Horizonte na divulgação de 
 
 
 ## Objetivos
+Objetivo Geral Desenvolver um software que auxilie na identificação e indicação de rotas seguras para a população de Belo Horizonte durante períodos de chuvas intensas, contribuindo para a mobilidade urbana e a redução de riscos associados a inundações e alagamentos.
 
-Aqui você deve descrever os objetivos do trabalho indicando que o objetivo geral é desenvolver um software para solucionar o problema apresentado acima. 
+Objetivos Específico:
+1.	Mapear áreas de risco: Identificar e categorizar pontos críticos de alagamento e inundações na cidade, utilizando dados históricos, informações geográficas e estatísticas da Defesa Civil.
+2.	Desenvolver um sistema de monitoramento em tempo real: Integrar informações meteorológicas e dados de sensores para fornecer alertas atualizados sobre as condições das vias.
+3.	Criar um sistema de rotas dinâmicas: Implementar algoritmos de cálculo de trajeto que permitam sugerir caminhos alternativos mais seguros com base em condições meteorológicas e histórico de alagamentos.
 
-Apresente também alguns (pelo menos 2) objetivos específicos dependendo de onde você vai querer concentrar a sua prática investigativa, ou como você vai aprofundar no seu trabalho.
+
  
 > **Links Úteis**:
 > - [Objetivo geral e objetivo específico: como fazer e quais verbos utilizar](https://blog.mettzer.com/diferenca-entre-objetivo-geral-e-objetivo-especifico/)
