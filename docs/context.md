@@ -35,14 +35,16 @@ Objetivos Específico:
 
 ## Justificativa
 
-Descreva a importância ou a motivação para trabalhar com esta aplicação que você escolheu. Indique as razões pelas quais você escolheu seus objetivos específicos ou as razões para aprofundar em certos aspectos do software.
+A estrutura da página, informações sobre as inundações, e rotas alternativas serão estruturadas por meio da linguagem de marcação (HTML). Iremos utilizar uma linguagem de estilização (CSS) para estilizar o conteúdo separando parte estética da estrutural. Por fim, para desenvolver as funcionalidades da aplicação, escolhemos a linguagem de programação Javascript. 
 
-Lembre-se de pesquisar e utilizar números que justifiquem por que é importante que tal problema seja resolvido ou que mostrem o impacto do problema na vida das pessoas.
+Impactos gerados na vida das pessoas por fornecer rotas alternativas casos de inundações:
 
-O grupo de trabalho pode fazer uso de questionários, entrevistas e dados estatísticos, que podem ser apresentados, com o objetivo de esclarecer detalhes do problema que será abordado pelo grupo.
+1. Prevenir a transmissão de doenças infecciosas como a leptospirose, tétano, hepatite, dengue entre outras que afetam principalmente as comunidades mais carentes.
+2. Redução de danos em veículos como: carros, motos,  caminhões e ônibus. Na maioria dos casos, trabalhadores utilizam-se destes meios para se locomover de suas casas até o trabalho. Temos também casos como motoristas de aplicativos de entrega de pessoas, produtos e serviços. 
+3. Redução de riscos de acidentes com animais peçonhentos como escorpiões, aranhas e cobras que se abrigam locais de acúmulo de entulhos.
 
-> **Links Úteis**:
-> - [Como montar a justificativa](https://guiadamonografia.com.br/como-montar-justificativa-do-tcc/)
+Com isso, é evidente a necessidade de fornecer rotas alternativas em casos de inundações que iram reduzir os riscos de transmissão de doenças, acidentes com animais peçonhentos e danos em veículos.  
+
 
 ## Público-Alvo
 
