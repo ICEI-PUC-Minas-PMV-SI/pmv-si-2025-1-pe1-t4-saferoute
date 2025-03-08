@@ -35,7 +35,7 @@ Objetivos Específico:
 
 ## Justificativa
 
-A estrutura da página, informações sobre as inundações, e rotas alternativas serão estruturadas por meio da linguagem de marcação (HTML). Iremos utilizar uma linguagem de estilização (CSS) para estilizar o conteúdo separando parte estética da estrutural. Por fim, para desenvolver as funcionalidades da aplicação, escolhemos a linguagem de programação Javascript. 
+A estrutura da página, informações sobre as inundações e rotas alternativas serão estruturadas por meio da linguagem de marcação (HTML). Iremos utilizar uma linguagem de estilização (CSS) para estilizar o conteúdo separando parte estética da estrutural. Por fim, para desenvolver as funcionalidades da aplicação, escolhemos a linguagem de programação Javascript. 
 
 Impactos gerados na vida das pessoas por fornecer rotas alternativas casos de inundações:
 
