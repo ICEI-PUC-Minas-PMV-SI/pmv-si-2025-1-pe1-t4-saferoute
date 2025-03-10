@@ -17,7 +17,7 @@ Anota-se também, que o relevo sobremodo íngreme da capital mineira majora os r
 
 Destarte, ante as circunstâncias hidrográficas e topográficas comentadas, bem como as alterações que o processo de urbanização implementou, as ocorrências de pontos inundações e alagamentos na capital mineira são relativamente frequentes. 
 
-Não obstante os esforços da Defesa Civil de Belo Horizonte na divulgação de alertas preventivos com foco na mitigação dos riscos, o município de Belo Horizonte carece de ferramentas que proporcionem rotas seguras de tráfego para população belo-horizontina.
+Não obstante os esforços da Defesa Civil de Belo Horizonte na divulgação de alertas preventivos com foco na mitigação dos riscos, o município de Belo Horizonte carece de ferramentas que proporcionem rotas seguras de tráfego para população belo-horizontina. Nesse sentido, iniciativas privadas, a exemplo de plataformas web, podem fornecer informações essenciais para as comunidades afetadas e diminuir o risco associado às inundações ou enchentes.
 
 
 ## Objetivos
