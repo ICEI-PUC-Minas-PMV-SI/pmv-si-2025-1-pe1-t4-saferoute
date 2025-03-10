@@ -29,10 +29,6 @@ Objetivos Específico:
 3.	Criar um sistema de rotas dinâmicas: Implementar algoritmos de cálculo de trajeto que permitam sugerir caminhos alternativos mais seguros com base em condições meteorológicas e histórico de alagamentos.
 
 
- 
-> **Links Úteis**:
-> - [Objetivo geral e objetivo específico: como fazer e quais verbos utilizar](https://blog.mettzer.com/diferenca-entre-objetivo-geral-e-objetivo-especifico/)
-
 ## Justificativa
 
 A estrutura da página, informações sobre as inundações e rotas alternativas serão estruturadas por meio da linguagem de marcação (HTML). Iremos utilizar uma linguagem de estilização (CSS) para estilizar o conteúdo separando parte estética da estrutural. Por fim, para desenvolver as funcionalidades da aplicação, escolhemos a linguagem de programação Javascript. 
