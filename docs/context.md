@@ -31,7 +31,7 @@ Objetivos Específico:
 
 ## Justificativa
 
-A estrutura da página, informações sobre as inundações e rotas alternativas serão estruturadas por meio da linguagem de marcação (HTML). Iremos utilizar uma linguagem de estilização (CSS) para estilizar o conteúdo separando a parte estética da estrutural. Por fim, para desenvolver as funcionalidades da aplicação, escolhemos a linguagem de programação Javascript. 
+A criação de um aplicativo para fornecer rotas alternativas durante inundações é fundamental para proteger a saúde e segurança das pessoas, especialmente em comunidades vulneráveis. Ele pode ajudar a prevenir a propagação de doenças infecciosas, como leptospirose e dengue, ao evitar áreas alagadas, reduzir danos em veículos essenciais para trabalhadores e motoristas de aplicativos, além de minimizar o risco de acidentes com animais peçonhentos, que buscam abrigo em locais alagados. Com informações em tempo real e alternativas de rotas seguras, o aplicativo contribui para a mobilidade das pessoas, garantindo maior segurança e acessibilidade em períodos críticos.
 
 Impactos gerados na vida das pessoas por fornecer rotas alternativas casos de inundações:
 
