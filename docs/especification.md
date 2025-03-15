@@ -56,14 +56,12 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 |ID     | Descrição do Requisito  |Prioridade |
 |-------|-------------------------|----|
-|RNF-001|O sistema deve ser responsivo, permitindo acesso eficiente em dispositivos móveis e desktops.| ALTA | 
+|RNF-001|O sistema deve ser compatível com dispositivos móveis e desktops, garantindo acessibilidade para diferentes perfis de usuários.| ALTA | 
 |RNF-002| O tempo de resposta para o cálculo e exibição de rotas seguras não deve ultrapassar 5 segundos. |  MÉDIA | 
-|RNF-003|O sistema deve suportar um alto volume de acessos simultâneos sem perda significativa de desempenho. |  ALTA |
-|RNF-004|A aplicação deve garantir alta disponibilidade (mínimo de 99% de uptime), principalmente em períodos chuvosos. |  ALTA |
-|RNF-005|O sistema deve integrar-se com APIs meteorológicas para obter dados climáticos atualizados em tempo real. |  ALTA |
-|RNF-006|O software deve seguir boas práticas de segurança da informação, garantindo que os dados do usuário sejam protegidos |  ALTA |
-|RNF-007|O sistema deve permitir atualizações automáticas para correção de bugs e melhorias sem impactar os usuários. |  MÉDIA  |
-|RNF-008|A interface do usuário deve ser intuitiva e acessível, garantindo que qualquer pessoa consiga utilizar o aplicativo sem dificuldades. |  MÉDIA  |
+|RNF-003|A aplicação deve garantir disponibilidade mínima de 99% para fornecer informações críticas em períodos chuvosos. |  ALTA |
+|RNF-004|O sistema deve seguir normas de segurança da informação, protegendo dados dos usuários e evitando acessos não autorizados. |  ALTA |
+|RNF-005|O aplicativo deve possuir um design intuitivo e acessível, seguindo diretrizes de acessibilidade para pessoas com deficiência.| MÉDIA |
+|RNF-006|O sistema deve ser escalável, permitindo a ampliação da infraestrutura para suportar um aumento repentino no número de acessos.| MÉDIA |
 
 Com base nas Histórias de Usuário, enumere os requisitos da sua solução. Classifique esses requisitos em dois grupos:
 
