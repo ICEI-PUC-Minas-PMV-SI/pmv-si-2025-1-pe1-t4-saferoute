@@ -18,11 +18,16 @@ Caso deseje atribuir uma imagem a sua persona, utilize o site https://thisperson
 ## Histórias de Usuários
 
 US 01 – Visualização de alertas de alagamento
+
 Eu como usuário quero poder visualizar alertas de alagamentos ou enchentes para identificar se algum ponto do trajeto de meu deslocamento se encontra afetado, bem como se há algum trajeto alternativo com tráfego regular.
 
 US 02 – Cadastro de alertas de alagamento
+
 Eu como usuário quero poder cadastrar um alerta de alagamento ou enchente para que outros usuários possam ter ciência do problema.
 
+US 03 - Manutenção dos alertas na consolidação de ruas afetas por alagamento e sugeridas como rotas alternativas
+
+Eu como usuário quero que o consolidado das ruas apresentas como afetadas por alagamento ou sugeridas como rotas alternativas considere somente alertas recentemente cadastrados para que a informação nele consignada reflita a atual situação das ruas apontadas.
 
 ## Requisitos
 
