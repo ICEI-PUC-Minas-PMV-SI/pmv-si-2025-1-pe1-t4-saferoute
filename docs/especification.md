@@ -65,8 +65,6 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |RNF-007|O sistema deve permitir atualizações automáticas para correção de bugs e melhorias sem impactar os usuários. |  MÉDIA  |
 |RNF-008|A interface do usuário deve ser intuitiva e acessível, garantindo que qualquer pessoa consiga utilizar o aplicativo sem dificuldades. |  MÉDIA  |
 
-
-
 Com base nas Histórias de Usuário, enumere os requisitos da sua solução. Classifique esses requisitos em dois grupos:
 
 
