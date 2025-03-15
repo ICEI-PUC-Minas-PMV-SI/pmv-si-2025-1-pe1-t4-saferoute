@@ -54,11 +54,18 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 ### Requisitos não Funcionais
 
-|ID     | Descrição do Requisito  |Prioridade |
-|-------|-------------------------|----|
-|RNF-001| A aplicação deve ser responsiva | MÉDIA | 
-|RNF-002| A aplicação deve processar requisições do usuário em no máximo 3s |  BAIXA | 
-
+Requisitos Não Funcionais (RNF)
+Código	Descrição do Requisito	Prioridade
+RNF-001	O sistema deve ser responsivo, permitindo acesso eficiente em dispositivos móveis e desktops.	ALTA
+RNF-002	O tempo de resposta para o cálculo e exibição de rotas seguras não deve ultrapassar 5 segundos.	MÉDIA
+RNF-003	O sistema deve suportar um alto volume de acessos simultâneos sem perda significativa de desempenho.	ALTA
+RNF-004	A aplicação deve garantir alta disponibilidade (mínimo de 99% de uptime), principalmente em períodos chuvosos.	ALTA
+RNF-005	O sistema deve integrar-se com APIs meteorológicas para obter dados climáticos atualizados em tempo real.	ALTA
+RNF-006	O software deve seguir boas práticas de segurança da informação, garantindo que os dados do usuário sejam protegidos.	ALTA
+RNF-007	O sistema deve permitir atualizações automáticas para correção de bugs e melhorias sem impactar os usuários.	MÉDIA
+RNF-008	A interface do usuário deve ser intuitiva e acessível, garantindo que qualquer pessoa consiga utilizar o aplicativo sem dificuldades.	MÉDIA
+RNF-009	O aplicativo deve possuir um sistema de notificações em tempo real para alertar os usuários sobre mudanças nas condições das vias.	ALTA
+RNF-010	A aplicação deve ser escalável para atender ao crescimento da demanda conforme mais usuários começarem a utilizá-la.	MÉD
 Com base nas Histórias de Usuário, enumere os requisitos da sua solução. Classifique esses requisitos em dois grupos:
 
 - [Requisitos Funcionais
