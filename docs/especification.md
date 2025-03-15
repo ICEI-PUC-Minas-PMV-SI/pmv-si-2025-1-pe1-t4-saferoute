@@ -8,19 +8,12 @@ Caso deseje atribuir uma imagem a sua persona, utilize o site https://thisperson
 
 ## Personas
 
-Pedro Paulo tem 26 anos, é arquiteto recém-formado e autônomo. Pensa em se desenvolver profissionalmente através de um mestrado fora do país, pois adora viajar, é solteiro e sempre quis fazer um intercâmbio. Está buscando uma agência que o ajude a encontrar universidades na Europa que aceitem alunos estrangeiros.
+1 - Gualter Carvalho Fortes, de 53 anos, natural de Fortaleza e residente em Buritis, Belo Horizonte, trabalha como motorista de Uber para sustentar sua família e ter mais flexibilidade, permitindo passar mais tempo com seus filhos. Ele escolheu essa profissão para poder levá-los à escola e atender emergências médicas com facilidade. A aplicação que oferece rotas alternativas e seguras em casos de inundações seria essencial para Gualter, ajudando-o a evitar áreas alagadas e congestionamentos, o que aumentaria sua eficiência no trabalho, reduziria o estresse e garantiria mais tempo com sua família.
 
-Enumere e detalhe as personas da sua solução. Para tanto, baseie-se tanto nos documentos disponibilizados na disciplina e/ou nos seguintes links:
+2 - Débora Oliveira dos Santos, nascida em Belo Horizonte em 1990, é uma mulher independente que concilia seu trabalho como operadora de caixa em um supermercado pela manhã com os estudos de direito à noite, em uma rotina intensa de 6x1. A aplicação que fornece rotas alternativas e seguras em casos de inundações seria extremamente útil para ela, pois, como depende do transporte público, poderia evitar áreas alagadas e congestionamentos, economizando tempo e reduzindo o estresse no trajeto entre o trabalho e a faculdade. Isso ajudaria Débora a otimizar seu tempo e garantir mais eficiência e segurança no seu dia a dia.
 
-> **Links Úteis**:
-> - [Rock Content](https://rockcontent.com/blog/personas/)
-> - [Hotmart](https://blog.hotmart.com/pt-br/como-criar-persona-negocio/)
-> - [O que é persona?](https://resultadosdigitais.com.br/blog/persona-o-que-e/)
-> - [Persona x Público-alvo](https://flammo.com.br/blog/persona-e-publico-alvo-qual-a-diferenca/)
-> - [Mapa de Empatia](https://resultadosdigitais.com.br/blog/mapa-da-empatia/)
-> - [Mapa de Stalkeholders](https://www.racecomunicacao.com.br/blog/como-fazer-o-mapeamento-de-stakeholders/)
->
-Lembre-se que você deve ser enumerar e descrever precisamente e personalizada todos os clientes ideais que sua solução almeja.
+3 - Ulisses Antônio, nascido em Belo Horizonte em 1968, é pai de três filhos e trabalha como encarregado de obras, utilizando o carro da empresa para se deslocar entre diferentes regiões da cidade. Ele gerencia a entrega de materiais para as obras, mas já enfrentou problemas com inundações e rotas inseguras, resultando em perdas de materiais e atrasos. A aplicação que fornece rotas alternativas e seguras em casos de inundações seria essencial para Ulisses, permitindo-lhe evitar áreas alagadas e garantir que os materiais sejam entregues pontualmente, melhorando a eficiência e evitando prejuízos nas obras.
+
 
 ## Histórias de Usuários
 
