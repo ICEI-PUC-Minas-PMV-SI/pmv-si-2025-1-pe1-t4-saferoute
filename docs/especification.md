@@ -27,6 +27,8 @@ Lembre-se que você deve ser enumerar e descrever precisamente e personalizada t
 US 01 – Visualização de alertas de alagamento
 Eu como usuário quero poder visualizar alertas de alagamentos ou enchentes para identificar se algum ponto do trajeto de meu deslocamento se encontra afetado, bem como se há algum trajeto alternativo com tráfego regular.
 
+US 02 – Cadastro de alertas de alagamento
+Eu como usuário quero poder cadastrar um alerta de alagamento ou enchente para que outros usuários possam ter ciência do problema.
 
 
 ## Requisitos
