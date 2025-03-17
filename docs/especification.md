@@ -74,7 +74,7 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 
 |ID| Restrição                                             |
 |--|-------------------------------------------------------|
-|01| O projeto deverá ser entregue até o final do semestre |
+|01| A aplicação deve se restringir à área geográfica de Belo Horizonte |
 |02| Não pode ser desenvolvido um módulo de backend        |
 
 
