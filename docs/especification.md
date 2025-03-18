@@ -37,9 +37,10 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 |ID    | Descrição do Requisito  | Prioridade | 
 |------|-----------------------------------------|----| 
-|RF-001| A aplicação deve permitir que o usuário gerencie suas tarefas | ALTA |  
-|RF-002| A aplicação deve permitir a emissão de um relatório de tarefas realizadas no mês   | MÉDIA | 
-
+|RF-001| A aplicação deve permitir que o usuário receba alertas de pontos de alagamentos ou enchentes. | ALTA |  
+|RF-002| A aplicação deve permitir que o usuario envie pontos criticos de alagamentos ou enchentes.   | MÉDIA | 
+|RF-003| A aplicação deve permitir que o usuario receba rotas alternativas .   | MÉDIA | 
+|RF-004| A aplicação deve permitir que o usuario receba alertas sobre a previsão do tempo.   | MÉDIA | 
 
 ### Requisitos não Funcionais
 
