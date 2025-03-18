@@ -46,8 +46,8 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |ID     | Descrição do Requisito  |Prioridade |
 |-------|-------------------------|----|
 |RNF-001|O sistema deve ser compatível com dispositivos móveis e desktops, garantindo acessibilidade para diferentes perfis de usuários.| ALTA | 
-|RNF-002| O tempo de resposta para o cálculo e exibição de rotas seguras não deve ultrapassar 5 segundos. |  MÉDIA | 
-|RNF-003|A aplicação deve garantir disponibilidade mínima de 99% para fornecer informações críticas em períodos chuvosos. |  ALTA |
+|RNF-002| O tempo de resposta para o cálculo e exibição de rotas seguras não deve ultrapassar 5 segundos.(REVISAR COM BASE NOS USER STORIES) |  MÉDIA | 
+|RNF-003|A aplicação deve garantir disponibilidade mínima de 99% para fornecer informações críticas em períodos chuvosos.(REVISAR COM BASE NOS USER STORIES) |  ALTA |
 |RNF-004|O sistema deve seguir normas de segurança da informação, protegendo dados dos usuários e evitando acessos não autorizados. |  ALTA |
 |RNF-005|O aplicativo deve possuir um design intuitivo e acessível, seguindo diretrizes de acessibilidade para pessoas com deficiência.| MÉDIA |
 |RNF-006|O sistema deve ser escalável, permitindo a ampliação da infraestrutura para suportar um aumento repentino no número de acessos.| MÉDIA |
