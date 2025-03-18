@@ -76,7 +76,7 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 |ID| Restrição                                             |
 |--|-------------------------------------------------------|
 |01| A aplicação deve se restringir à área geográfica de Belo Horizonte |
-|02| Apenas dados oficiais e verificados serão utilizados (Defesa Civil, INMET) |
+|02|  |
 
 
 Enumere as restrições à sua solução. Lembre-se de que as restrições geralmente limitam a solução candidata.
