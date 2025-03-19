@@ -32,13 +32,13 @@ Objetivos Específico:
 
 Desenvolver uma aplicação para fornecer rotas alternativas durante inundações é fundamental para proteger a saúde e segurança das pessoas, especialmente em comunidades vulneráveis. Ele pode ajudar a prevenir a propagação de doenças infecciosas, como leptospirose e dengue, ao evitar áreas alagadas, reduzir danos em veículos essenciais para trabalhadores e motoristas de aplicativos, além de minimizar o risco de acidentes com animais peçonhentos, que buscam abrigo em locais alagados. Com informações em tempo real e alternativas de rotas seguras, o aplicativo contribui para a mobilidade das pessoas, garantindo maior segurança e acessibilidade em períodos críticos.
 
-De acordo com o Ministério da Saúde, grandes inundações oferecem riscos imediatos e futuros à saúde das pessoas que vivem nas regiões afetadas. Entre os perigos estão as infecções, como a leptospirose e a dengue. Além disso, o ambiente, repleto de entulhos e destroços, aumenta o risco de acidentes com animais peçonhentos. Diante disso, os principais impactos nas vidas das pessoas incluem:
+Segundo o Ministério da Saúde, as grandes inundações representam riscos tanto imediatos quanto a longo prazo para a saúde das pessoas que vivem nas regiões atingidas. Entre os principais perigos estão as infecções. Além disso, o ambiente, repleto de entulhos, destroços e áreas alagadas, torna-se um terreno propício para a proliferação de animais peçonhentos que podem causar graves acidentes. Essa situação coloca ainda mais em risco a saúde e o bem-estar da população. Em resposta a esses desafios, a implementação de medidas de segurança adequadas, como o fornecimento de rotas alternativas e seguras para o deslocamento da população, pode desempenhar um papel crucial como: 
 
 1. Prevenir a transmissão de doenças infecciosas como a leptospirose, tétano, hepatite, dengue entre outras que afetam principalmente as comunidades mais carentes.
 2. Redução de danos em veículos como: carros, motos,  caminhões e ônibus. Na maioria dos casos, trabalhadores utilizam-se destes meios para se locomover de suas casas até o trabalho. Temos também casos como motoristas de aplicativos de entrega de pessoas, produtos e serviços. 
 3. Redução de riscos de acidentes com animais peçonhentos como escorpiões, aranhas e cobras que se abrigam locais de acúmulo de entulhos.
 
-Com isso, é evidente a necessidade de fornecer rotas alternativas em casos de inundações que iram reduzir os riscos de transmissão de doenças, acidentes com animais peçonhentos e danos em veículos.  
+Com isso, essas rotas ajudam a evitar áreas de risco, como locais alagados ou com entulhos, garantindo a segurança das pessoas e prevenindo acidentes e a disseminação de doenças, que se espalham facilmente devido ao acúmulo de água contaminada e à falta de saneamento básico nas áreas afetadas. Além disso, a criação de alternativas pode contribuir para uma recuperação mais rápida e eficaz das áreas afetadas, minimizando os danos à saúde pública.
 
 ## Público-Alvo
 
