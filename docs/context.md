@@ -30,15 +30,20 @@ Objetivos Específico:
 
 ## Justificativa
 
-Desenvolver uma aplicação para fornecer rotas alternativas durante inundações é fundamental para proteger a saúde e segurança das pessoas, especialmente em comunidades vulneráveis. Ele pode ajudar a prevenir a propagação de doenças infecciosas, como leptospirose e dengue, ao evitar áreas alagadas, reduzir danos em veículos essenciais para trabalhadores e motoristas de aplicativos, além de minimizar o risco de acidentes com animais peçonhentos, que buscam abrigo em locais alagados. Com informações em tempo real e alternativas de rotas seguras, o aplicativo contribui para a mobilidade das pessoas, garantindo maior segurança e acessibilidade em períodos críticos.
+Desenvolver uma aplicalção que forneça rotas alternativas durante inundações é essencial para proteger a saúde e a segurança das pessoas, especialmente em comunidades mais vulneráveis. Esse tipo de aplicação pode ajudar a prevenir a propagação de doenças infecciosas, como leptospirose e dengue, ao evitar áreas alagadas e diminuir os danos a veículos utilizados por trabalhadores e motoristas de aplicativos. Além disso, a ferramenta contribui para a redução dos riscos de acidentes com animais peçonhentos, como escorpiões, aranhas e cobras, que buscam abrigo em locais alagados. Com informações e sugestões de rotas seguras, a aplicalção não só assegura a mobilidade das pessoas durante situações de crise, mas também promove maior segurança e acessibilidade nesses períodos críticos. 
 
-Segundo o Ministério da Saúde, as grandes inundações representam riscos tanto imediatos quanto a longo prazo para a saúde das pessoas que vivem nas regiões atingidas. Entre os principais perigos estão as infecções. Além disso, o ambiente, repleto de entulhos, destroços e áreas alagadas, torna-se um terreno propício para a proliferação de animais peçonhentos que podem causar graves acidentes. Essa situação coloca ainda mais em risco a saúde e o bem-estar da população. Em resposta a esses desafios, a implementação de medidas de segurança adequadas, como o fornecimento de rotas alternativas e seguras para o deslocamento da população, pode desempenhar um papel crucial como: 
+  
+De acordo com o Ministério da Saúde, as grandes inundações apresentam riscos imediatos e de longo prazo à saúde das pessoas nas regiões afetadas. As infecções, como leptospirose e hepatite, são algumas das ameaças mais comuns, agravadas pelas condições insalubres causadas pelo acúmulo de água e pela falta de infraestrutura adequada. Além disso, o ambiente inundado, repleto de entulhos, destroços e áreas alagadas, cria um cenário propício para a proliferação de animais peçonhentos, que podem gerar acidentes graves e aumentar ainda mais os riscos para a saúde. Para lidar com essas situações, a adoção de medidas de segurança, como o fornecimento de rotas alternativas e seguras, é fundamental. Essas rotas alternativas podem ter um impacto significativo em vários aspectos como: 
 
-1. Prevenir a transmissão de doenças infecciosas como a leptospirose, tétano, hepatite, dengue entre outras que afetam principalmente as comunidades mais carentes.
-2. Redução de danos em veículos como: carros, motos,  caminhões e ônibus. Na maioria dos casos, trabalhadores utilizam-se destes meios para se locomover de suas casas até o trabalho. Temos também casos como motoristas de aplicativos de entrega de pessoas, produtos e serviços. 
-3. Redução de riscos de acidentes com animais peçonhentos como escorpiões, aranhas e cobras que se abrigam locais de acúmulo de entulhos.
+  
+1 - Prevenir a transmissão de doenças infecciosas, como leptospirose, tétano, hepatite e dengue, que afetam principalmente as comunidades mais vulneráveis, expostas às águas contaminadas. 
 
-Com isso, essas rotas ajudam a evitar áreas de risco, como locais alagados ou com entulhos, garantindo a segurança das pessoas e prevenindo acidentes e a disseminação de doenças, que se espalham facilmente devido ao acúmulo de água contaminada e à falta de saneamento básico nas áreas afetadas. Além disso, a criação de alternativas pode contribuir para uma recuperação mais rápida e eficaz das áreas afetadas, minimizando os danos à saúde pública.
+2 - Reduzir os danos a veículos, como carros, motos, caminhões e ônibus, essenciais para o transporte de trabalhadores e motoristas de aplicativos, que dependem desses meios de transporte para suas atividades diárias. 
+
+3 - Minimizar os riscos de acidentes com animais peçonhentos, como escorpiões, aranhas e cobras, que buscam abrigo em locais com acúmulo de entulho e água. 
+
+ 
+Ao fornecer alternativas seguras e atualizadas para a mobilidade da população, essas rotas ajudam a evitar áreas de risco, como locais inundados ou com entulhos, garantindo maior proteção para as pessoas. Além disso, elas contribuem para a rápida recuperação das áreas afetadas, minimizando os danos à saúde pública e permitindo que as comunidades se recuperem de forma mais eficaz e eficiente 
 
 ## Público-Alvo
 
