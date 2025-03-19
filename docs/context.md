@@ -61,4 +61,6 @@ CAPUTO, Úrsula Kelli. SIQUEIRA, Rejane Siqueira. Precipitações de Janeiro de 
 
 LUCAS, Lucas Taíza de Pinho Barroso, Augusto Pollyanna, ROCHA, Solimar Carnavalli. Impactos Hidrometeóricos em Belo Horizonte - MG. Disponível em: https://ojs.ufgd.edu.br/rbclima/article/download/13801/7120/44556 . Acesso em: 18/03/2025
 
-INUNDAÇÕES. Disponível em: <https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/e/enchentes>. Acesso em: 19 mar. 2025.
+GALDINO, R. Moradores de áreas de inundação em BH articulam rota de fuga para se protegerem da chuva. Disponível em: <https://www.hojeemdia.com.br/minas/moradores-de-areas-de-inundac-o-em-bh-articulam-rota-de-fuga-para-se-protegerem-da-chuva-1.768396>. Acesso em: 19 mar. 2025.
+
+Inundações. Disponível em: <https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/e/enchentes>. Acesso em: 19 mar. 2025.
