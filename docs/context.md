@@ -1,5 +1,4 @@
 # Introdução
-
 Em muitas comunidades sujeitas a inundações, a necessidade de rotas seguras é essencial para garantir a mobilidade e a segurança dos moradores. Durante os períodos de chuvas intensas, ruas, pontes e passagens podem ficar intransitáveis, aumentando os riscos para a população. Nos últimos dias, Belo Horizonte e sua região metropolitana enfrentaram fortes chuvas, resultando em alagamentos e diversos transtornos.
 
 A falta de um planejamento adequado e de informações acessíveis sobre rotas alternativas agrava ainda mais essa situação, deixando a população exposta a riscos como correntezas, buracos ocultos e contaminação da água. Para mitigar esses impactos, é fundamental implementar estratégias que garantam rotas seguras e bem sinalizadas, além de fornecer alertas em tempo real sobre as condições das vias.
