@@ -30,9 +30,9 @@ Objetivos Específico:
 
 ## Justificativa
 
-A criação de um aplicativo para fornecer rotas alternativas durante inundações é fundamental para proteger a saúde e segurança das pessoas, especialmente em comunidades vulneráveis. Ele pode ajudar a prevenir a propagação de doenças infecciosas, como leptospirose e dengue, ao evitar áreas alagadas, reduzir danos em veículos essenciais para trabalhadores e motoristas de aplicativos, além de minimizar o risco de acidentes com animais peçonhentos, que buscam abrigo em locais alagados. Com informações em tempo real e alternativas de rotas seguras, o aplicativo contribui para a mobilidade das pessoas, garantindo maior segurança e acessibilidade em períodos críticos.
+Desenvolver uma aplicação para fornecer rotas alternativas durante inundações é fundamental para proteger a saúde e segurança das pessoas, especialmente em comunidades vulneráveis. Ele pode ajudar a prevenir a propagação de doenças infecciosas, como leptospirose e dengue, ao evitar áreas alagadas, reduzir danos em veículos essenciais para trabalhadores e motoristas de aplicativos, além de minimizar o risco de acidentes com animais peçonhentos, que buscam abrigo em locais alagados. Com informações em tempo real e alternativas de rotas seguras, o aplicativo contribui para a mobilidade das pessoas, garantindo maior segurança e acessibilidade em períodos críticos.
 
-Impactos gerados na vida das pessoas por fornecer rotas alternativas casos de inundações:
+De acordo com o Ministério da Saúde, grandes inundações oferecem riscos imediatos e futuros à saúde das pessoas que vivem nas regiões afetadas. Entre os perigos estão as infecções, como a leptospirose e a dengue. Além disso, o ambiente, repleto de entulhos e destroços, aumenta o risco de acidentes com animais peçonhentos. Diante disso, os principais impactos nas vidas das pessoas incluem:
 
 1. Prevenir a transmissão de doenças infecciosas como a leptospirose, tétano, hepatite, dengue entre outras que afetam principalmente as comunidades mais carentes.
 2. Redução de danos em veículos como: carros, motos,  caminhões e ônibus. Na maioria dos casos, trabalhadores utilizam-se destes meios para se locomover de suas casas até o trabalho. Temos também casos como motoristas de aplicativos de entrega de pessoas, produtos e serviços. 
