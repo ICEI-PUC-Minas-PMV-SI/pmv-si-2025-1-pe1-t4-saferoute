@@ -40,13 +40,12 @@ Impactos gerados na vida das pessoas por fornecer rotas alternativas casos de in
 
 Com isso, é evidente a necessidade de fornecer rotas alternativas em casos de inundações que iram reduzir os riscos de transmissão de doenças, acidentes com animais peçonhentos e danos em veículos.  
 
-
 ## Público-Alvo
 
-A aplicação web projetada se destinará a atender primariamente os seguintes usuários:
+A aplicação web projetada se destinará a atender primariamente os usuários que frequentemente necessitam trafegar pelas ruas de Belo Horizonte. Um bom exemplo de potenciais usuários são motoristas de transportes de pessoas por meio de aplicativos ou taxistas. Estes usuários necessitam trafegar diariamente pelas ruas da cidade. A ausência de rotas seguras majoram seus ricos físicos, bem como de avarias aos veículos utilizados como meio de sustendo.
 
-- Motoristas de transportes de pessoas por meio de aplicativos ou taxistas. Estes usuários necessitam trafegar diariamente pelas ruas de Belo Horizonte. A ausência de rotas seguras majoram seus ricos físicos, bem como de avarias aos veículos utilizados como meio de sustendo.
-- Trabalhadores de empresas de entrega de correspondência. Além dos mesmos riscos enfrentados pelos motoristas de aplicativos, o conhecimento prévio de rotas seguras os auxiliariam a otimizar o processo de entrega, aumentando o seu volume e celeridade na ocorrência de intempéries climáticas.
-- Moradores de Belo Horizonte que amiúde necessitam trafegar por rotas que usualmente se mostram passíveis de alagamento. A ciência de rotas seguras traria mais segurança e presteza ao seu deslocamento.
+Pode-se destacar também como potenciais usuários, os trabalhadores de empresas de entrega de correspondência. Além dos mesmos riscos enfrentados pelos motoristas de aplicativos, o conhecimento prévio de rotas seguras os auxiliariam a otimizar o processo de entrega, aumentando o seu volume e celeridade na ocorrência de intempéries climáticas.
+
+Por fim, também é possível sublinhar como possíveis usuários da aplicação, moradores de Belo Horizonte que frequentemente necessitam trafegar por rotas que usualmente se mostram passíveis de alagamento. A ciência de rotas seguras traria mais segurança e presteza ao seu deslocamento.
 
 [^1]: Mais informações sobre alertas de risco emitidos pela Defesa Civil de Belo Horizonte podem ser obtidas em: https://prefeitura.pbh.gov.br/defesa-civil/alertas-de-risco 
