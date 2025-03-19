@@ -6,7 +6,7 @@ Diante desse cenário, é fundamental implementar estratégias que garantam rota
 
 ## Problema
 
-<p style="text-align: justify;">>No fim do século XIX, a cidade de Ouro Preto apresentava dificuldades ao gradual progresso demandado pela capital do estado de Minas Gerais. A diminuição na mineração de ouro, aliada à topografia montanhosa, dificultava o acesso de pessoas e mercadorias ao município, bem como levantava obstáculos ao crescimento urbano que se fazia necessário à capital do estado.</p>
+<p style="text-align: justify;">No fim do século XIX, a cidade de Ouro Preto apresentava dificuldades ao gradual progresso demandado pela capital do estado de Minas Gerais. A diminuição na mineração de ouro, aliada à topografia montanhosa, dificultava o acesso de pessoas e mercadorias ao município, bem como levantava obstáculos ao crescimento urbano que se fazia necessário à capital do estado.</p>
 
 Neste sentido, o engenheiro Aarão Reis ficou encarregado de projetar a nova capital mineira, a atual Belo Horizonte. Foi a primeira cidade do país a ser modernamente planejada. Seu planejamento continha a supressão de alguns rios, bem como, com base nas teorias higienistas da época, a canalização de córregos com o fim de prevenir a proliferação de doenças.
 
