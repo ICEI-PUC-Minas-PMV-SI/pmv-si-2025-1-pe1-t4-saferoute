@@ -49,3 +49,9 @@ Pode-se destacar também como potenciais usuários, os trabalhadores de empresas
 Por fim, também é possível sublinhar como possíveis usuários da aplicação, moradores de Belo Horizonte que frequentemente necessitam trafegar por rotas que usualmente se mostram passíveis de alagamento. A ciência de rotas seguras traria mais segurança e presteza ao seu deslocamento.
 
 [^1]: Mais informações sobre alertas de risco emitidos pela Defesa Civil de Belo Horizonte podem ser obtidas em: https://prefeitura.pbh.gov.br/defesa-civil/alertas-de-risco 
+
+## Referências Bibliográficas
+
+CAPUTO, Úrsula Kelli. SIQUEIRA, Rejane Siqueira. Precipitações de Janeiro de 2020 no Município de Belo Horizonte – MG. Disponível em: https://files.abrhidro.org.br/Eventos/Trabalhos/131/XIIIENAU-IIISSRU0077-2-20201016-093343.pdf . Acesso em: 22/02/2025.
+
+LUCAS, Lucas Taíza de Pinho Barroso, Augusto Pollyanna, ROCHA, Solimar Carnavalli. Impactos Hidrometeóricos em Belo Horizonte - MG. Disponível em: https://ojs.ufgd.edu.br/rbclima/article/download/13801/7120/44556 . Acesso em: 18/03/2025
