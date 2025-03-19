@@ -60,3 +60,5 @@ Por fim, também é possível sublinhar como possíveis usuários da aplicação
 CAPUTO, Úrsula Kelli. SIQUEIRA, Rejane Siqueira. Precipitações de Janeiro de 2020 no Município de Belo Horizonte – MG. Disponível em: https://files.abrhidro.org.br/Eventos/Trabalhos/131/XIIIENAU-IIISSRU0077-2-20201016-093343.pdf . Acesso em: 22/02/2025.
 
 LUCAS, Lucas Taíza de Pinho Barroso, Augusto Pollyanna, ROCHA, Solimar Carnavalli. Impactos Hidrometeóricos em Belo Horizonte - MG. Disponível em: https://ojs.ufgd.edu.br/rbclima/article/download/13801/7120/44556 . Acesso em: 18/03/2025
+
+INUNDAÇÕES. Disponível em: <https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/e/enchentes>. Acesso em: 19 mar. 2025.
