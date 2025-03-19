@@ -63,4 +63,6 @@ LUCAS, Lucas Taíza de Pinho Barroso, Augusto Pollyanna, ROCHA, Solimar Carnaval
 
 GALDINO, R. Moradores de áreas de inundação em BH articulam rota de fuga para se protegerem da chuva. Disponível em: <https://www.hojeemdia.com.br/minas/moradores-de-areas-de-inundac-o-em-bh-articulam-rota-de-fuga-para-se-protegerem-da-chuva-1.768396>. Acesso em: 19 mar. 2025.
 
+Temporal alaga avenidas e causa transtorno no trânsito em BH e Região Metropolitana. Disponível em: <https://g1.globo.com/mg/minas-gerais/noticia/2025/03/17/temporal-alaga-avenidas-e-causa-transtorno-no-transito-em-bh-e-regiao-metropolitana.ghtml>. Acesso em: 19 mar. 2025.
+
 Inundações. Disponível em: <https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/e/enchentes>. Acesso em: 19 mar. 2025.
