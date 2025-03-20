@@ -77,6 +77,7 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 |01| A aplicação deve se restringir à área geográfica de Belo Horizonte |
 |02| A aplicação não funcionará offline e exigirá conexão com a internet para exibir alertas e rotas |
 |03| A aplicação não armazenará dados pessoais sensíveis dos usuários |
+|04| A aplicação não permitirá mensagens diretas entre usuários para evitar abusos e spam |
 
 Enumere as restrições à sua solução. Lembre-se de que as restrições geralmente limitam a solução candidata.
 
