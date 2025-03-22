@@ -63,9 +63,3 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 |02| A aplicação não funcionará offline e exigirá conexão com a internet para exibir alertas e rotas |
 |03| A aplicação não armazenará dados pessoais sensíveis dos usuários |
 |04| A aplicação não permitirá mensagens diretas entre usuários para evitar abusos e spam |
-
-Enumere as restrições à sua solução. Lembre-se de que as restrições geralmente limitam a solução candidata.
-
-> **Links Úteis**:
-> - [O que são Requisitos Funcionais e Requisitos Não Funcionais?](https://codificar.com.br/requisitos-funcionais-nao-funcionais/)
-> - [O que são requisitos funcionais e requisitos não funcionais?](https://analisederequisitos.com.br/requisitos-funcionais-e-requisitos-nao-funcionais-o-que-sao/)
