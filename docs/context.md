@@ -26,7 +26,7 @@ Desenvolver um software que auxilie na identificação e indicação de rotas se
 Objetivos Específico:
 1.	Mapear áreas de risco: Identificar e categorizar pontos críticos de alagamento e inundações na cidade, utilizando dados históricos, informações geográficas e estatísticas da Defesa Civil.
 2.	Desenvolver um sistema de monitoramento em tempo real: Integrar informações meteorológicas e dados de sensores para fornecer alertas atualizados sobre as condições das vias.
-3.	Criar um sistema de rotas dinâmicas: Implementar algoritmos de cálculo de trajeto que permitam sugerir caminhos alternativos mais seguros com base em condições meteorológicas e histórico de alagamentos.
+3.	Criar um sistema de rotas dinâmicas: Implementar algoritmos de cálculo de trajeto que permitam sugerir caminhos alternativos mais seguros com base em condições meteorológicas e histórico de alagamentos. Esse algoritmo também levará em consideração se houve usuários alertando sobre situação de alagamento/enchente em outros trajetos próximos.
 
 
 ## Justificativa
