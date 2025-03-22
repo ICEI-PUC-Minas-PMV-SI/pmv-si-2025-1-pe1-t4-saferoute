@@ -39,13 +39,13 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |------|-----------------------------------------|----| 
 |RF-001| A aplicação deve permitir que o usuário visualize alertas de pontos de alagamentos ou enchentes. | ALTA |  
 |RF-002| A aplicação deve permitir que o usuario envie pontos criticos de alagamentos ou enchentes.   | ALTA | 
-|RF-003| A aplicação deve permitir que o usuario visualize rotas alternativas .   | MÉDIA | 
+|RF-003| A aplicação deve permitir que o usuario visualize rotas alternativas.   | MÉDIA | 
 
 ### Requisitos não Funcionais
 
 |ID     | Descrição do Requisito  |Prioridade |
 |-------|-------------------------|----|
-|RNF-001|O sistema deve ser compatível com dispositivos móveis e desktops, garantindo acessibilidade para diferentes perfis de usuários.| ALTA | 
+|RNF-001|O sistema deve ser compatível com dispositivos móveis e desktops, bem como os principais navegadores web, garantindo acessibilidade para diferentes perfis de usuários.| ALTA | 
 |RNF-002| O tempo de resposta para o cálculo e exibição de rotas seguras não deve ultrapassar 5 segundos.(REVISAR COM BASE NOS USER STORIES) |  MÉDIA | 
 |RNF-003|A aplicação deve garantir disponibilidade mínima de 99% para fornecer informações críticas em períodos chuvosos.(REVISAR COM BASE NOS USER STORIES) |  ALTA |
 |RNF-004|O sistema deve seguir normas de segurança da informação, protegendo dados dos usuários e evitando acessos não autorizados. |  ALTA |
@@ -61,5 +61,5 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 |--|-------------------------------------------------------|
 |01| A aplicação deve se restringir à área geográfica de Belo Horizonte |
 |02| A aplicação não funcionará offline e exigirá conexão com a internet para exibir alertas e rotas |
-|03| A aplicação não armazenará dados pessoais sensíveis dos usuários |
+|03| A aplicação não armazenará dados pessoais sensíveis dos usuários - a exemplo de CPF, RG, data de nascimento, nome completo, entre outros |
 |04| A aplicação não permitirá mensagens diretas entre usuários para evitar abusos e spam |
