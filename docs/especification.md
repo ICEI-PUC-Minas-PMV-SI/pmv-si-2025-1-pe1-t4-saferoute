@@ -1,10 +1,6 @@
 # Especificações do Projeto
 
-Definição do problema e ideia de solução a partir da perspectiva do usuário. É composta pela definição do  diagrama de personas, histórias de usuários, requisitos funcionais e não funcionais além das restrições do projeto.
-
-Apresente uma visão geral do que será abordado nesta parte do documento, enumerando as técnicas e/ou ferramentas utilizadas para realizar a especificações do projeto.
-
-Caso deseje atribuir uma imagem a sua persona, utilize o site https://thispersondoesnotexist.com/
+A especificação do projeto visa o desenvolvimento de uma aplicação web e móvel focada na melhoria do tráfego e segurança dos usuários de Belo Horizonte, proporcionando rotas seguras em situações de alagamento. A aplicação atenderá a diferentes personas, como motoristas de Uber, trabalhadores que utilizam transporte público, e encarregados de obras, oferecendo alertas em tempo real sobre áreas afetadas por inundações, além de rotas alternativas para otimizar o tempo de deslocamento. As funcionalidades principais incluem a visualização de alertas de alagamento, o envio de novos alertas pelos usuários, e a manutenção de informações atualizadas sobre as condições das ruas afetadas. Além disso, a aplicação será compatível com dispositivos móveis e desktops, com um design intuitivo e acessível, garantindo a segurança dos dados e alta disponibilidade, especialmente durante períodos chuvosos. A aplicação deverá ser capaz de oferecer uma experiência ágil, com tempo de resposta para o cálculo de rotas não superior a 5 segundos, e operar com uma disponibilidade mínima de 99%, considerando sua importância durante emergências climáticas.
 
 ## Personas
 
