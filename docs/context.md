@@ -31,7 +31,7 @@ Objetivos Específico:
 
 ## Justificativa
 
-Desenvolver uma aplicalção que forneça rotas alternativas durante inundações é essencial para proteger a saúde e a segurança das pessoas, especialmente em comunidades mais vulneráveis. Esse tipo de aplicação pode ajudar a prevenir a propagação de doenças infecciosas, como leptospirose e dengue, ao evitar áreas alagadas e diminuir os danos a veículos utilizados por trabalhadores e motoristas de aplicativos. Além disso, a ferramenta contribui para a redução dos riscos de acidentes com animais peçonhentos, como escorpiões, aranhas e cobras, que buscam abrigo em locais alagados. Com informações e sugestões de rotas seguras, a aplicalção não só assegura a mobilidade das pessoas durante situações de crise, mas também promove maior segurança e acessibilidade nesses períodos críticos. 
+Desenvolver uma aplicação que forneça rotas alternativas durante inundações é essencial para proteger a saúde e a segurança das pessoas, especialmente em comunidades mais vulneráveis. Esse tipo de aplicação pode ajudar a prevenir a propagação de doenças infecciosas, como leptospirose e dengue, ao evitar áreas alagadas e diminuir os danos a veículos utilizados por trabalhadores e motoristas de aplicativos. Além disso, a ferramenta contribui para a redução dos riscos de acidentes com animais peçonhentos, como escorpiões, aranhas e cobras, que buscam abrigo em locais alagados. Com informações e sugestões de rotas seguras, a aplicalção não só assegura a mobilidade das pessoas durante situações de crise, mas também promove maior segurança e acessibilidade nesses períodos críticos. 
 
   
 De acordo com o Ministério da Saúde, as grandes inundações apresentam riscos imediatos e de longo prazo à saúde das pessoas nas regiões afetadas. As infecções, como leptospirose e hepatite, são algumas das ameaças mais comuns, agravadas pelas condições insalubres causadas pelo acúmulo de água e pela falta de infraestrutura adequada. Além disso, o ambiente inundado, repleto de entulhos, destroços e áreas alagadas, cria um cenário propício para a proliferação de animais peçonhentos, que podem gerar acidentes graves e aumentar ainda mais os riscos para a saúde. Para lidar com essas situações, a adoção de medidas de segurança, como o fornecimento de rotas alternativas e seguras, é fundamental. Essas rotas alternativas podem ter um impacto significativo em vários aspectos como: 
@@ -58,7 +58,7 @@ Por fim, também é possível sublinhar como possíveis usuários da aplicação
 
 ## Referências Bibliográficas
 
-CAPUTO, Úrsula Kelli. SIQUEIRA, Rejane Siqueira. Precipitações de Janeiro de 2020 no Município de Belo Horizonte – MG. Disponível em: https://files.abrhidro.org.br/Eventos/Trabalhos/131/XIIIENAU-IIISSRU0077-2-20201016-093343.pdf . Acesso em: 22/02/2025.
+CAPUTO, Úrsula Kelli. SIQUEIRA, Rejane Siqueira. Precipitações de Janeiro de 2020 no Município de Belo Horizonte – MG. Disponível em: https://files.abrhidro.org.br/Eventos/Trabalhos/131/XIIIENAU-IIISSRU0077-2-20201016-093343.pdf . Acesso em: 18/03/2025.
 
 LUCAS, Lucas Taíza de Pinho Barroso, Augusto Pollyanna, ROCHA, Solimar Carnavalli. Impactos Hidrometeóricos em Belo Horizonte - MG. Disponível em: https://ojs.ufgd.edu.br/rbclima/article/download/13801/7120/44556 . Acesso em: 18/03/2025
 
