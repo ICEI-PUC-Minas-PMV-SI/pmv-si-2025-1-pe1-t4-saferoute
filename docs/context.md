@@ -21,7 +21,7 @@ Apesar dos esforços da Defesa Civil de Belo Horizonte na divulgação de alerta
 
 
 ## Objetivos
-Desenvolver um software que auxilie na identificação e indicação de ruas em estado de alagament, inundações e enchentes para a população de Belo Horizonte, contribuindo para a mobilidade urbana e a redução de riscos associados a inundações e alagamentos.
+Desenvolver um software que auxilie na identificação e indicação de ruas em estado de alagamento, inundações e enchentes para a população de Belo Horizonte, contribuindo para a mobilidade urbana e a redução de riscos associados a inundações e alagamentos.
 
 Objetivos Específico:
 1.	Identificar e categorizar pontos críticos de alagamento e inundações na cidade, utilizando dados fornecidos pela comunidade de usuários que irão utilizar a ferramenta.
