@@ -35,20 +35,18 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |------|-----------------------------------------|----| 
 |RF-001| A aplicação deve permitir que o usuário visualize alertas de pontos de alagamentos ou enchentes. | ALTA |  
 |RF-002| A aplicação deve permitir que o usuario envie pontos criticos de alagamentos ou enchentes. | ALTA | 
-|RF-003| A aplicação deve permitir que o usuario visualize rotas alternativas. | MÉDIA | 
+|RF-003| A aplicação deve permitir que o usuário indique ruas em estado regular (sem inundações/enchentes). | ALTA |
+|RF-004| A aplicação deve permitir que o usuário visualize as ruas que estão em estado regular. | ALTA | 
 
 ### Requisitos não Funcionais
 
 |ID     | Descrição do Requisito  |Prioridade |
 |-------|-------------------------|----|
 |RNF-001|O sistema deve ser compatível com dispositivos móveis e desktops, bem como os principais navegadores web, garantindo acessibilidade para diferentes perfis de usuários.| ALTA | 
-|RNF-002| O tempo de resposta para o cálculo e exibição de rotas seguras não deve ultrapassar 10 segundos, garantindo que os usuários possam acessar as informações rapidamente, mesmo em conexões de internet mais lentas..(REVISAR COM BASE NOS USER STORIES) |  ALTA | 
-|RNF-003|A aplicação deve realizar backups regulares dos dados dos alertas e das rotas seguras cadastradas, para que as informações não sejam perdidas em caso de falha no sistema. |  ALTA |
-|RNF-004|O sistema deve seguir normas de segurança da informação, protegendo dados dos usuários e evitando acessos não autorizados. | ALTA |
-|RNF-005|O aplicativo deve possuir um design intuitivo e acessível, seguindo diretrizes de acessibilidade para pessoas com deficiência. | MÉDIA |
-|RNF-006|O sistema deve ser escalável, permitindo a ampliação da infraestrutura para suportar um aumento repentino no número de acessos. | MÉDIA |
-|RNF-007|O código-fonte da aplicação deve ser organizado de forma que seja fácil realizar manutenções ou atualizações futuras, com comentários claros e documentação simples para que programadores com experiência limitada possam fazer ajustes sem grandes dificuldades. | MÉDIA |
-
+|RNF-002|O aplicativo deve possuir um design intuitivo e acessível, seguindo diretrizes de acessibilidade para pessoas com deficiência. | MÉDIA |
+|RNF-003|O sistema deve ser escalável, permitindo a ampliação da infraestrutura para suportar um aumento repentino no número de acessos, usuários e localidades. | MÉDIA |
+|RNF-004|O código-fonte da aplicação deve ser organizado de forma que seja fácil realizar manutenções ou atualizações futuras, com comentários claros e documentação simples para que programadores com experiência limitada possam fazer ajustes sem grandes dificuldades. | MÉDIA |
+|RNF-005|O código-fonte da aplicação deve seguir boas práticas de desenvolvimento seguro a fim de evitar manipulação dos dados que serão disponibilizados para o usuário. | MÉDIA |
 
 ## Restrições
 
@@ -58,5 +56,7 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 |--|-------------------------------------------------------|
 |01| A aplicação deve se restringir à área geográfica de Belo Horizonte |
 |02| A aplicação não funcionará offline e exigirá conexão com a internet para exibir alertas e rotas |
-|03| A aplicação não armazenará dados pessoais sensíveis dos usuários - a exemplo de CPF, RG, data de nascimento, nome completo, entre outros |
+|03| A aplicação não armazenará dados pessoais dos usuários - a exemplo de CPF, RG, data de nascimento, nome completo, entre outros |
 |04| A aplicação não permitirá mensagens diretas entre usuários para evitar abusos e spam |
+|05| A aplicação não tem capacidade de verificar a veracidade das indicações recebidas pelos usuários | 
+|06| Uma rua só será considerada alagada/inundada pela aplicação a partir da indicação de 2 alertas ou mais pela comunidade de usuários | 
