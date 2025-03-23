@@ -1,9 +1,9 @@
 # Introdução
 Em muitas comunidades sujeitas a inundações, a necessidade de rotas seguras é essencial para garantir a mobilidade e a segurança dos moradores. Durante os períodos de chuvas intensas, ruas, pontes e passagens podem ficar intransitáveis, aumentando os riscos para a população. Nos últimos dias, Belo Horizonte e sua região metropolitana enfrentaram fortes chuvas, resultando em alagamentos e diversos transtornos.
 
-A falta de um planejamento adequado e de informações acessíveis sobre rotas alternativas agrava ainda mais essa situação, deixando a população exposta a riscos como correntezas, buracos ocultos e contaminação da água. Para mitigar esses impactos, é fundamental implementar estratégias que garantam rotas seguras e bem sinalizadas, além de fornecer alertas em tempo real sobre as condições das vias.
+A falta de um planejamento adequado e de informações acessíveis sobre o estado das ruas agrava ainda mais essa situação, deixando a população exposta a riscos como correntezas, buracos ocultos e contaminação pela água. Para mitigar esses impactos, é fundamental implementar estratégias que garantam rotas seguras e bem sinalizadas, além de fornecer alertas em tempo real sobre as condições das vias.
 
-Medidas como sistemas de monitoramento, sinalização adequada e ações de conscientização comunitária podem reduzir significativamente os riscos e minimizar atrasos no deslocamento. Ao investir na segurança da mobilidade em áreas de risco, não apenas protegemos vidas, mas também fortalecemos a resiliência da comunidade, permitindo que as pessoas transitem com mais confiança e segurança, mesmo em situações adversas.
+Medidas como sistemas de monitoramento, sinalização adequada e ações de conscientização comunitária podem reduzir significativamente os riscos. Ao investir na segurança da mobilidade em áreas de risco, não apenas protegemos vidas, mas também fortalecemos a resiliência da comunidade, permitindo que as pessoas transitem com mais confiança e segurança, mesmo em situações adversas.
 
 ## Problema
 
@@ -21,13 +21,11 @@ Apesar dos esforços da Defesa Civil de Belo Horizonte na divulgação de alerta
 
 
 ## Objetivos
-Desenvolver um software que auxilie na identificação e indicação de rotas seguras para a população de Belo Horizonte durante períodos de chuvas intensas, contribuindo para a mobilidade urbana e a redução de riscos associados a inundações e alagamentos.
+Desenvolver um software que auxilie na identificação e indicação de ruas em estado de alagament, inundações e enchentes para a população de Belo Horizonte, contribuindo para a mobilidade urbana e a redução de riscos associados a inundações e alagamentos.
 
 Objetivos Específico:
 1.	Identificar e categorizar pontos críticos de alagamento e inundações na cidade, utilizando dados fornecidos pela comunidade de usuários que irão utilizar a ferramenta.
-2.	Proporcionar rotas alternativas com base nos pontos críticos de alagamento e inundações identificados.
-3.	Implementar algoritmos de cálculo de trajeto que permitam sugerir caminhos alternativos mais seguros com base em condições meteorológicas e histórico de alagamentos. Esse algoritmo também levará em consideração se houve usuários alertando sobre situação de alagamento/enchente em outros trajetos próximos.
-
+2.	Indicar as ruas que estão em estado regular, utilizando dados fornecidos pela comunidade de usuários que irão utilizar a ferramenta.
 
 ## Justificativa
 
@@ -60,10 +58,12 @@ Por fim, também é possível sublinhar como possíveis usuários da aplicação
 
 CAPUTO, Úrsula Kelli. SIQUEIRA, Rejane Siqueira. Precipitações de Janeiro de 2020 no Município de Belo Horizonte – MG. Disponível em: https://files.abrhidro.org.br/Eventos/Trabalhos/131/XIIIENAU-IIISSRU0077-2-20201016-093343.pdf . Acesso em: 18/03/2025.
 
+CORDEIRO, Elisângela. Ministério da Saúde orienta sobre cuidados essenciais à população no pós-enchente. Ministério da Saúde orienta sobre cuidados essenciais à população no pós-enchente, Ano da Publicação. Disponível em: https://www.gov.br/saude/pt-br/assuntos/noticias/2024/maio/ministerio-da-saude-orienta-sobre-cuidados-essenciais-a-populacao-no-pos-enchente. Acesso em: 21 mar. 2025. 
+
+GALDINO, R. Moradores de áreas de inundação em BH articulam rota de fuga para se protegerem da chuva. Disponível em: https://www.hojeemdia.com.br/minas/moradores-de-areas-de-inundac-o-em-bh-articulam-rota-de-fuga-para-se-protegerem-da-chuva-1.768396. Acesso em: 19 mar. 2025.
+
 LUCAS, Lucas Taíza de Pinho Barroso, Augusto Pollyanna, ROCHA, Solimar Carnavalli. Impactos Hidrometeóricos em Belo Horizonte - MG. Disponível em: https://ojs.ufgd.edu.br/rbclima/article/download/13801/7120/44556 . Acesso em: 18/03/2025
 
-GALDINO, R. Moradores de áreas de inundação em BH articulam rota de fuga para se protegerem da chuva. Disponível em: <https://www.hojeemdia.com.br/minas/moradores-de-areas-de-inundac-o-em-bh-articulam-rota-de-fuga-para-se-protegerem-da-chuva-1.768396>. Acesso em: 19 mar. 2025.
+Inundações. Disponível em: <https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/e/enchentes>. Acesso em: 19 mar. 2025.
 
 Temporal alaga avenidas e causa transtorno no trânsito em BH e Região Metropolitana. Disponível em: <https://g1.globo.com/mg/minas-gerais/noticia/2025/03/17/temporal-alaga-avenidas-e-causa-transtorno-no-transito-em-bh-e-regiao-metropolitana.ghtml>. Acesso em: 19 mar. 2025.
-
-Inundações. Disponível em: <https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/e/enchentes>. Acesso em: 19 mar. 2025.
