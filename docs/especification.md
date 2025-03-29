@@ -41,7 +41,7 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |RF-006| O cadastro do alerta de uma rua com alagamento deve sobrescrever eventual indicação desta rua como rota alternativa no consolidado de ruas afetadas x rotas alternativas. | MÉDIA |
 |RF-007| O cadastro posterior de uma rua como rota alternativa deve sobrepor a indicação da rua como afetada por alagamento ou enchente. | MÉDIA |
 |RF-008| O cadastro como área alagada ou como rota alternativa dependerá de ao menos 2 indicações diferentes. | MÉDIA |
-|RF-009| Após 5 horas do último reporte de uma rua como afetada por alagamento ou como rota alternativa, a informação desta rua será removida da consolidação. | MÉDIA |
+|RF-009| Após 5 horas do último reporte de uma rua como afetada por alagamento ou como rota alternativa, a informação desta rua será removida da consolidação, a não ser que haja outros reportes para atualização do status.  | MÉDIA |
 
 
 
