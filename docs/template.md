@@ -1,36 +1,31 @@
 # Template padrão do site
+As telas do sistema a serem desenvolvidas serão responsivas de modo a se adequar a diferentes tamanhos. Pensou-se em um design que se adequasse tanto à visualização em um desktop quanto em telas de celulares.
+O mapa ocupará lugar de proeminência na tela de forma a facilitar a visualização da situação da rua pesquisada, bem como das ruas adjacentes.
 
-Layout padrão do site (HTML e CSS) que será utilizado em todas as páginas com a definição de identidade visual, aspectos de responsividade e iconografia.
-
-Explique as guias de estilo utilizadas no seu projeto.
 
 ## Design
+O sistema constará com uma barra de navegação lateral com as seguintes opções:
+- Nome do usuário e imagem de identificação;
+- Reportar alagamentos;
+- Histórico de reportes; e
+- Sair (deslogar).
 
-Detalhe os layouts que serão utilizados. Apresente onde será colocado o logo do sistema. Defina os menus padrões, entre outras coisas.
-
+O Mapa ocupará a maior parte da tela, permitindo a iterativadade do usuário.
+A previsão do tempo será colocada à frente do mapa, na parte superior direita.
 
 ## Cores
+No menu lateral e no título, será aplicado o tom de azul escuro: #0D0576.
+No corpo da página, será aplicado o tom de azul claro: #E1DBDB.
 
-Apresente a paleta de cores que será utilizada. Uma ferramenta interessante para a criação de palestas de cores é o *Adobe Color* ([https://color.adobe.com/pt/create/color-wheel](https://color.adobe.com/pt/create/color-wheel)).
 
 
 ## Tipografia
-
-Apresente as fontes que serão utilizadas e sua função no site. As principais funções são: Título de página, Título de Seção, Rótulos de componentes e Corpo de Texto.
+Em toda a aplicação, será aplicada a fonte Arial.
 
 
 ## Iconografia
-
-Defina os ícones que serão utilizados e suas respectivas funções.
-
-Apresente os estilos CSS criados para cada um dos elementos apresentados.
-Outras seções podem ser adicionadas neste documento para apresentar padrões de componentes, de menus, etc.
-
-
-> **Links Úteis**:
->
-> -  [Como criar um guia de estilo de design da Web](https://edrodrigues.com.br/blog/como-criar-um-guia-de-estilo-de-design-da-web/#)
-> - [CSS Website Layout (W3Schools)](https://www.w3schools.com/css/css_website_layout.asp)
-> - [Website Page Layouts](http://www.cellbiol.com/bioinformatics_web_development/chapter-3-your-first-web-page-learning-html-and-css/website-page-layouts/)
-> - [Perfect Liquid Layout](https://matthewjamestaylor.com/perfect-liquid-layouts)
-> - [How and Why Icons Improve Your Web Design](https://usabilla.com/blog/how-and-why-icons-improve-you-web-design/)
+Os ícones preponderantemente se encontrarão no menu lateral ajudando a elucidar a funcionalidade indicada.
+A funcionalidade reportar será indicada com uma placa com um ponto de exclamação aludindo à atenção que a situação a ser reportada demanda.
+A visualização do histórico de reportes será representada por um relógio com uma seta em sentido anti-horário fazendo referência a um tempo anterior ao presente.
+A funcionalidade de sair/deslogar será indicada com uma porta e uma senta indicando o caminho através dela.
+O regresso à página inicial da aplicação será representada pelo tradicional desenho de uma casa indicando o regresso a "homepage".
