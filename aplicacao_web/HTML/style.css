@@ -3,11 +3,11 @@
 }
 
 body {
-    background-color: #e6f0ff; 
-    background-image: url('caminho/para/sua/rotas.pg.jpg'); 
-    background-size: cover; 
-    background-position: center; 
-    background-repeat: no-repeat; 
+    background-color: #e6f0ff;
+    background-image: url('caminho/para/sua/rotas.pg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     font-family: Arial, sans-serif;
     display: flex;
     justify-content: center;
@@ -18,7 +18,7 @@ body {
 }
 
 
-.login-container{
+.login-container {
     background-color: white;
     padding: 40px;
     border-radius: 10px;
@@ -27,8 +27,8 @@ body {
     text-align: center;
 }
 
-.login-container h2{
-    color: #004aad; 
+.login-container h2 {
+    color: #004aad;
     margin-bottom: 20px;
 }
 
@@ -53,19 +53,19 @@ body {
 }
 
 .login-container button:hover {
-    background-color: #003a8c; 
+    background-color: #003a8c;
 }
 
 .register-link {
-   margin-top: 15px;
-   font-size: 14px;
-   color: #333;
+    margin-top: 15px;
+    font-size: 14px;
+    color: #333;
 }
 
 .register-link a {
-   color: #004aad; 
-   text-decoration: none;
-   font-weight: bold;
+    color: #004aad;
+    text-decoration: none;
+    font-weight: bold;
 }
 
 * {
@@ -76,7 +76,7 @@ body {
 }
 
 body {
-    background-color: #e6f0ff; 
+    background-color: #e6f0ff;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -94,7 +94,7 @@ body {
 }
 
 h2 {
-    color: #004aad; 
+    color: #004aad;
     margin-bottom: 10px;
 }
 
@@ -132,7 +132,7 @@ button {
 }
 
 button:hover {
-    background-color: #1e00b5; 
+    background-color: #1e00b5;
 }
 
 .voltar-login {
