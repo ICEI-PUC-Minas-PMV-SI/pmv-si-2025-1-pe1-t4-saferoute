@@ -1,12 +1,68 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pagina Inicial</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="imagens/logo_cidade.ico">
+	<link rel="stylesheet" href="css/index.css">
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+	<title>Safe Route</title>
 </head>
 <body>
-    <p>teste1</p>
-    
+	<header>SAFE ROUTE
+		<img id="botao_opcoes" src="imagens/opcoes.png" onclick="exibir_opcoes()">
+		<a href="login.html">
+			<img src="imagens/usuario.png" id="imagem_usuario">
+			<p id="label_login">Entrar</p>
+		</a>		
+	</header>
+	<aside id=menu_opcoes>
+		<a href="index.html">
+			<div class="botoes_menu" id="botao_pg_inicial">
+			<img id="icone_pagina_inicial" src="imagens/pagina_inicial.png">
+			</div>
+		</a>
+		<a href="reportar_alagamento.html">
+			<div class="botoes_menu" id="botao_reportar">
+				<img src="imagens/atencao.png" id="imagem_atencao">
+				<p id="label_reportar">Reportar</p>
+			</div>
+		</a>
+		<a href="historico_reportes.html">
+			<div class="botoes_menu" id="botao_historico">
+				<img src="imagens/historico.png" id="imagem_historico">
+				<p id="label_historico">Histórico</p>
+			</div>
+		</a>
+		<a href="sobre.html">
+			<div class="botoes_menu" id="botao_info">
+				<img src="imagens/info.png" id="imagem_info">
+				<p id="label_info">Sobre</p>
+			</div>
+		</a>
+		<div class="botoes_menu" id="botao_sair">
+			<img src="imagens/sair.png" id="imagem_sair">
+			<p id="label_sair">Sair</p>
+		</div>
+	</aside>
+	<section>
+		<form>
+			<div id="div_endereco">
+				<label for="input_endereco" id="label_endereco">Endereço:</label>
+				<input type="text" id="input_endereco" placeholder="Digite o endereço">
+			</div>
+			<div id="div_cep">
+				<label for="input_cep" id="label_cep"">CEP:</label>
+				<input type="text" id="input_cep" placeholder="Digite o CEP">
+			</div>
+		<button id="btn_pesquisar"><img src="imagens/lupa.png" id="img_lupa"></button>
+		</form>
+	</section>
+	<section id="section_mapa">
+		<div id="mapa"></div>
+		<img src="imagens/previsao_tempo.png" id="img_previsao_tempo">
+	</section>
+<script src="javascript/index.js"></script>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 </body>
 </html>
