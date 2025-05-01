@@ -1,0 +1,183 @@
+body {font-family: Arial;
+	  font-size: 200%;
+	  background-color: #E1DBDB;
+	  margin: 0;
+}
+
+header {background-color: #0D0576;
+		color: #FFFFFF;
+		text-align: center;
+		padding-top: 5px;
+		padding-bottom: 5px;
+}
+
+#icone_pagina_inicial {width: 30px;
+				height: auto;
+				position: absolute;
+				right: 30px;
+				top: 15px;
+}
+
+#botao_opcoes {width: 40px;
+			   height: auto;
+			   position: absolute;
+			   left: 20px;
+			   top: 5px;
+}
+
+
+fieldset {border: none;
+		  position: absolute;
+		  top: 20px;
+		  left: 100px;
+}
+
+ul {list-style: none;
+	}
+
+label {font-size: 20px;  
+}		 
+
+#label_endereco {position: absolute;
+	             top: 45px;
+}
+
+#label_cep {position: absolute;
+	        top: 75px;
+}
+
+#input_cep  {position: absolute;
+	        top: 75px;
+}
+
+input {width: 800px;
+	   height: 20px;
+	   position: absolute;
+	   left: 170px;
+}
+
+#btn_pesquisar {width: 50px;
+				height: 35px;
+				position: absolute;
+				top: 87px;
+				right: 110px;
+}
+
+#img_lupa {width: 25px;
+				height: 25px;
+}
+
+section_mapa {position: absolute;
+			  top: 150px;
+			  border-top: 10px solid #000000;
+}
+
+#img_mapa {width: 1120px;
+		   height: 410px;
+		   position: absolute;
+		   top: 150px;
+		   left: 150px;			   
+}
+
+#img_previsao_tempo {position: absolute;
+			         top: 170px;
+					 right: 30px;
+					 width: 200px;
+					 height: auto;
+}
+
+aside {width: 150px;
+	   height: 513px;
+	   background-color: #0D0576;
+}
+
+.botoes_menu {font-size: 15px;
+			  color: #FFFFFF;
+}
+	
+#imagem_usuario {width: 40px;
+				 height: auto;
+				 border-radius: 50%;
+				 position: absolute;
+				 top: 65px;
+				 left: 50px;
+}
+
+#label_login {position: absolute;
+			  top: 105px;
+			  padding-bottom: 10px;
+}
+
+#botao_login {border-top: 1px solid #000000;		  
+			  border-bottom: 1px solid #000000;
+			  height: 102px;
+}
+
+#imagem_atencao {width: 62px;
+				 height: auto;
+				 position: absolute;
+				 top: 155px;
+				 left: 40px;
+}
+
+#label_reportar {position: absolute;
+			  top: 205px;
+			  padding-bottom: 10px;
+}
+
+#botao_reportar {border-bottom: 1px solid #000000;
+			  height: 100px;
+}
+
+#imagem_historico {width: 44px;
+				 height: auto;
+				 position: absolute;
+				 top: 265px;
+				 left: 50px;
+}
+
+#label_historico {position: absolute;
+			  top: 305px;
+			  padding-bottom: 10px;
+}
+
+#botao_historico {border-bottom: 1px solid #000000;
+			  height: 100px;
+}
+
+
+
+#imagem_info {width: 32px;
+			  height: auto;
+			  position: absolute;
+			  top: 365px;
+			  left: 55px;
+}
+
+#label_info {position: absolute;
+			  top: 405px;
+			  left: 50px;
+			  padding-bottom: 10px;
+}
+
+#botao_info {border-bottom: 1px solid #000000;
+			  height: 100px;
+}
+
+
+#imagem_sair {width: 45px;
+			  height: auto;
+			  position: absolute;
+			  top: 465px;
+			  left: 50px;
+}
+
+#label_sair {position: absolute;
+			  top: 505px;
+			  left: 60px;
+			  padding-bottom: 10px;
+}
+
+#botao_sair {border-bottom: 1px solid #000000;
+			  height: 100px;
+}
