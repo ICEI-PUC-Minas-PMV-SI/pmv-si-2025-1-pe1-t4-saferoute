@@ -10,7 +10,7 @@
 <body>
   <div class="container">
     <div class="sidebar">
-      <img src="../icone/Usuario.jpg" alt="User Photo">
+      <img src="Usuariologado.jpg" alt="Usuario">
       <p>Ulisses Antônio</p>
       <button><i class="fa-solid fa-exclamation-triangle"></i> Reportar</button>
       <button><i class="fa-solid fa-clock-rotate-left"></i> Histórico de Reportes</button>
@@ -26,6 +26,10 @@
         <label>Descrição do Alagamento</label>
         <textarea rows="4" placeholder="Descreva a situação"></textarea>
       </div>
+      <div class="form-group">
+        <label>Enviar Imagem</label>
+        <input type="file" accept="image/*">
+      </div>
       <div class="form-group urgency">
         <label><input type="radio" name="urgency" value="Alta"> Alta</label>
         <label><input type="radio" name="urgency" value="Média"> Média</label>
@@ -34,8 +38,8 @@
       <div class="buttons">
         <button onclick="enviarRelatorio()"><i class="fa-solid fa-paper-plane"></i> Enviar Relatório</button>
         <button onclick="cancelar()"><i class="fa-solid fa-xmark"></i> Cancelar</button>
+        </div>
       </div>
     </div>
-  </div>
-</body>
-</html>
+  </body>
+  </html>

@@ -63,7 +63,7 @@ body {
   margin-right: 10px;
 }
 
-.sidebar button:hover {
+.sidebar button:hover, .sidebar button:focus {
   background-color: white;
   color: #002366;
   transform: scale(1.05);
@@ -145,7 +145,7 @@ textarea {
   color: white;
 }
 
-.buttons button:first-child:hover {
+.buttons button:first-child:hover, .buttons button:first-child:focus {
   background-color: #001a4d;
   transform: scale(1.05);
 }
@@ -154,7 +154,7 @@ textarea {
   background-color: #ccc;
 }
 
-.buttons button:last-child:hover {
+.buttons button:last-child:hover, .buttons button:last-child:focus {
   background-color: #bbb;
   transform: scale(1.05);
 }
