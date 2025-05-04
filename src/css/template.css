@@ -14,8 +14,8 @@ header {background-color: #0D0576;
 #icone_pagina_inicial {width: 40px;
 				height: auto;
 				position: absolute;
-				left: 31px;
-				top: 94px;
+				left: 34px;
+				top: 100px;
 }
 
 #botao_opcoes {width: 50px;
@@ -25,8 +25,8 @@ header {background-color: #0D0576;
 			   top: 15px;
 }
 
-#menu_opcoes {width: 100px;
-	   height: 480px;
+#menu_opcoes {width: 105px;
+	   height: 835px;
 	   background-color: #0D0576;
 	   display: block;
 }
@@ -56,7 +56,7 @@ header {background-color: #0D0576;
 #botao_pg_inicial {border-top: 1px solid #dcdcdc;		  
 	        border-bottom: 1px solid #dcdcdc;
     		  box-shadow: 2px 2px 5px rgba(0,0,0,0.3); 
-			  height: 80px;
+			  height: 95px;
 			  margin-bottom: 2px;
 			  margin-right: 1px;
 }
@@ -64,77 +64,77 @@ header {background-color: #0D0576;
 #imagem_atencao {width: 62px;
 				 height: auto;
 				 position: absolute;
-				 top: 158px;
-				 left: 20px;
+				 top: 178px;
+				 left: 22px;
 }
 
 #label_reportar {position: absolute;
-			  top: 205px;
-			  left: 27px;
+			  top: 235px;
+			  left: 29px;
 }
 
 #botao_reportar {border-bottom: 1px solid #dcdcdc;
 				box-shadow: 2px 2px 5px rgba(0,0,0,0.3); 
 				margin-bottom: 2px;
 				margin-right: 1px; 
-				height: 83px;
+				height: 95px;
 }
 
 #imagem_historico {width: 44px;
 				 height: auto;
 				 position: absolute;
-				 top: 255px;
-				 left: 25px;
+				 top: 290px;
+				 left: 29px;
 }
 
 #label_historico {position: absolute;
-			 	  top: 295px;
-				  left: 25px;
+			 	  top: 333px;
+				  left: 27px;
 }
 
 #botao_historico {border-bottom: 1px solid #dcdcdc;
 				  box-shadow: 2px 2px 5px rgba(0,0,0,0.3); 
 				  margin-bottom: 2px;
 				  margin-right: 1px; 
-    			  height: 83px;
+    			  height: 95px;
 }
 
 #imagem_info {width: 32px;
 			  height: auto;
 			  position: absolute;
-			  top: 340px;
-			  left: 30px;
+			  top: 385px;
+			  left: 34px;
 }
 
 #label_info {position: absolute;
-			  top: 380px;
-			  left: 30px;
+			  top: 430px;
+			  left: 34px;
 }
 
 #botao_info {border-bottom: 1px solid #dcdcdc;
 			 box-shadow: 2px 2px 5px rgba(0,0,0,0.3); 
 			 margin-bottom: 2px;
 			 margin-right: 1px; 
-			 height: 83px;
+			 height: 95px;
 }
 
 #imagem_sair {width: 45px;
 			  height: auto;
 			  position: absolute;
-			  top: 425px;
-			  left: 25px;
+			  top: 482px;
+			  left: 27px;
 }
 
 #label_sair {position: absolute;
-			  top: 460px;
-			  left: 36px;
+			  top: 525px;
+			  left: 39px;
 }
 
 #botao_sair {border-bottom: 1px solid #dcdcdc;
 	         box-shadow: 2px 2px 5px rgba(0,0,0,0.3); 
 	         margin-bottom: 2px;
 	         margin-right: 1px; 
-			 height: 83px;
+			 height: 95px;
 }
 
 a {all: unset;
