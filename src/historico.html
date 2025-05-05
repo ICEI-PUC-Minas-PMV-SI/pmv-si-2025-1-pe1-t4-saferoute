@@ -1,0 +1,91 @@
+<!DOCTYPE html> 
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="imagens/logo_cidade.ico">
+  <link rel="stylesheet" href="css/historico.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+  <title>Safe Route</title>
+</head>
+<body>
+
+  <header>
+    SAFE ROUTE
+    <img id="botao_opcoes" src="imagens/opcoes.png" onclick="exibir_opcoes()">
+    <a href="login.html">
+      <img src="imagens/usuario.png" id="imagem_usuario">
+      <p id="label_login">Entrar</p>
+    </a>		
+  </header>
+
+  <aside id="menu_opcoes">
+    <a href="index.html">
+      <div class="botoes_menu" id="botao_pg_inicial">
+        <img id="icone_pagina_inicial" src="imagens/pagina_inicial.png">
+      </div>
+    </a>
+    <a href="reportar_alagamento.html">
+      <div class="botoes_menu" id="botao_reportar">
+        <img src="imagens/atencao.png" id="imagem_atencao">
+        <p id="label_reportar">Reportar</p>
+      </div>
+    </a>
+    <a href="historico_reportes.html">
+      <div class="botoes_menu" id="botao_historico">
+        <img src="imagens/historico.png" id="imagem_historico">
+        <p id="label_historico">Histórico</p>
+      </div>
+    </a>
+    <a href="sobre.html">
+      <div class="botoes_menu" id="botao_info">
+        <img src="imagens/info.png" id="imagem_info">
+        <p id="label_info">Sobre</p>
+      </div>
+    </a>
+    <div class="botoes_menu" id="botao_sair">
+      <img src="imagens/sair.png" id="imagem_sair">
+      <p id="label_sair">Sair</p>
+    </div>
+  </aside>
+
+  <main>
+    
+    <div class="box-container">
+      <div class="box report-box">
+       
+        <h2>Reportes informados pelos usuários</h2>
+        <div class="report">
+          <div class="icon">👤</div>
+          <div class="text">Água no altura do peito na interseção com rua 123</div>
+        </div>
+        <div class="report">
+          <div class="icon">👤</div>
+          <div class="text">Rua começando a alagar</div>
+        </div>
+        <div class="report">
+          <div class="icon">👤</div>
+          <div class="text">Alagada na interseção com rua YZ</div>
+        </div>
+      </div>
+      <div class="box route-box">
+        <h2>Rotas alternativas informadas para essa região inundada</h2>
+        <div class="icon">➡️</div>
+        <div class="text">Rua Maria Célia</div>
+        <div class="icon">➡️</div>
+        <div class="text">Rua Tereza Cristina</div>
+      </div>
+      
+    </div>
+
+    <section id="section_mapa">
+      <div id="mapa"></div>
+      <img src="imagens/previsao_tempo.png" id="img_previsao_tempo">
+    </section>
+  </main>
+
+  <script src="javascript/index.js"></script>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+</body>
+</html>
