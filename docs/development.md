@@ -40,7 +40,7 @@ As tabelas que se seguem apresentam os requisitos funcionais e não-funcionais q
 |   Id           | Numero (Inteiro)  | Identificador do usuário cadastrado           | 1                                              |
 | Nome       | Texto             | Nome completo do usuário cadastrado                      | Jose da Silva                                    |
 | E-mail       | Texto             | E-mail do usuário cadastrado                       | josesilva@hotmail.com
-| Senha  | Hash | Hash da senha (campo alfanumérico) | Senha123                  |
+| Senha  | Texto | Hash da senha (campo alfanumérico) | Senha123                  |
 
 ## Mapa
 |  **Nome**      | **Tipo**          | **Descrição**                             | **Exemplo**                                    |
