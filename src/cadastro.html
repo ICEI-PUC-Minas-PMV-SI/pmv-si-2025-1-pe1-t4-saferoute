@@ -1,32 +1,28 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro</title>
-    <link rel="stylesheet" href="css/cadastro.css">
+	<meta charset="utf-8">
+	<link rel="icon" href="imagens/logo_cidade.ico">
+	<link rel="stylesheet" href="css/cadastro.css">
+	<title>Safe Route</title>
 </head>
 <body>
-   <div class="container">
-    <h1>SAFE ROUTE</h1>
-    <h2>Cadastrar</h2><br>
-
-    <form action="" method="get">
-        Nome:
-        <input type="text" placeholder="Nome" name="" value=""><br><br>
-
-        Email:
-        <input type="text" placeholder="Email" name="" value=""><br><br>
-
-        Senha:
-        <input type="password" placeholder="Senha" name="" value=""><br><br>
-
-        <button type="submit">Cadastrar</button>
-    </form> <br>
-
-    <p>Já tem uma conta? <a href="login.html">Login</a> </p>
-   </div>
-
-    
+<div id="container">
+	<header>SAFE ROUTE</header>
+	<section>Cadastro
+		<form>
+			<fieldset>
+				<ul>
+					<li><input type="text" id="input_nome" placeholder="Nome completo" required></li>
+					<li><input type="text" id="input_email" placeholder="E-mail" required></li>
+					<li><input type="password" id="input_senha" placeholder="Senha" required></li>
+					<li><input type="password" id="input_confirmar_senha" placeholder="Confirmar senha" required></li>
+				</ul>
+				<button id="btn_cadastrar">Cadastrar</button>
+			</fieldset>
+		</form>
+		<p>Já tem um conta? <span><a href="login.html">Login</a></p>
+	</section>
+</div>
 </body>
 </html>
