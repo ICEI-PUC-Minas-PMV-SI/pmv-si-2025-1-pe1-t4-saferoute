@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reporte de Alagamento</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+ <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="sidebar">
+      <img src="imagens/usuario.png" alt="Usuario">
+      <p>Igor Cecílio</p>
+      
+      <a href="index.html">
+        <div class="botoes_menu" id="botao_pg_inicial">
+          <img id="icone_pagina_inicial" src="imagens/pagina_inicial.png" alt="Ícone Página Inicial">
+        </div>
+      </a>
+      
+      <div class="botoes_menu" id="botao_reportar">
+        <a href="reportar_alagamento.html">
+          <img src="imagens/atencao.png" id="imagem_atencao" alt="Ícone Atenção">
+          <p id="label_reportar">Reportar</p>
+        </a>
+      </div>
+      
+      <a href="historico_reportes.html">
+        <div class="botoes_menu" id="botao_historico">
+          <img src="imagens/historico.png" id="imagem_historico" alt="Ícone Histórico">
+          <p id="label_historico">Histórico</p>
+        </div>
+      </a>
+      
+      <a href="sobre.html">
+        <div class="botoes_menu" id="botao_info">
+          <img src="imagens/info.png" id="imagem_info" alt="Ícone Sobre">
+          <p id="label_info">Sobre</p>
+        </div>
+      </a>
+      
+      <div class="botoes_menu" id="botao_sair">
+        <a href="logout.html">
+          <img src="imagens/sair.png" id="imagem_sair" alt="Ícone Sair">
+        </a>
+        <p id="label_sair">Sair</p>
+      </div>
+    </div>
+    
+    <div class="content">
+      <h1>Reporte de Alagamento</h1>
+      
+      <div class="form-group">
+        <input type="text" name="localizacao" placeholder="Localização do Alagamento">
+      </div>
+      <div class="form-group">
+        <input type="text" name="localizacao" placeholder="Rotas Alternativas">
+      </div>
+      
+      <div class="form-group">
+        <textarea rows="4" name="descricao" placeholder="Descreva a situação"></textarea>
+      </div>
+      
+      <div class="form-group">
+        <input type="file" name="imagem" accept="image/*">
+      </div>
+      
+      <div class="form-group urgency">
+        <div style="text-align: center;">
+          <label style="display: inline-block; margin-right: 10px;">
+            <input type="radio" name="urgency" value="Alta"> Alta
+          </label>
+          <label style="display: inline-block; margin-right: 10px;">
+            <input type="radio" name="urgency" value="Média"> Média
+          </label>
+          <label style="display: inline-block;">
+            <input type="radio" name="urgency" value="Baixa"> Baixa
+          </label>
+        </div>
+      </div>
+      
+      <div class="buttons">
+        <button onclick="enviarRelatorio()">
+          <i class="fa-solid fa-paper-plane"></i> Enviar Relatório
+        </button>
+        <button onclick="cancelar()">
+          <i class="fa-solid fa-xmark"></i> Cancelar
+        </button>
+      </div>
+    </div>
+  </div>
+<script>
+  function enviarRelatorio() {
+    alert('Relatório enviado com sucesso!');
+  }
+
+  function cancelar() {
+    if (confirm('Tem certeza de que deseja cancelar?')) {
+      window.location.href = 'index.html';
+    }
+  }
+</script>
+</html>
+</html></button></div></a></div></a></html>
