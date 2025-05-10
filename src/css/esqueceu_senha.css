@@ -6,7 +6,12 @@ body {font-family: Arial;
 	  background-repeat: no-repeat;
 	  background-size: cover;
 	  background-position: center;
+	  display: flex;
+	  align-items: center;
+	  justify-content: center;
+	  height: 100vh;
 }
+
 
 header {background-color: #0D0576;
 		color: #FFFFFF;
@@ -17,7 +22,7 @@ header {background-color: #0D0576;
 		border-radius: 10px 10px 0px 0px;
 }
 
-section {background-color: #E1DBDB;
+section {background-color: #FFFFFF;
 		padding-top: 15px;
 		width:500px;
 		border-radius: 0px 0px 10px 10px;

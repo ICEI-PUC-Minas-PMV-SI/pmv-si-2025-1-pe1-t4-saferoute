@@ -1,8 +1,8 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: Arial;
     font-size: 200%;
     margin: 0;
-    background-image: url("../imagens/fundo_tempestade.jpg");
+    background-image: url("../imagens/logo_tempestade.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -10,6 +10,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    text-align: center;
 }
 
 #container {
@@ -27,12 +28,11 @@ header {
     padding: 10px 0;
     border-bottom: 3px solid #000000;
     border-radius: 10px 10px 0 0;
-    font-size: 1.5rem;
     text-transform: uppercase;
 }
 
 section {
-    background-color: #E1DBDB;
+    background-color: #FFFFFF;
     padding: 20px 0;
     border-radius: 0 0 10px 10px;
 }
@@ -47,36 +47,31 @@ ul {
     margin: 0 0 20px 0;
 }
 
-input {
-    width: 80%;
-    height: 35px;
-    border-radius: 5px;
-    border: 1px solid #333;
-    font-size: 1rem;
-    padding-left: 10px;
-    margin-bottom: 15px;
+input {width: 300px;
+	   height: 20px;
+	   border-radius: 5px;
 }
 
-button {
-    background-color: #0D0576;
-    color: #FFFFFF;
-    width: 80%;
-    font-size: 1.2rem;
-    height: 40px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+
+button {background-color: #0D0576;
+		color: #FFFFFF;
+		text-align: center;
+		width: 300px;
+		font-size: 20px;
+		border-radius: 5px;
+}
+
+p {font-size: 15px;
+   margin:0;
+   padding-top:7px;
+   padding-bottom:3px;
+   text-align: left;
+   padding-left: 100px;
 }
 
 button:hover {
     background-color: #2921a0;
-}
-
-p {
-    font-size: 0.9rem;
-    margin: 0;
-    padding: 5px 0;
-    text-align: center;
+    cursor: pointer;
 }
 
 a {
