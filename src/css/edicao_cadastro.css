@@ -232,7 +232,11 @@ form input {border-radius: 5px;
 }
 
 button:hover {cursor: pointer;
+	         background-color: #2921a0;
 }
+
+#btn_alterar_imagem:hover {background-color: #2921a0;
+}  
 
 @media (max-width: 1100px) {
 	form{top:580px;
