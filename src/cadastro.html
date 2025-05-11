@@ -1,1 +1,46 @@
-
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="utf-8">
+	<link rel="icon" href="Img/logo_cidade.ico">
+	<link rel="stylesheet" href="css/cadastro.css">
+	<title>Safe Route</title>
+</head>
+<body>
+<div id="container">
+	<header>SAFE ROUTE</header>
+	<section>Cadastro
+		<form>
+			<fieldset>
+				<ul>
+					<li><input type="text" id="input_first_name" placeholder="Primeiro nome" required></li>
+					<li><input type="text" id="input_last_name" placeholder="Sobrenome" required></li>
+					<li><input type="text" id="input_email" placeholder="E-mail" required></li>
+					<li><input type="password" id="input_senha" placeholder="Senha" required></li>
+					<li><input type="password" id="input_confirmar_senha" placeholder="Confirmar senha" required></li>
+					<li><input type="text" placeholder="Endereço" required /></li>
+					<li><input type="text" placeholder="CEP" required /></li>
+					<li><input type="text" placeholder="Número" required /></li>
+					<li><input type="text" placeholder="Telefone" required /></li>
+                    <li>
+                        <select id="input_genero" required>
+                            <option value="" disabled selected>Selecione o gênero</option>
+                            <option value="masculino">Masculino</option>
+                            <option value="feminino">Feminino</option>
+                            <option value="outro">Outro</option>
+                            <option value="nao_informar">Prefiro não informar</option>
+                        </select>
+                    </li>
+					<li>
+						<p id="userphoto">Adicionar foto:</p>
+						<input type="file" name="img_user" value="img_user">
+					</li>
+				</ul>
+				<button id="btn_cadastrar">Cadastrar</button>
+			</fieldset>
+		</form>
+		<p>Já tem um conta? <span><a href="login.html">Login</a></span></p>
+	</section>
+</div>
+</body>
+</html>

@@ -3,7 +3,7 @@ body {
   font-size: 200%;
   text-align: center;
   margin: 0;
-  background-image: url("../imagens/logo_tempestade.png");
+  background-image: url("imagens/logo_tempestade.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -78,4 +78,9 @@ a {
 
 a:hover {
   text-decoration: underline;
+}
+
+#input_genero {
+  margin-right: 165px;
+
 }
