@@ -12,6 +12,7 @@ header {
     color: white;
     padding: 20px;
     text-align: center;
+    display: block;
     
 }
 
@@ -24,8 +25,9 @@ h1 {
 main {
     padding: 45px;
     display: flex;
-    flex-direction: column;
-    align-items:center ;
+    flex-direction: column-reverse;
+    align-items: end;
+    width: auto;
     
     
     
@@ -34,22 +36,32 @@ main {
 .box-container {
 
   display: flex;
-  justify-content: flex-start;
+  justify-content: right;
   gap: 20px;
-  width: 80%;
-  margin: 50 auto;
+  width: 60%;
+  margin: 20px auto; 
   flex-wrap: wrap; 
+  right: 50px;
+  flex-direction: column;
+  
+  
+  
+
+  
   
 }
 
 .report-box {
-  width: 50%;
-  background-color: white;
+  
+  background-color: rgb(107, 51, 51);
+ 
+  
+  
   
 }
 
 .route-box {
-  width: 10%;
+  
   background-color: white;
   
 }
@@ -59,14 +71,15 @@ main {
     border-radius: 30px;
     padding: 20px;
     margin: 10px 0;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(211, 4, 4, 0.1);
     max-width: 600px;
-    width: 90%;
-    text-align: justify;
+    width: 95%;
+    height: 400px;
+   
 }
 
 .text h2 {
-    color: #1607f1;
+    color: #e9e8f0;
     margin-bottom: 10px;
     
     
@@ -110,7 +123,8 @@ main {
 
 @media (max-width: 768px) {
     .box {
-        padding: 15px;
+        padding: 150px;
+        
     }
 
     #mapa {
@@ -136,13 +150,21 @@ main {
 
 .box {font-size: 20px;
     color: #080808;
-    justify-content: space-around;
+    
+    width: 1005px ;
+    height: 45vw;
+    position: absolute;
+    top: 55px;
+    left: 1070px;
+    margin-left: auto;
+    margin-top: 10px;
+    
+    
 
 }
 
 .report {font-size: 20px;
     color: #080404;
-    
     
 
 }
@@ -150,6 +172,8 @@ main {
 
 .route {font-size: 20px;
     color: #020101;
+   
+   
     
 
 }
@@ -261,20 +285,20 @@ main {
 
 
 
-#mapa {width: 93%;
-  height: 25vw;
+#mapa {width: 50%;
+  height: 70vw;
   position: absolute;
-  top: 110px;
-  left: 90px;
+  top: 45px;
+  left: 10px;
   border: 2px solid #dcdcdc;
   border-radius: 20px;
   box-shadow: 2px 2px 20px rgba(0,0,0,0.3); 
-  right: 90px;
+  right: 659px;
 }
 
 #img_previsao_tempo {position: absolute;
-            top: 170px;
-            right: 30px;
+            top: 110px;
+            right: 800px;
             width: 200px;
             height: auto;
             z-index: 1000;
