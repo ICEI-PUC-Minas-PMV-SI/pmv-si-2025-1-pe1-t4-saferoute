@@ -1,6 +1,6 @@
 body {font-family: Arial;
 	  font-size: 200%;
-	  background-color: #E1DBDB;
+	  background-color: #FFFFFF;
 	  margin: 0;  
 }
 
@@ -39,6 +39,25 @@ header {background-color: #0D0576;
 #botao_opcoes:hover {cursor: pointer;
 }
 
+#opcoes_login:hover {cursor: pointer;
+}
+
+#botao_sair:hover{cursor: pointer;
+}
+
+#div_drop_down {width: 100px;
+	            height: auto;
+				border-radius: 5px;
+				position:absolute;
+				right: 5px;
+				top: 70px;
+				font-size: 14px;
+				border: 2px solid #dcdcdc;
+				color: #000000;
+				background-color: #E1DBDB;
+				display: none;
+			}
+
 #imagem_usuario {width: 30px;
 				 height: auto;
 				 border-radius: 50%;
@@ -47,11 +66,27 @@ header {background-color: #0D0576;
 				 top: 18px;
 }
 
+#img_usuario_logado {width: 30px;
+	height: auto;
+	border-radius: 50%;
+	position: absolute;
+	right: 30px;
+	top: 18px;
+	display: none;
+}
+
 #label_login {position: absolute;
 			  top: 43px;
 			  right: 30px;
 			  font-size: 12px;
 }
+
+#lbl_usuario_logado {position: absolute;
+	top: 43px;
+	right: 5px;
+	font-size: 12px;
+	display: none;
+  }
 
 #botao_pg_inicial {border-top: 1px solid #dcdcdc;		  
 	        border-bottom: 1px solid #dcdcdc;
