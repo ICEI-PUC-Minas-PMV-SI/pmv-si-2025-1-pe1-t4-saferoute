@@ -10,6 +10,8 @@ var lon;
 var rua;
 var url;
 var endereco;
+var rua_api;
+var marcador;
 
 /*function exibir_opcoes () {
     var aside  = document.getElementById('menu_opcoes');
@@ -57,13 +59,15 @@ function drop_opcoes_menu() {
     } else {div_drop_down.style.display='none';}
 }
 
-function visualizar_mapa(lat,lon){
+function visualizar_mapa(lat,lon,marcador){
     if (window.map) {window.map.remove();
      }
     map = L.map('mapa').setView([lat,lon], 16);
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
         attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
     }).addTo(map);
+    if (marcador) {
+    L.marker([lat,lon]).addTo(map);}
 }
 
 function ver_coodenada(){
@@ -75,13 +79,33 @@ function ver_coodenada(){
     if (rua) {
         endereco =  rua + ', Belo Horizonte';
         url = 'https://nominatim.openstreetmap.org/search?q=${'+ endereco + '}&format=json&limit=1';
+        console.log(url)
                 fetch(url)
         .then(response => response.json())
         .then(data => {
         if (data.length > 0) {
+        rua_api = data[0].name;
+        rua_api = rua_api.toLowerCase();
+        rua_api = rua_api.replace(/^(rua|av(enida)?|trav(essa)?|al(ameda)?|estr(ada)?|praça|pç\.?|largo|lg\.?|beco|viel(a)?|rod(ovia)?|via|boulevard|serv(idão)?|caminho|pass(agem|arela)?)[\s\.]+/i, '');
+        rua_api = rua_api.trim();
+
+        rua = rua.toLowerCase();
+        rua = rua.replace(/^(rua|av(enida)?|trav(essa)?|al(ameda)?|estr(ada)?|praça|pç\.?|largo|lg\.?|beco|viel(a)?|rod(ovia)?|via|boulevard|serv(idão)?|caminho|pass(agem|arela)?)[\s\.]+/i, '');
+        rua = rua.trim();
+        console.log(rua_api);
+        console.log(rua);
+        if (rua===rua_api){
           lat = data[0].lat;
           lon = data[0].lon;
-          visualizar_mapa(lat,lon)
+          marcador = true
+          visualizar_mapa(lat,lon,marcador)
+        } else {lat=undefined;
+                  lon=undefined;
+            Swal.fire({
+  icon: 'error',
+  text: 'Não foi possível localizar a rua pesquisada!',
+  confirmButtonText: 'OK'
+});}
          } else {lat=undefined;
                   lon=undefined;
             Swal.fire({
@@ -97,11 +121,6 @@ function ver_coodenada(){
             throw new Error('Erro na resposta da API');            
         } return response.json()})
         .then(data => {
-        if (data.erro) {Swal.fire({
-            icon: 'error',
-            text: 'Não foi possível localizar o CEP pesquisado!',
-            confirmButtonText: 'OK'});
-        }
     rua = data.logradouro;
     endereco =  rua + ', Belo Horizonte';
     url = 'https://nominatim.openstreetmap.org/search?q=${'+ endereco + '}&format=json&limit=1';    
@@ -109,9 +128,10 @@ function ver_coodenada(){
         .then(response => response.json())
         .then(data => {
         if (data.length > 0) {
-          lat = data[0].lat;
+            lat = data[0].lat;
           lon = data[0].lon;
-          visualizar_mapa(lat,lon)
+          marcador=true
+          visualizar_mapa(lat,lon,marcador)
          } else {lat=undefined;
                   lon=undefined;
             Swal.fire({
@@ -130,8 +150,9 @@ function ver_coodenada(){
 
 window.onload = function() {
     lat = -19.9191
-    lon = -43.9386
-    visualizar_mapa(lat,lon);
+    lon = -43.9386   
+    marcador = false
+    visualizar_mapa(lat,lon,false);
     if (document.cookie==='login=Ulisses_Antonio') {img_usuario_logado.style.display='block';
         lbl_usuario_logado.style.display='block';
         imagem_usuario.style.display='none';
