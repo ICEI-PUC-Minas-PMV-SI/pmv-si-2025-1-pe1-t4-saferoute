@@ -1,17 +1,16 @@
 {
-  "produtos": [
-    {
-      "id": 1,
-      "nome": "Smartphone X",
-      "categoria": "Eletrônicos",
-      "pesoKgs": 0.18,
-      "preco": 1200.0,
-      "precoMinimoVenda": 1100.0,
-      "garantiaMeses": 24,
-      "descricao": "Smartphone de última geração com tela de 6.5 polegadas.",
-      "estaDisponivel": true,
-      "criadoEm": "2023-06-01T10:00:00",
-      "atualizadoEm": "2024-06-01T10:00:00"
-    }
-  ]
+  "usuarios": [{
+    "id": 1,
+    "email": "ulisses_antonio@gmail.com",
+    "senha": "bola123",
+    "nome": "Ulisses",
+    "sobrenome": "Antônio",
+    "sexo": "masculino",
+    "cep": "30535-490",
+    "endereco": "Rua Padre Pedro Evangelista",
+    "numero": 115,
+    "complemento": "Apartamento 202",
+    "bairro": "Coração Eucarístico",
+    "municipio": "Belo Horizonte",
+    "uf": "MG"}] 
 }
