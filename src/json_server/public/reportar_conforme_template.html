@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="imagens/logo_cidade.ico">
+	<link rel="stylesheet" href="css/reportar_conforme_template.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+	<title>Safe Route</title>
+</head>
+<body>
+	<header>SAFE ROUTE
+		<img id="botao_opcoes" src="imagens/opcoes.png" onclick="exibir_opcoes()">
+		<a href="login.html">
+			<img src="imagens/usuario.png" id="imagem_usuario">
+			<p id="label_login">Entrar</p>
+		</a>		
+		<div id="opcoes_login" onclick="drop_opcoes_menu()">
+			<img src="imagens/ulisses_antonio.png" id="img_usuario_logado">
+			<p id="lbl_usuario_logado">Ulisses Antônio</p>
+		</div>
+		<div id="div_drop_down"">
+			<a href="edicao_cadastro.html">Editar perfil</a>
+		</div>
+	</header>
+	<aside id=menu_opcoes>
+		<a href="index.html">
+			<div class="botoes_menu" id="botao_pg_inicial">
+			<img id="icone_pagina_inicial" src="imagens/pagina_inicial.png">
+			</div>
+		</a>
+		<a href="reportar_alagamento.html">
+			<div class="botoes_menu" id="botao_reportar">
+				<img src="imagens/atencao.png" id="imagem_atencao">
+				<p id="label_reportar">Reportar</p>
+			</div>
+		</a>
+		<a href="historico_reportes.html">
+			<div class="botoes_menu" id="botao_historico">
+				<img src="imagens/historico.png" id="imagem_historico">
+				<p id="label_historico">Histórico</p>
+			</div>
+		</a>
+		<a href="sobre.html">
+			<div class="botoes_menu" id="botao_info">
+				<img src="imagens/info.png" id="imagem_info">
+				<p id="label_info">Sobre</p>
+			</div>
+		</a>
+		<div class="botoes_menu" id="botao_sair" onclick="sair()">
+			<img src="imagens/sair.png" id="imagem_sair">
+			<p id="label_sair">Sair</p>
+		</div>
+	</aside>
+    	<section id="section_formulario">
+		<form>
+			<fieldset>
+				<ul>
+					<li>
+						<label for="input_rua_alagada" id="label_rua_alagada">Rua/CEP alagada:</label>
+						<br>
+						<input type="text" id="input_rua_alagada">
+					</li>
+					<li>
+						<label for="input_descricao" id="label_descricao">Descrição:</label>
+						<br>
+						<textarea id="txtarea_descricao"></textarea>
+					</li>
+					<li>
+						<label for="input_rota_alternativa" id="label_rota_alternativa">Rota alternativa:</label>
+						<br>
+						<input type="text" id="input_rota_alternativa">
+					</li>
+					Severidade:
+					<li>
+					<br>			
+					<div class="opcoes_severidade">
+						<div class="div_radio">
+							<input type="radio" id="radio_alta" name="severidade" value="Alta">
+							<label class="opcoes_radio" for="radio_alta" id="lable_radio_alta">Alta</label>
+						</div>
+						<div class="div_radio" id="div_rd_media">
+							<input type="radio" id="radio_media" name="severidade" value="Média">
+							<label class="opcoes_radio" for="radio_media" id="label_radio_media">Média</label>
+						</div>
+						<div class="div_radio" id="div_rd_baixa">
+							<input type="radio" id="radio_baixa" name="severidade" value="Baixa">
+							<label class="opcoes_radio" for="radio_baixa" id="label_radio_baixa">Baixa</label>						
+						</div>
+					</div>
+				</ul>
+			</fieldset>
+			<button id="btn_enviar">Enviar</button>
+			<button id="btn_cancelar">Cancelar</button>
+		</form>
+    </section>
+	<section id="section_mapa">
+		<div id="mapa"></div>
+	</section>
+<script src="javascript/reportar_conforme_template.js"></script>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+</body>
+</html>

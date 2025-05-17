@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="imagens/logo_cidade.ico">
+	<link rel="stylesheet" href="css/historico_novo.css">
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+	<title>Safe Route</title>
+</head>
+<body>
+	<header>Histórico de reportes
+		<img id="botao_opcoes" src="imagens/opcoes.png" onclick="exibir_opcoes()">
+		<a href="login.html">
+			<img src="imagens/usuario.png" id="imagem_usuario">
+			<p id="label_login">Entrar</p>
+		</a>		
+		<div id="opcoes_login" onclick="drop_opcoes_menu()">
+			<img src="imagens/ulisses_antonio.png" id="img_usuario_logado">
+			<p id="lbl_usuario_logado">Ulisses Antônio</p>
+		</div>
+		<div id="div_drop_down"">
+			<a href="edicao_cadastro.html">Editar perfil</a>
+		</div>
+	</header>
+	<aside id=menu_opcoes>
+		<a href="index.html">
+			<div class="botoes_menu" id="botao_pg_inicial">
+			<img id="icone_pagina_inicial" src="imagens/pagina_inicial.png">
+			</div>
+		</a>
+		<a href="reportar_alagamento.html">
+			<div class="botoes_menu" id="botao_reportar">
+				<img src="imagens/atencao.png" id="imagem_atencao">
+				<p id="label_reportar">Reportar</p>
+			</div>
+		</a>
+		<a href="historico_reportes.html">
+			<div class="botoes_menu" id="botao_historico">
+				<img src="imagens/historico.png" id="imagem_historico">
+				<p id="label_historico">Histórico</p>
+			</div>
+		</a>
+		<a href="sobre.html">
+			<div class="botoes_menu" id="botao_info">
+				<img src="imagens/info.png" id="imagem_info">
+				<p id="label_info">Sobre</p>
+			</div>
+		</a>
+		<div class="botoes_menu" id="botao_sair" onclick="sair()">
+			<img src="imagens/sair.png" id="imagem_sair">
+			<p id="label_sair">Sair</p>
+		</div>
+	</aside>
+		<section>
+		<form>
+			<div id="div_endereco">
+				<label for="input_endereco" id="label_endereco">Endereço:</label>
+				<input type="text" id="input_endereco" placeholder="Digite o endereço">
+			</div>
+			<div id="div_cep">
+				<label for="input_cep" id="label_cep">CEP:</label>
+				<input type="text" id="input_cep" placeholder="Digite o CEP">
+			</div>
+		<button id="btn_pesquisar"><img src="imagens/lupa.png" id="img_lupa"></button>
+		</form>
+	</section>
+	<section id="section_mapa">
+		<div id="mapa"></div>
+	</section>
+	<section id="historico_reportes_usuario">
+		<p id="p_reportes_usuarios">Reportes informados pelos usuários</p>
+		<div id="div_img_reporte_01">
+			<img class="img_usuario_reporte" id="img_usu_rep_01" src="imagens/usuario.png">
+		</div>
+		<div id="div_p_reporte_01">
+			<p><pre>19/04/25 - 20:50     Alagamento na interseção com a rua Padre Pedro Evangelista</pre></p>
+		</div>
+		<br>
+		<div id="div_img_reporte_02">
+			<img class="img_usuario_reporte" id="img_usu_rep_02" src="imagens/usuario.png">
+		</div>
+		<div id="div_p_reporte_02">
+			<p><pre>19/04/25 - 18:30     Automóveis trafegando com dificuldade</pre></p>
+		</div>
+		<br>
+		<div id="div_img_reporte_03">
+			<img class="img_usuario_reporte" id="img_usu_rep_03" src="imagens/usuario.png">
+		</div>
+		<div id="div_p_reporte_03">
+			<p><pre>19/04/25 - 18:00     Alagamento na interseção com a rua Padre Demerval Gomes</pre></p>
+		</div>
+		<br>
+		<div id="div_img_reporte_04">
+			<img class="img_usuario_reporte" id="img_usu_rep_04" src="imagens/usuario.png">
+		</div>
+		<div id="div_p_reporte_04">
+			<p><pre>19/04/25 - 17:40     Alagamento na interseção com a rua Dom Aristides Pôrtos</pre></p>
+		</div>
+		<br>
+		<div id="div_img_reporte_05">
+			<img class="img_usuario_reporte" id="img_usu_rep_05" src="imagens/usuario.png">
+		</div>
+		<div id="div_p_reporte_05">
+			<p><pre>19/04/25 - 17:25     Alagamento na interseção com a rua Dom João Pimenta</pre></p>
+		</div>
+		<br>
+		<div id="div_img_reporte_06">
+			<img class="img_usuario_reporte" id="img_usu_rep_06" src="imagens/usuario.png">
+		</div>
+		<div id="div_p_reporte_06">
+			<p><pre>19/04/25 - 17:25     Alagamento na interseção com a rua Dom Modesto Augusto</pre></p>
+		</div>
+		<br>
+		<div id="div_img_reporte_07">
+			<img class="img_usuario_reporte" id="img_usu_rep_07" src="imagens/usuario.png">
+		</div>
+		<div id="div_p_reporte_07">
+			<p><pre>19/04/25 - 17:00     Alagamento na interseção com a rua Padre Pedro Evangelista</pre></p>
+		</div>
+		<br>
+		<div id="div_img_reporte_08">
+			<img class="img_usuario_reporte" id="img_usu_rep_08" src="imagens/usuario.png">
+		</div>
+		<div id="div_p_reporte_08">
+			<p><pre>19/04/25 - 16:50     Automóveis trafegando com dificuldade</pre></p>
+		</div>
+		<br>
+		<div id="div_img_reporte_09">
+			<img class="img_usuario_reporte" id="img_usu_rep_09" src="imagens/usuario.png">
+		</div>
+		<div id="div_p_reporte_09">
+			<p><pre>19/04/25 - 16:40     Alagamento na interseção com a rua Padre Demerval Gomes</pre></p>
+		</div>
+		<br>
+		<div id="div_img_reporte_10">
+			<img class="img_usuario_reporte" id="img_usu_rep_10" src="imagens/usuario.png">
+		</div>
+		<div id="div_p_reporte_10">
+			<p><pre>19/04/25 - 16:30     Alagamento na interseção com a rua Dom Aristides Pôrtos</pre></p>
+		</div>
+	</section>
+	<section id="section_rotas_alternativas">
+		<p id="p_rotas_alternativas">Rotas alternativas</p>
+
+		<div id="div_img_rota_alternativa_01">
+			<img class="img_usuario_reporte" id="img_usu_rep_01" src="imagens/usuario.png">
+		</div>
+		<div id="div_p_rota_alternativa_01">
+			<p><pre>19/04/25 - 20:50     Rua Dom Joaquim Silvério</pre></p>
+		</div>
+	</section>
+<script src="javascript/historico_novo.js"></script>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+</body>
+</html>
