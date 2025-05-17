@@ -13,8 +13,8 @@ As tabelas que se seguem apresentam os requisitos funcionais e não-funcionais q
 |RF-003| Visualização das ruas em estado regular. Ficarão na cor verde | Aleph | index.html e historico.html |
 |RF-004| Visualização do mapa em Belo-Horizonte na geolocalização do IP do usuário | Aleph | index.html e historico.html |
 |RF-005| Visualização do mapa em Belo-Horizonte na rua ou CEP pesquisado | Roberto | index.html e historico.html |
-|RF-006| Envio e armazenamento de pontos críticos de alagamentos ou enchentes | Yuri | reportar.html e historico.html |
-|RF-007| Envio e armazenamento de ruas em estado regular | Yuri | reportar.html |
+|RF-006| Envio e armazenamento de pontos críticos de alagamentos ou enchentes | Victor | reportar.html e historico.html |
+|RF-007| Envio e armazenamento de ruas em estado regular | Victor | reportar.html |
 |RF-008| Visualização dos avisos registrados na aplicação em ordem decrescente de cadastro | Victor | historico.html |
 |RF-009| O cadastro do alerta de uma rua com alagamento deve sobrescrever eventual indicação desta rua como rota alternativa | Igor | reportar.html |
 |RF-010| O cadastro posterior de uma rua como rota alternativa deve sobrepor a indicação da rua como afetada por alagamento ou enchente | Igor | reportar.html |
