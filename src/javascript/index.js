@@ -107,6 +107,26 @@ function ver_coodenada(){
       confirmButtonText: 'OK'
     });})        
         }};
+        function buscarPrevisaoTempo(latitude = -19.92, longitude = -43.94) {
+	const url = `https://api.open-meteo.com/v1/forecast?latitude=${latitude}&longitude=${longitude}&hourly=temperature_2m&timezone=auto`;
+
+	fetch(url)
+		.then(response => response.json())
+		.then(data => {
+			const horaAtual = new Date().toISOString().slice(0, 13); // exemplo: "2025-05-19T15"
+			const index = data.hourly.time.findIndex(hora => hora.startsWith(horaAtual));
+
+			if (index !== -1) {
+				const temperatura = data.hourly.temperature_2m[index];
+				const div = document.getElementById('previsao_tempo_texto');
+				div.textContent = `Temperatura atual: ${temperatura}°C`;
+			}
+		})
+		.catch(error => {
+			console.error('Erro ao buscar previsão do tempo:', error);
+		});
+}
+
 
 window.onload = function() {
     lat = -19.9191
@@ -123,4 +143,5 @@ window.onload = function() {
         label_login.style.display='block';
         console.log(document.cookie);
     }
+    buscarPrevisaoTempo();
 }

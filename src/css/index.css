@@ -221,12 +221,19 @@ input {border-radius: 5px;
 	right: 5px;
 }
 
-#img_previsao_tempo {position: absolute;
-			  top: 170px;
-			  right: 30px;
-			  width: 200px;
-			  height: auto;
-			  z-index: 1000;
+#previsao_tempo_texto {
+  position: absolute;
+  top: 200px; /
+  right: 30px;
+  left: 650px;
+  background-color: rgba(13, 5, 118, 0.85);
+  color: #FFFFFF;
+  font-size: 16px;
+  padding: 10px 15px;
+  border-radius: 8px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  width: 200px;
+  z-index: 1001;
 }
 
 
