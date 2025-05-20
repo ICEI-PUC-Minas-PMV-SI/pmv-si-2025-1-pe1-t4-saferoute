@@ -14,6 +14,13 @@
 			<img src="imagens/usuario.png" id="imagem_usuario">
 			<p id="label_login">Entrar</p>
 		</a>		
+		<div id="opcoes_login" onclick="drop_opcoes_menu()">
+			<img src="" id="img_usuario_logado">
+			<p id="lbl_usuario_logado"></p>
+		</div>
+		<div id="div_drop_down"">
+			<a href="edicao_cadastro.html">Editar perfil</a>
+		</div>
 	</header>
 	<aside id=menu_opcoes>
 		<a href="index.html">
@@ -21,7 +28,7 @@
 			<img id="icone_pagina_inicial" src="imagens/pagina_inicial.png">
 			</div>
 		</a>
-		<a href="reportar_conforme_template.htmlgit ">
+		<a href="reportar_conforme_template.html ">
 			<div class="botoes_menu" id="botao_reportar">
 				<img src="imagens/atencao.png" id="imagem_atencao">
 				<p id="label_reportar">Reportar</p>
@@ -39,7 +46,7 @@
 				<p id="label_info">Sobre</p>
 			</div>
 		</a>
-		<div class="botoes_menu" id="botao_sair">
+		<div class="botoes_menu" id="botao_sair" onclick="sair()">
 			<img src="imagens/sair.png" id="imagem_sair">
 			<p id="label_sair">Sair</p>
 		</div>
@@ -61,13 +68,6 @@
                 </ul>
             </p>
 	</main>
-
-<script src="javascript/index.js"></script>
-
-
-
-
-
-
+<script src="javascript/sobre.js"></script>
 </body>
 </html>

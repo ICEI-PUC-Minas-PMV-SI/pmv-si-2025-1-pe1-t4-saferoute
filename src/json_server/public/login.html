@@ -13,16 +13,17 @@
 		<form>
 			<fieldset>
 				<ul>
-					<li><input type="text" id="input_email" placeholder="E-mail" required></li>
-					<li><input type="password" id="input_senha" placeholder="Senha" required></li>
+					<li><input type="text" id="input_email" placeholder="E-mail"></li>
+					<li><input type="password" id="input_senha" placeholder="Senha"></li>
 				</ul>				
-				<button id="btn_entrar" onclick="criando_cookie()">Entrar</button>
 			</fieldset>
 		</form>
+		<button id="btn_entrar" onclick="verificar_login()">Entrar</button>
 		<p><a href="esqueceu_senha.html">Esqueci minha senha</a></p>
 		<p>Não tem conta? <span><a href="cadastro_.html">Cadastre-se</a></span></p>
 	</section>
 </div>
 <script src="javascript/login.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 </html>

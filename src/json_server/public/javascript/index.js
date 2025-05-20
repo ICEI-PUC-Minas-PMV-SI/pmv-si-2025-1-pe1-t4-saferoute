@@ -12,7 +12,7 @@ var rua_api;
 var marcador;
 var imagem_usuario_logado; 
 var nome_usuario_logado;
-
+var cookie_login;
 
 function exibir_opcoes () {
     var aside  = document.getElementById('menu_opcoes');
@@ -48,10 +48,11 @@ function drop_opcoes_menu() {
 function sair() {document.cookie = "login=usuario_logado; path=/; max-age=0";
     document.cookie = "nome=nome_usuario_logado; path=/; max-age=0";
     document.cookie = "imagem=imagem_usuario_logado; path=/; max-age=0";
-     img_usuario_logado.style.display='none';
-        lbl_usuario_logado.style.display='none';
-        imagem_usuario.style.display='block';
-        label_login.style.display='block';
+    img_usuario_logado.style.display='none';
+    lbl_usuario_logado.style.display='none';
+    imagem_usuario.style.display='block';
+    label_login.style.display='block';
+    cookie_login=false;
 }
 
 function ver_coodenada(){
@@ -133,22 +134,26 @@ function ver_coodenada(){
         }};
 
 
-function obterCookie(nome,imagem) {
+function obterCookie() {
   var cookies = document.cookie.split(';');
   console.log(cookies);
+  cookie_login = false;
   for (var i = 0; i < cookies.length; i++) {
     var c = cookies[i].trim();
-    if (c.startsWith(nome + '=')) {
-      nome_usuario_logado = decodeURIComponent(c.substring(nome.length + 1));
-      console.log(nome_usuario_logado)
-      document.getElementById("lbl_usuario_logado").textContent = nome_usuario_logado;      
+    if (c.startsWith('nome=')) {
+      nome_usuario_logado = decodeURIComponent(c.substring('nome'.length + 1));
+      document.getElementById("lbl_usuario_logado").textContent = nome_usuario_logado;  
     }
-    if (c.startsWith(imagem + '=')) {
-      imagem_usuario_logado = decodeURIComponent(c.substring(nome.length + 1));
+    if (c.startsWith('imagem=')) {
+      imagem_usuario_logado = decodeURIComponent(c.substring('imagem'.length + 1));
       document.getElementById("img_usuario_logado").src="imagens/" + imagem_usuario_logado;
-    }                  
-  }
-  return null;
+    }
+    if (c.startsWith('login=usuario_logado')) {
+      cookie_login=true;
+  } 
+}
+verifica_login (cookie_login);
+console.log(cookie_login)
 }
 
 function buscarPrevisaoTempo(latitude = -19.92, longitude = -43.94) {
@@ -171,24 +176,43 @@ function buscarPrevisaoTempo(latitude = -19.92, longitude = -43.94) {
 		});
 }
 
+function verifica_login (cookie_login){
+    if (cookie_login===true) {
+        img_usuario_logado.style.display='block';
+        lbl_usuario_logado.style.display='block';
+        imagem_usuario.style.display='none';
+        label_login.style.display='none';
+    } else if(cookie_login===false){
+        img_usuario_logado.style.display='none';
+        lbl_usuario_logado.style.display='none';
+        imagem_usuario.style.display='block';
+        label_login.style.display='block';
+    }
+}
+
+document.addEventListener('visibilitychange', function () {
+  if (document.visibilityState === 'visible') {
+    obterCookie();
+  }
+});
+
 window.onload = function() {
     lat = -19.9191
     lon = -43.9386
     marcador = false
     visualizar_mapa(lat,lon,false);
-    obterCookie("nome","imagem");
-    if (document.cookie==='login=usuario_logado') {
-        console.log('usuario_logado');
+    obterCookie();
+    verifica_login (cookie_login);
+    buscarPrevisaoTempo();
+    if (cookie_login===true) {
         img_usuario_logado.style.display='block';
         lbl_usuario_logado.style.display='block';
         imagem_usuario.style.display='none';
         label_login.style.display='none';
-        console.log(document.cookie);
-    } else {img_usuario_logado.style.display='none';
+    } else if(cookie_login===false){
+        img_usuario_logado.style.display='none';
         lbl_usuario_logado.style.display='none';
         imagem_usuario.style.display='block';
         label_login.style.display='block';
-        console.log(document.cookie);
     }
-    buscarPrevisaoTempo();
 }
