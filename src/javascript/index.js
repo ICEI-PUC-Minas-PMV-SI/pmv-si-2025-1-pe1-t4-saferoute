@@ -107,7 +107,8 @@ function ver_coodenada(){
       confirmButtonText: 'OK'
     });})        
         }};
-        function buscarPrevisaoTempo(latitude = -19.92, longitude = -43.94) {
+
+function buscarPrevisaoTempo(latitude = -19.92, longitude = -43.94) {
 	const url = `https://api.open-meteo.com/v1/forecast?latitude=${latitude}&longitude=${longitude}&hourly=temperature_2m&timezone=auto`;
 
 	fetch(url)

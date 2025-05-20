@@ -10,6 +10,8 @@ var url;
 var endereco;
 var rua_api;
 var marcador;
+var imagem_usuario_logado; 
+var nome_usuario_logado;
 
 
 function exibir_opcoes () {
@@ -43,7 +45,9 @@ function drop_opcoes_menu() {
     } else {div_drop_down.style.display='none';}
 }
 
-function sair() {document.cookie = "login=Ulisses_Antonio; path=/; max-age=0";
+function sair() {document.cookie = "login=usuario_logado; path=/; max-age=0";
+    document.cookie = "nome=nome_usuario_logado; path=/; max-age=0";
+    document.cookie = "imagem=imagem_usuario_logado; path=/; max-age=0";
      img_usuario_logado.style.display='none';
         lbl_usuario_logado.style.display='none';
         imagem_usuario.style.display='block';
@@ -128,12 +132,54 @@ function ver_coodenada(){
     });})        
         }};
 
+
+function obterCookie(nome,imagem) {
+  var cookies = document.cookie.split(';');
+  console.log(cookies);
+  for (var i = 0; i < cookies.length; i++) {
+    var c = cookies[i].trim();
+    if (c.startsWith(nome + '=')) {
+      nome_usuario_logado = decodeURIComponent(c.substring(nome.length + 1));
+      console.log(nome_usuario_logado)
+      document.getElementById("lbl_usuario_logado").textContent = nome_usuario_logado;      
+    }
+    if (c.startsWith(imagem + '=')) {
+      imagem_usuario_logado = decodeURIComponent(c.substring(nome.length + 1));
+      document.getElementById("img_usuario_logado").src="imagens/" + imagem_usuario_logado;
+    }                  
+  }
+  return null;
+}
+
+function buscarPrevisaoTempo(latitude = -19.92, longitude = -43.94) {
+	const url = `https://api.open-meteo.com/v1/forecast?latitude=${latitude}&longitude=${longitude}&hourly=temperature_2m&timezone=auto`;
+
+	fetch(url)
+		.then(response => response.json())
+		.then(data => {
+			const horaAtual = new Date().toISOString().slice(0, 13); // exemplo: "2025-05-19T15"
+			const index = data.hourly.time.findIndex(hora => hora.startsWith(horaAtual));
+
+			if (index !== -1) {
+				const temperatura = data.hourly.temperature_2m[index];
+				const div = document.getElementById('previsao_tempo_texto');
+				div.textContent = `Temperatura atual: ${temperatura}°C`;
+			}
+		})
+		.catch(error => {
+			console.error('Erro ao buscar previsão do tempo:', error);
+		});
+}
+
 window.onload = function() {
     lat = -19.9191
     lon = -43.9386
     marcador = false
     visualizar_mapa(lat,lon,false);
-    if (document.cookie==='login=Ulisses_Antonio') {img_usuario_logado.style.display='block';
+    obterCookie("nome","imagem");
+    if (document.cookie==='login=usuario_logado') {
+        console.log('usuario_logado');
+        img_usuario_logado.style.display='block';
         lbl_usuario_logado.style.display='block';
         imagem_usuario.style.display='none';
         label_login.style.display='none';
@@ -144,4 +190,5 @@ window.onload = function() {
         label_login.style.display='block';
         console.log(document.cookie);
     }
+    buscarPrevisaoTempo();
 }
