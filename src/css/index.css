@@ -223,9 +223,9 @@ input {border-radius: 5px;
 
 #previsao_tempo_texto {
   position: absolute;
-  top: 200px; /
+  top: 200px;
   right: 30px;
-  left: 650px;
+  /*left: 650px;*/
   background-color: rgba(13, 5, 118, 0.85);
   color: #FFFFFF;
   font-size: 16px;
