@@ -27,5 +27,14 @@
     "complemento": "",
     "bairro": "Padre Eustáquio",
     "municipio": "Belo Horizonte",
-    "uf": "MG"}]
+    "uf": "MG"}], 
+    "reportes":[{
+      "id": 1,
+      "rua": "Rua Padre Pedro Evangelista",
+      "descricao": " Automóveis trafegando com dificuldade",
+      "rotaAlternativa": "Rua Dom Joaquim Silvério",
+      "severidade": "Média",
+      "idUsuario": 1,
+      "dataHora": "2025-04-19T16:30:00Z"
+    }]
 }

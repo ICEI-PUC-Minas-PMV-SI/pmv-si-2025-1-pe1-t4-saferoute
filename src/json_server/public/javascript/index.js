@@ -1,13 +1,13 @@
 var map;
-var img_usuario_logado  = document.getElementById('img_usuario_logado');
-var lbl_usuario_logado = document.getElementById('lbl_usuario_logado');
-var imagem_usuario  = document.getElementById('imagem_usuario');
-var label_login  = document.getElementById('label_login');
-var lat;
-var lon;
-var rua;
-var url;
-var endereco;
+const img_usuario_logado  = document.querySelector('#img_usuario_logado');
+const lbl_usuario_logado = document.getElementById('lbl_usuario_logado');
+const imagem_usuario  = document.getElementById('imagem_usuario');
+const label_login  = document.getElementById('label_login');
+let lat = 0.00;
+let lon = 0.00;
+let rua = "";
+let url = "";
+let endereco;
 var rua_api;
 var marcador;
 var imagem_usuario_logado; 
@@ -15,8 +15,10 @@ var nome_usuario_logado;
 var cookie_login;
 
 function exibir_opcoes () {
-    var aside  = document.getElementById('menu_opcoes');
-    var mapa = document.getElementById('mapa')
+    
+    const aside  = document.getElementById('menu_opcoes');
+    const mapa = document.getElementById('mapa')
+    
     if (aside.style.display==='none') {
         aside.style.display='block';
         mapa.style.left='105px';        
@@ -135,7 +137,7 @@ function ver_coodenada(){
 
 
 function obterCookie() {
-  var cookies = document.cookie.split(';');
+  let cookies = document.cookie.split(';');
   console.log(cookies);
   cookie_login = false;
   for (var i = 0; i < cookies.length; i++) {
