@@ -28,12 +28,10 @@
 			<img id="icone_pagina_inicial" src="imagens/pagina_inicial.png">
 			</div>
 		</a>
-		<a href="reportar_conforme_template.html ">
-			<div class="botoes_menu" id="botao_reportar">
+			<div class="botoes_menu" id="botao_reportar" onclick="verificar_login_tela_reporar (cookie_login)">
 				<img src="imagens/atencao.png" id="imagem_atencao">
 				<p id="label_reportar">Reportar</p>
 			</div>
-		</a>
 		<a href="historico_reportes.html">
 			<div class="botoes_menu" id="botao_historico">
 				<img src="imagens/historico.png" id="imagem_historico">
@@ -69,5 +67,6 @@
             </p>
 	</main>
 <script src="javascript/sobre.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 </html>

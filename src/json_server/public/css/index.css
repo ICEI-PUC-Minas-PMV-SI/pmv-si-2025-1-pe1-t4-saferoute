@@ -116,6 +116,9 @@ border-bottom: 1px solid #dcdcdc;
 	height: 95px;
 }
 
+#botao_reportar:hover {cursor: pointer;
+}
+
 #imagem_historico {width: 44px;
 	 height: auto;
 	 position: absolute;

@@ -16,8 +16,8 @@
 			<p id="label_login">Entrar</p>
 		</a>		
 		<div id="opcoes_login" onclick="drop_opcoes_menu()">
-			<img src="imagens/ulisses_antonio.png" id="img_usuario_logado">
-			<p id="lbl_usuario_logado">Ulisses Antônio</p>
+			<img src="" id="img_usuario_logado">
+			<p id="lbl_usuario_logado"></p>
 		</div>
 		<div id="div_drop_down"">
 			<a href="edicao_cadastro.html">Editar perfil</a>
@@ -29,12 +29,10 @@
 			<img id="icone_pagina_inicial" src="imagens/pagina_inicial.png">
 			</div>
 		</a>
-		<a href="reportar_alagamento.html">
-			<div class="botoes_menu" id="botao_reportar">
+			<div class="botoes_menu" id="botao_reportar" onclick="verificar_login_tela_reporar (cookie_login)">
 				<img src="imagens/atencao.png" id="imagem_atencao">
 				<p id="label_reportar">Reportar</p>
 			</div>
-		</a>
 		<a href="historico_reportes.html">
 			<div class="botoes_menu" id="botao_historico">
 				<img src="imagens/historico.png" id="imagem_historico">

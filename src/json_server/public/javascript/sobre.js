@@ -23,7 +23,11 @@ function sair() {document.cookie = "login=usuario_logado; path=/; max-age=0";
     imagem_usuario.style.display='block';
     label_login.style.display='block';
     cookie_login=false;
-}
+
+    if (window.location.pathname.endsWith("reportar_conforme_template.html")) {
+    window.location.href = "index.html";
+  }   
+  }
 
 function drop_opcoes_menu() {
     var div_drop_down = document.getElementById('div_drop_down');
@@ -72,6 +76,16 @@ document.addEventListener('visibilitychange', function () {
     obterCookie();
   }
 });
+
+function verificar_login_tela_reporar (cookie_login){
+  if (cookie_login===true){
+    window.location.href = "reportar_conforme_template.html";
+  } else {Swal.fire({
+      icon: 'info',
+      text: 'É necessário efetuar o login para reportar um alagamento.',
+      confirmButtonText: 'OK'
+    });}           
+  }
 
 window.onload = function() {
     obterCookie();
