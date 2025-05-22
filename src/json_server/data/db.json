@@ -1,34 +1,40 @@
 {
-  "usuarios": [{
-    "id": 1,
-    "email": "ulisses_antonio@gmail.com",
-    "senha": "bola123",
-    "nome": "Ulisses",
-    "sobrenome": "Antônio",
-    "imagem": "ulisses_antonio.png",
-    "sexo": "masculino",
-    "cep": "30535-490",
-    "endereco": "Rua Padre Pedro Evangelista",
-    "numero": 115,
-    "complemento": "Apartamento 202",
-    "bairro": "Coração Eucarístico",
-    "municipio": "Belo Horizonte",
-    "uf": "MG"},   
-  {"id": 2,
-    "email": "gualter.fortes@hotmail.com",
-    "senha": "bola123",
-    "nome": "Gualter",
-    "sobrenome": "Fortes",
-    "imagem": "gualter_fortes.png",
-    "sexo": "masculino",
-    "cep": "30720-410",
-    "endereco": "Rua Humaitá",
-    "numero": 719,
-    "complemento": "",
-    "bairro": "Padre Eustáquio",
-    "municipio": "Belo Horizonte",
-    "uf": "MG"}], 
-    "reportes":[{
+  "usuarios": [
+    {
+      "id": 1,
+      "email": "ulisses_antonio@gmail.com",
+      "senha": "bola123",
+      "nome": "Ulisses",
+      "sobrenome": "Antônio",
+      "imagem": "ulisses_antonio.png",
+      "sexo": "masculino",
+      "cep": "30535-490",
+      "endereco": "Rua Padre Pedro Evangelista",
+      "numero": 115,
+      "complemento": "Apartamento 202",
+      "bairro": "Coração Eucarístico",
+      "municipio": "Belo Horizonte",
+      "uf": "MG"
+    },
+    {
+      "id": 2,
+      "email": "gualter.fortes@hotmail.com",
+      "senha": "bola123",
+      "nome": "Gualter",
+      "sobrenome": "Fortes",
+      "imagem": "gualter_fortes.png",
+      "sexo": "masculino",
+      "cep": "30720-410",
+      "endereco": "Rua Humaitá",
+      "numero": 719,
+      "complemento": "",
+      "bairro": "Padre Eustáquio",
+      "municipio": "Belo Horizonte",
+      "uf": "MG"
+    }
+  ],
+  "reportes": [
+    {
       "id": 1,
       "rua": "Rua Padre Pedro Evangelista",
       "descricao": " Automóveis trafegando com dificuldade",
@@ -36,5 +42,6 @@
       "severidade": "Média",
       "idUsuario": 1,
       "dataHora": "2025-04-19T16:30:00Z"
-    }]
+    }
+  ]
 }
