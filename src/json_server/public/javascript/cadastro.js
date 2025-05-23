@@ -78,6 +78,7 @@ function salvar(){
                 }               
                 })
         usuario["sexo"] = document.querySelector('input[name="radio_sexo"]:checked').value
+        usuario["imagem"] = usuario["nome"] + "_" + usuario["sobrenome"] + ".png"
         fetch('http://localhost:3000/usuarios', {
           method: 'POST',
           headers: {
@@ -86,24 +87,51 @@ function salvar(){
           body: JSON.stringify(usuario)
         })
         .then(response => response.json())
-        .then(data => {
-          alert('Usuário cadastrado com sucesso!');
-        });
+        .then(data => {Swal.fire({
+        icon: 'info',
+        text: 'Usuário cadastrado com sucesso!',
+        confirmButtonText: 'OK'
+        }).then((result) => {
+           if (result.isConfirmed) {
+        window.location.href = "login.html"
+        }})});
       }})  
       }
-      /**/
-    /*"imagem": "gualter_fortes.png",
-    "sexo": "masculino",*/
+ 
+function cancelar(){
+  window.location.href = "login.html"
 
+}
+
+function alterar_imagem(){
+   const btnAlterarImagem = document.querySelector("#btn_alterar_imagem");
+   const inputImagem = document.querySelector("#input_imagem"); 
+   const imgUsuarioCadastro = document.querySelector("#img_usuario_cadastro")
+
+   btnAlterarImagem.addEventListener('click', () => {
+   inputImagem.click();  
+  });
+
+    inputImagem.addEventListener('change', () => {
+    const arquivoSelecionado = inputImagem.files[0];
+    const arquivoSelecionadoNome = arquivoSelecionado.name;
+
+    console.log('Arquivo selecionado:', arquivoSelecionado);
+    console.log(arquivoSelecionadoNome);
+
+    if (arquivoSelecionadoNome.toLowerCase().endsWith(".jpg") || arquivoSelecionadoNome.toLowerCase().endsWith(".png")){  
+      console.log(URL.createObjectURL(arquivoSelecionado));
+      const urlImagem = URL.createObjectURL(arquivoSelecionado); 
+      imgUsuarioCadastro.src = urlImagem;
+      } else {Swal.fire({
+        icon: 'error',
+        text: 'A imagem selecionada deve ser um arquivo .png ou .jpg!',
+        confirmButtonText: 'OK'
+        }); 
+      }
+  });
+}
+ 
 window.onload = function() {
-    nome.value="Ulisses";
-    sobrenome.value="Antônio";
-    cep.value = "30535-490";
-    endereco.value = "Rua Padre Evangelista";
-    municipio.value = "Belo Horizonte";
-    uf.value = "MG";
-    bairro.value = "Coração Eucarístico";
-    numero.value = "115";
-    complemento.value = "Apartamento 202";
     masculino.checked = true;
 }

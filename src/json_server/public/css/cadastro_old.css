@@ -1,0 +1,86 @@
+body {
+  font-family: Arial;
+  font-size: 200%;
+  text-align: center;
+  margin: 0;
+  background-image: url("../imagens/logo_tempestade.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+header {
+  background-color: #0D0576;
+  color: #FFFFFF;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-bottom: 3px solid #000000;
+  width: 500px;
+  border-radius: 10px 10px 0px 0px;
+}
+
+section {
+  background-color: #FFFFFF;
+  padding-top: 15px;
+  width: 500px;
+  border-radius: 0px 0px 10px 10px;
+}
+
+fieldset {
+  border: none;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  padding-left: 0px;
+}
+
+input {
+  width: 300px;
+  height: 20px;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #0D0576;
+  color: #FFFFFF;
+  text-align: center;
+  width: 300px;
+  font-size: 20px;
+  border-radius: 5px;
+}
+
+p {
+  font-size: 15px;
+  margin: 0;
+  padding-top: 7px;
+  padding-bottom: 3px;
+  text-align: left;
+  padding-left: 100px;
+}
+
+div {
+  padding: 20px;
+  border-radius: 10px;
+}
+
+a {
+  all: unset;
+  cursor: pointer;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+#input_genero {
+  margin-right: 165px;
+
+}
