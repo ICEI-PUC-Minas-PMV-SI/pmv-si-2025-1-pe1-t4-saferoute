@@ -4,12 +4,13 @@ var nome_usuario;
 var sobrenome_usuario;
 var imagem_usuario_logado;
 var nome_usuario_logado;
+let idUsuario;
 
-
-function criando_cookie (nome_usuario_logado,sobrenome_usuario,imagem_usuario_logado){
+function criando_cookie (nome_usuario_logado,sobrenome_usuario,imagem_usuario_logado,idUsuario){
     document.cookie = "login=usuario_logado; path=/;";
     document.cookie = `nome=${nome_usuario_logado} ${sobrenome_usuario}; path=/;`;
     document.cookie = `imagem=${encodeURIComponent(imagem_usuario_logado)}; path=/;`;
+    document.cookie = `idUsuario=${encodeURIComponent(idUsuario)}; path=/;`;
     window.history.back();
 }
 
@@ -60,7 +61,8 @@ function verificar_login (){
         sobrenome_usuario = usuario.sobrenome;
         imagem_usuario_logado = usuario.imagem;
         nome_usuario_logado = nome_usuario + " " + sobrenome_usuario;
-        criando_cookie(nome_usuario,sobrenome_usuario,imagem_usuario_logado);
+        idUsuario = id;
+        criando_cookie(nome_usuario,sobrenome_usuario,imagem_usuario_logado,idUsuario);
       } else {
         Swal.fire({
           icon: 'error',
