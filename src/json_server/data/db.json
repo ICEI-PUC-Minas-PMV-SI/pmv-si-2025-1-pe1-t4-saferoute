@@ -31,6 +31,22 @@
       "bairro": "Padre Eustáquio",
       "municipio": "Belo Horizonte",
       "uf": "MG"
+    },
+    {
+      "email": "debora,oliveira@hotmail.com",
+      "senha": "bola123",
+      "nome": "debora",
+      "sobrenome": "oliveira",
+      "cep": "30810060",
+      "endereco": "Rua Vicente Longo",
+      "numero": "30",
+      "complemento": "Casa B",
+      "bairro": "Jardim Alvorada",
+      "municipio": "Belo Horizonte",
+      "uf": "MG",
+      "sexo": "Feminino",
+      "imagem": "debora_oliveira.png",
+      "id": 3
     }
   ],
   "reportes": [
