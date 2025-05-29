@@ -50,7 +50,7 @@
 		</div>
 		<div id="div_endereco" class="campos_formulario">
 			<label for="endereco" id="label_endereco">Endereço:</label>
-			<input type="text" id="endereco" placeholder="Digite seu endereço" required>
+			<input type="text" id="endereco" placeholder="Digite seu endereço" readonly>
 		</div>
 		<div id="div_numero" class="campos_formulario">
 			<label for="numero" id="label_endereco">Número:</label>
@@ -62,15 +62,15 @@
 		</div>
 		<div id="div_bairro" class="campos_formulario">
 			<label for="bairro" id="label_bairro">Bairro:</label>
-			<input type="text" id="bairro" placeholder="Digite o bairro onde mora" required>
+			<input type="text" id="bairro" placeholder="Digite o bairro onde mora" readonly>
 		</div>
 		<div id="div_municipio" class="campos_formulario">
 			<label for="municipio" id="label_municipio">Município:</label>
-			<input type="text" id="municipio" placeholder="Digite o município onde mora" required>
+			<input type="text" id="municipio" placeholder="Digite o município onde mora" readonly>
 		</div>
 		<div id="div_uf" class="campos_formulario">
 			<label for="uf" id="label_uf">UF:</label>
-			<input type="text" id="uf" placeholder="Digite o estado onde mora" required>
+			<input type="text" id="uf" placeholder="Digite o estado onde mora" readonly>
 		</div>
 	</form>
 	<div id="div_imagem_usuario">
@@ -78,6 +78,7 @@
 		<button id="btn_alterar_imagem" onclick="alterar_imagem()">Alterar imagem</button>
 		<input type="file" id="input_imagem">
 	</div>
+	<button id="btn_pesquisar" onclick="buscar_cep()">Pesquisar CEP</button>
 	<button id="btn_salvar" class="botoes_edicao" onclick="salvar()">Salvar</button>
 	<button id="btn_cancelar" class="botoes_edicao" onclick="cancelar()">Cancelar</button>
 	</div>

@@ -97,3 +97,18 @@ button:hover {cursor: pointer;
 }
 
 #input_imagem{display: none;}
+
+#btn_pesquisar{width: 110px;
+				height: 20px;
+			    position: relative;
+                left: 220px;
+                top: -185px;
+}
+
+#btn_salvar{position: relative;
+    left:-70px;
+}
+
+#btn_cancelar{position: relative;
+    left:-50px;
+}
