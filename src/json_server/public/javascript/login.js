@@ -55,13 +55,13 @@ function verificar_login (){
       usuario = data.find(
         u => u.email === email && u.senha === senha
       );
-
       if (usuario) {
         nome_usuario = usuario.nome;
         sobrenome_usuario = usuario.sobrenome;
         imagem_usuario_logado = usuario.imagem;
         nome_usuario_logado = nome_usuario + " " + sobrenome_usuario;
-        idUsuario = id;
+        idUsuario = usuario.id;
+        console.log(idUsuario)
         criando_cookie(nome_usuario,sobrenome_usuario,imagem_usuario_logado,idUsuario);
       } else {
         Swal.fire({

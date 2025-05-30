@@ -48,7 +48,6 @@
       "imagem": "debora_oliveira.png",
       "id": 3
     }
-    
   ],
   "reportes": [
     {
@@ -58,8 +57,7 @@
       "rotaAlternativa": "Rua Dom Joaquim Silvério",
       "severidade": "Média",
       "idUsuario": 1,
-      "dataHora": "2025-04-19T16:30:00Z"
-      
+      "dataHora": "2025-04-19T16:30:00Z"   
     }
   ]
 }
