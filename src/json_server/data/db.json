@@ -49,15 +49,42 @@
       "id": 3
     }
   ],
+
   "reportes": [
+    
     {
       "id": 1,
       "rua": "Rua Padre Pedro Evangelista",
       "descricao": " Automóveis trafegando com dificuldade",
-      "rotaAlternativa": "Rua Dom Joaquim Silvério",
+      "rotaAlternativa": "Padre Rossini Cândido",
       "severidade": "Média",
       "idUsuario": 1,
-      "dataHora": "2025-04-19T16:30:00Z"   
-    }
-  ]
-}
+      "dataHora": "2025-04-19T16:30:00Z",
+      "geolocalizaçãoRuaAlagada": "-19.924885, -43.989210, -19.923775 -43.990650",
+      "geolocalizaçãoRotaAlternativa": "-19.924638, -43.987929, -19.923005, -43.989935"   
+      },
+    {
+      "id": 2,
+      "rua": "Rua Dom João Antônio dos Santos",
+      "descricao": "Rua interditada",
+      "rotaAlternativa": "Rua Dom José Pereira Lara",
+      "severidade": "Alta",
+      "idUsuario": 2,
+      "dataHora": "2025-04-19T16:30:00Z",
+      "geolocalizaçãoRuaAlagada": "-19.920715, -43.987876, -19.921196, -43.987284",
+      "geolocalizaçãoRotaAlternativa": "-19.921498, -43.988590, -19.922018, -43.987926"   
+      },
+    {
+      "id": 3,
+      "rua": "Dom João Pimenta",
+      "descricao": " Automóveis trafegando com dificuldade",
+      "rotaAlternativa": "Dom Modesto Augusto",
+      "severidade": "Baixa",
+      "idUsuario": 3,
+      "dataHora": "2025-04-19T19:31:00Z" ,
+      "geolocalizaçãoRuaAlagada": "-19.926874, -43.993307, -19.927350, -43.992709",
+      "geolocalizaçãoRotaAlternativa": "-19.927565, -43.994061, -19.928137, -43.993347"
+   }
+
+  ],
+} 
