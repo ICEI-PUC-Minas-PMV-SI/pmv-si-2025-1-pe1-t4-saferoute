@@ -213,23 +213,52 @@ function verificar_login_tela_reporar (cookie_login){
     });}           
   }
 
+  
+  function success(pos){
+    console.log(pos.coords.latitude, pos.coords.longitude);
+    
+
+    if (map === undefined) {
+        map = L.map('mapa').setView([pos.coords.latitude, pos.coords.longitude], 13);
+    } else {
+        map.remove();
+        map = L.map('mapa').setView([pos.coords.latitude, pos.coords.longitude], 13);
+    }
+
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    }).addTo(map);
+
+    L.marker([pos.coords.latitude, pos.coords.longitude]).addTo(map)
+        .bindPopup('Eu estou aqui!')
+        .openPopup();
+        L.marker([lat,lon]).addTo(map);
+        
+}
+
+function error(err){
+    console.log(err);
+}
+
+var watchID = navigator.geolocation.watchPosition(success, error, {
+    enableHighAccuracy: true,
+    timeout: 5000
+});
+
 window.onload = function() {
     lat = -19.9191
     lon = -43.9386
-    marcador = false
-    visualizar_mapa(lat,lon,false);
-    obterCookie();
-    verifica_login (cookie_login);
-    buscarPrevisaoTempo();
-    if (cookie_login===true) {
-        img_usuario_logado.style.display='block';
+    visualizar_mapa(lat,lon);
+    if (document.cookie==='login=Ulisses_Antonio') {img_usuario_logado.style.display='block';
         lbl_usuario_logado.style.display='block';
         imagem_usuario.style.display='none';
         label_login.style.display='none';
-    } else if(cookie_login===false){
-        img_usuario_logado.style.display='none';
+        console.log(document.cookie);
+    } else {img_usuario_logado.style.display='none';
         lbl_usuario_logado.style.display='none';
         imagem_usuario.style.display='block';
         label_login.style.display='block';
+        console.log(document.cookie);
     }
+    buscarPrevisaoTempo();
 }
