@@ -47,11 +47,26 @@
       "sexo": "Feminino",
       "imagem": "debora_oliveira.png",
       "id": 3
+    },
+    {
+      "email": "sofiabontempo@gmail.com",
+      "senha": "sekiro2579",
+      "nome": "Sofia",
+      "sobrenome": "Bontenpo",
+      "cep": "31720300",
+      "endereco": "Avenida Doutor Cristiano Guimarães",
+      "numero": "55",
+      "complemento": "Casa 407",
+      "bairro": "Planalto",
+      "municipio": "Belo Horizonte",
+      "uf": "MG",
+      "sexo": "Feminino",
+      "imagem": "sofia_bontempo.png",
+      "id": 4
     }
   ],
 
-  "reportes": [
-    
+"reportes": [
     {
       "id": 1,
       "rua": "Rua Padre Pedro Evangelista",
@@ -60,9 +75,9 @@
       "severidade": "Média",
       "idUsuario": 1,
       "dataHora": "2025-04-19T16:30:00Z",
-      "geolocalizaçãoRuaAlagada": "-19.924885, -43.989210, -19.923775 -43.990650",
-      "geolocalizaçãoRotaAlternativa": "-19.924638, -43.987929, -19.923005, -43.989935"   
-      },
+      "geolocalizaçãoRuaAlagada": [[-19.924885, -43.989210], [-19.923775, -43.990650]],
+      "geolocalizaçãoRotaAlternativa": [[-19.924638, -43.987929], [-19.923005, -43.989935]]
+    },
     {
       "id": 2,
       "rua": "Rua Dom João Antônio dos Santos",
@@ -70,10 +85,10 @@
       "rotaAlternativa": "Rua Dom José Pereira Lara",
       "severidade": "Alta",
       "idUsuario": 2,
-      "dataHora": "2025-04-19T16:30:00Z",
-      "geolocalizaçãoRuaAlagada": "-19.920715, -43.987876, -19.921196, -43.987284",
-      "geolocalizaçãoRotaAlternativa": "-19.921498, -43.988590, -19.922018, -43.987926"   
-      },
+      "dataHora": "2025-04-12T21:37:00Z",
+      "geolocalizaçãoRuaAlagada": [[-19.920715, -43.987876], [-19.921196, -43.987284]],
+      "geolocalizaçãoRotaAlternativa": [[-19.921498, -43.988590], [-19.922018, -43.987926]]
+    },
     {
       "id": 3,
       "rua": "Dom João Pimenta",
@@ -81,10 +96,64 @@
       "rotaAlternativa": "Dom Modesto Augusto",
       "severidade": "Baixa",
       "idUsuario": 3,
-      "dataHora": "2025-04-19T19:31:00Z" ,
-      "geolocalizaçãoRuaAlagada": "-19.926874, -43.993307, -19.927350, -43.992709",
-      "geolocalizaçãoRotaAlternativa": "-19.927565, -43.994061, -19.928137, -43.993347"
-   }
-
+      "dataHora": "2025-04-19T20:25:00Z",
+      "geolocalizaçãoRuaAlagada": [[-19.926874, -43.993307], [-19.927350, -43.992709]],
+      "geolocalizaçãoRotaAlternativa": [[-19.927565, -43.994061], [-19.928137, -43.993347]]
+    },
+    {
+      "id": 4,
+      "rua": "Rua Henrique Gorceix - Padre Eustáquio",
+      "descricao": " Rua interditada",
+      "rotaAlternativa": "Rua Francisco Bicalho",
+      "severidade": "Alta",
+      "idUsuario": 4,
+      "dataHora": "2025-04-27T21:10:00Z",
+      "geolocalizaçãoRuaAlagada": [[-19.913684, -43.979678], [-19.914833, -43.979678]],
+      "geolocalizaçãoRotaAlternativa": [[-19.913809, -43.977557], [-19.914897, -43.977607]]
+    },
+    {
+      "id": 5,
+      "rua": "Rua Marambaia",
+      "descricao": " Rua interditada",
+      "rotaAlternativa": "Rua Tietê",
+      "severidade": "Alta",
+      "idUsuario": 1,
+      "dataHora": "2025-04-27T21:10:00Z",
+      "geolocalizaçãoRuaAlagada": [[-19.903849, -43.968414], [-19.905012, -43.968403]],
+      "geolocalizaçãoRotaAlternativa": [[-19.903718, -43.969077], [-19.904980, -43.969061]]
+    },
+    {
+      "id": 6,
+      "rua": "Rua R. Manhumirim",
+      "descricao": " Automóveis trafegando com dificuldade",
+      "rotaAlternativa": "Rua Guaíra",
+      "severidade": "Média",
+      "idUsuario": 2,
+      "dataHora": "2025-04-27T21:10:00Z",
+      "geolocalizaçãoRuaAlagada": [[-19.905231, -43.971801], [-19.905998, -43.971596]],
+      "geolocalizaçãoRotaAlternativa": [[-19.905271, -43.970405], [-19.906287, -43.970344]]
+    },
+    {
+      "id": 7,
+      "rua": "Rua Cambuquira",
+      "descricao": " Automóveis trafegando com lentidão",
+      "rotaAlternativa": "Rua Três Pontas",
+      "severidade": "Média",
+      "idUsuario": 3,
+      "dataHora": "2025-04-27T21:10:00Z",
+      "geolocalizaçãoRuaAlagada": [[-19.910704, -43.964235], [-19.91044, -43.96316]],
+      "geolocalizaçãoRotaAlternativa": [[-19.91132, -43.96416], [-19.91107, -43.96303]]
+    },
+    {
+      "id": 8,
+      "rua": "Rua Boaventura",
+      "descricao": " Automóveis trafegando com lentidão",
+      "rotaAlternativa": "Praça Santo Antônio",
+      "severidade": "Média",
+      "idUsuario": 4,
+      "dataHora": "2025-04-27T21:10:00Z",
+      "geolocalizaçãoRuaAlagada": [[-19.85597, -43.95546], [-19.85564, -43.95482]],
+      "geolocalizaçãoRotaAlternativa": [[-19.85498, -43.95560], [-19.85511, -43.95401]]
+    }
   ]
 } 

@@ -13,6 +13,9 @@ var marcador;
 var imagem_usuario_logado; 
 var nome_usuario_logado;
 var cookie_login;
+let marcadorAtual;
+let marcadorPesquisado;
+let cookieRuaPesquisada;
 
 function exibir_opcoes () {
     
@@ -29,17 +32,64 @@ function exibir_opcoes () {
         map.invalidateSize();
     }
 }
+    function getColor(severidade) {
+        switch (severidade.toLowerCase()) {
+            case 'alta': return 'red';
+            case 'média': return 'orange';
+            case 'baixa': return 'green';
+            
+        }
+    }
 
-function visualizar_mapa(lat,lon,marcador){
-    if (window.map) {window.map.remove();
-     }
-    map = L.map('mapa').setView([lat,lon], 16);
+function visualizar_mapa(lat, lon, marcador) {
+    if (window.map) {
+        window.map.remove();
+    }
+    map = L.map('mapa').setView([lat, lon], 16); // corrigido aqui
+
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
         attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
     }).addTo(map);
+
     if (marcador) {
-    L.marker([lat,lon]).addTo(map);}
+        if (marcadorAtual){ 
+          marcadorAtual.remove(map);
+        }
+        marcadorPesquisado = L.marker([lat, lon]).addTo(map);
+        criando_cookie();
+    
+    }
+
+
+    fetch('http://localhost:3000/reportes')
+        .then(response => response.json())
+        .then(data => {
+            data.forEach(reporte => {
+                const cor = getColor(reporte.severidade);
+
+                const coordsRuaAlagada = reporte["geolocalizaçãoRuaAlagada"];
+                if (coordsRuaAlagada) {
+                    L.polyline(coordsRuaAlagada, {
+                        color: cor,
+                        weight: 5,
+                        opacity: 0.8
+                    }).addTo(map);
+                }
+
+                const coordsRotaAlternativa = reporte["geolocalizaçãoRotaAlternativa"];
+                if (coordsRotaAlternativa) {
+                    L.polyline(coordsRotaAlternativa, {
+                        color: 'blue',
+                        weight: 4,
+                        opacity: 0.7,
+                        
+                    }).addTo(map);
+                }
+            });
+        })
+        .catch(err => console.error('Erro ao carregar db.json:', err));
 }
+
 
 function drop_opcoes_menu() {
     var div_drop_down = document.getElementById('div_drop_down');
@@ -157,6 +207,9 @@ function obterCookie() {
     if (c.startsWith('login=usuario_logado')) {
       cookie_login=true;
   } 
+  if (c.startsWith('ruaPesquisada=true')) {
+      cookieRuaPesquisada =true;
+  }
 }
 verifica_login (cookie_login);
 console.log(cookie_login)
@@ -215,8 +268,7 @@ function verificar_login_tela_reporar (cookie_login){
 
   
   function success(pos){
-    console.log(pos.coords.latitude, pos.coords.longitude);
-    
+  
 
     if (map === undefined) {
         map = L.map('mapa').setView([pos.coords.latitude, pos.coords.longitude], 13);
@@ -226,24 +278,28 @@ function verificar_login_tela_reporar (cookie_login){
     }
 
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        attribution: '&copy; OpenStreetMap contributors'
     }).addTo(map);
-
-    L.marker([pos.coords.latitude, pos.coords.longitude]).addTo(map)
+    if (marcadorAtual){
+      marcadorAtual.remove(map);
+    }
+    if (marcadorPesquisado){
+      marcadorPesquisado.remove(map);
+    }
+    marcadorAtual = L.marker([pos.coords.latitude, pos.coords.longitude]).addTo(map)
         .bindPopup('Eu estou aqui!')
         .openPopup();
-        L.marker([lat,lon]).addTo(map);
-        
+    
 }
 
 function error(err){
     console.log(err);
 }
 
-var watchID = navigator.geolocation.watchPosition(success, error, {
-    enableHighAccuracy: true,
-    timeout: 5000
-});
+function criando_cookie (){
+    document.cookie = "ruaPesquisada = true; path=/;";
+   
+}
 
 window.onload = function() {
     lat = -19.9191
@@ -261,4 +317,14 @@ window.onload = function() {
         console.log(document.cookie);
     }
     buscarPrevisaoTempo();
+    if (marcadorPesquisado != true){
+      document.cookie = "ruaPesquisada=true; path=/; max-age=0";
+    }
+    obterCookie();
+  
+    console.log(cookieRuaPesquisada);
+    if (cookieRuaPesquisada != true) {var watchID = navigator.geolocation.watchPosition(success, error, {
+    enableHighAccuracy: true
+    
+});}
 }
