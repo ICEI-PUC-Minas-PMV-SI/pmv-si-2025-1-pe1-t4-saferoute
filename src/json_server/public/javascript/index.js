@@ -45,11 +45,46 @@ function visualizar_mapa(lat, lon, marcador) {
     if (window.map) {
         window.map.remove();
     }
-    map = L.map('mapa').setView([lat, lon], 16); // corrigido aqui
+    map = L.map('mapa').setView([lat, lon], 16); 
 
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
         attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
     }).addTo(map);
+
+    const legenda = L.control({ position: 'bottomright' });
+
+    legenda.onAdd = function (map) {
+    const div = L.DomUtil.create('div', 'legend-box');
+
+    div.innerHTML = `
+        <div class="legend-header" onclick="toggleLegenda()">
+            <strong>ℹ️ Severidade dos Alagamentos</strong>
+            <span id="legend-toggle">−</span>
+        </div>
+        <div id="legend-content">
+            <div><i class="legend-icon" style="background: red;"></i> Alta</div>
+            <div><i class="legend-icon" style="background: orange;"></i> Média</div>
+            <div><i class="legend-icon" style="background: green;"></i> Baixa</div>
+            <div><i class="legend-icon" style="background: blue;"></i> Rota alternativa</div>
+        </div>
+    `;
+    return div;
+};
+
+legenda.addTo(map);
+
+
+function toggleLegenda() {
+    const content = document.getElementById("legend-content");
+    const toggle = document.getElementById("legend-toggle");
+    if (content.style.display === "none") {
+        content.style.display = "block";
+        toggle.innerText = "−";
+    } else {
+        content.style.display = "none";
+        toggle.innerText = "+";
+    }
+}
 
     if (marcador) {
         if (marcadorAtual){ 
@@ -71,8 +106,8 @@ function visualizar_mapa(lat, lon, marcador) {
                 if (coordsRuaAlagada) {
                     L.polyline(coordsRuaAlagada, {
                         color: cor,
-                        weight: 5,
-                        opacity: 0.8
+                        weight: 11,
+                        opacity: 1,
                     }).addTo(map);
                 }
 
@@ -80,8 +115,8 @@ function visualizar_mapa(lat, lon, marcador) {
                 if (coordsRotaAlternativa) {
                     L.polyline(coordsRotaAlternativa, {
                         color: 'blue',
-                        weight: 4,
-                        opacity: 0.7,
+                        weight: 11,
+                        opacity: 1,
                         
                     }).addTo(map);
                 }
