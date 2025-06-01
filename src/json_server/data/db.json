@@ -160,19 +160,10 @@
       "rotaAlternativa": "Dom Modesto Augusto",
       "severidade": "Baixa",
       "idUsuario": 3,
-<<<<<<< HEAD
       "dataHora": "2025-04-19T19:31:00Z" ,
       "geolocalizaçãoRuaAlagada": "-19.926874, -43.993307, -19.927350, -43.992709",
       "geolocalizaçãoRotaAlternativa": "-19.927565, -43.994061, -19.928137, -43.993347"
-   }
-
-  ]
-} 
-=======
-      "dataHora": "2025-04-19T20:25:00Z",
-      "geolocalizaçãoRuaAlagada": [[-19.926874, -43.993307], [-19.927350, -43.992709]],
-      "geolocalizaçãoRotaAlternativa": [[-19.927565, -43.994061], [-19.928137, -43.993347]]
-    },
+   },     
     {
       "id": 4,
       "rua": "Rua Henrique Gorceix - Padre Eustáquio",
@@ -274,4 +265,3 @@
     }
   ]
 }
->>>>>>> 74a034e5fa57455e797ba81c09164ef13846add5
