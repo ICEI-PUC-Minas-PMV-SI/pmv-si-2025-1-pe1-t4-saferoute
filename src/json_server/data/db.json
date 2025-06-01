@@ -33,6 +33,7 @@
       "uf": "MG"
        },
     {
+      "id": 3,
       "email": "debora,oliveira@hotmail.com",
       "senha": "bola123",
       "nome": "debora",
@@ -45,10 +46,10 @@
       "municipio": "Belo Horizonte",
       "uf": "MG",
       "sexo": "Feminino",
-      "imagem": "debora_oliveira.png",
-      "id": 3
+      "imagem": "debora_oliveira.png"    
     },
     {
+      "id": 4,
       "email": "sofiabontempo@gmail.com",
       "senha": "bola123",
       "nome": "Sofia",
@@ -61,8 +62,71 @@
       "municipio": "Belo Horizonte",
       "uf": "MG",
       "sexo": "Feminino",
-      "imagem": "sofia_bontempo.png",
-      "id": 4
+      "imagem": "sofia_bontempo.png"
+    },
+    {
+      "id": 5,
+      "email": "perera_santos@gmail.com",
+      "senha": "bola123",
+      "nome": "Pereraa",
+      "sobrenome": "Santos",
+      "cep": "31720-300",
+      "endereco": "Rua Marambaia",
+      "numero": "22",
+      "complemento": "Casa 65",
+      "bairro": "Planalto",
+      "municipio": "Belo Horizonte",
+      "uf": "MG",
+      "sexo": "masculino",
+      "imagem": "perera_santos.png"
+    },
+    {
+      "id": 6,
+      "email": "flavia@gmail.com",
+      "senha": "bola123",
+      "nome": "Flavia",
+      "sobrenome": "Silva",
+      "cep": "31720-300",
+      "endereco": "Rua Marambaia",
+      "numero": "289",
+      "complemento": "Casa 65",
+      "bairro": "Planalto",
+      "municipio": "Belo Horizonte",
+      "uf": "MG",
+      "sexo": "Feminino",
+      "imagem": "flavia_silva.png"
+    },
+    {
+      "id": 7,
+      "email": "fabiola@gmail.com",
+      "senha": "bola123",
+      "nome": "Fabiola",
+      "sobrenome": "Silva",
+      "cep": "31720-300",
+      "endereco": "Rua Marambaia",
+      "numero": "245",
+      "complemento": "Casa 65",
+      "bairro": "Planalto",
+      "municipio": "Belo Horizonte",
+      "uf": "MG",
+      "sexo": "Feminino",
+      "imagem": "fabiola_silva.png"
+    },
+    {
+      "id": 8,
+      "email": "lucas@gmail.com",
+      "senha": "bola123",
+      "nome": "Lucas",
+      "sobrenome": "Silva",
+      "cep": "31720-300",
+      "endereco": "Rua Marambaia",
+      "numero": "220",
+      "complemento": "Casa 65",
+      "bairro": "Planalto",
+      "municipio": "Belo Horizonte",
+      "uf": "MG",
+      "sexo": "Masculino",
+      "imagem": "lucas_silva.png"
     }
   ],
 
@@ -154,6 +218,50 @@
       "dataHora": "2025-04-27T21:10:00Z",
       "geolocalizaçãoRuaAlagada": [[-19.85597, -43.95546], [-19.85564, -43.95482]],
       "geolocalizaçãoRotaAlternativa": [[-19.85498, -43.95560], [-19.85511, -43.95401]]
+    },
+    {
+      "id": 9,
+      "rua": "Rua Magalhães Pinto",
+      "descricao": " Alagamento na pista, impossibilitando o tráfego de veículos pesados",
+      "rotaAlternativa": "rua do quebra",
+      "severidade": "Alta",
+      "idUsuario": 5,
+      "dataHora": "2025-04-19T16:30:00Z",
+      "geolocalizaçãoRuaAlagada": [[-19.924885, -43.989210], [-19.923775, -43.990650]],
+      "geolocalizaçãoRotaAlternativa": [[-19.924638, -43.987929], [-19.923005, -43.989935]]
+    },
+    {
+      "id": 10,
+      "rua": "Rua Pirulito do Céu",
+      "descricao": "buraco na pista",
+      "rotaAlternativa": "Rua a direita Jk",
+      "severidade": "Media",
+      "idUsuario": 6,
+      "dataHora": "2025-04-19T16:30:00Z",
+      "geolocalizaçãoRuaAlagada": [[-19.924885, -43.989210], [-19.923775, -43.990650]],
+      "geolocalizaçãoRotaAlternativa": [[-19.924638, -43.987929], [-19.923005, -43.989935]]
+    },
+    {
+      "id": 11,
+      "rua": "Rua Jk centro",
+      "descricao": "Alagamento na pista e Buraco no trajeto impossibilitando o tráfego de veículos pesados e leves",
+      "rotaAlternativa": "Rua a esquerda da Jk",
+      "severidade": "Alta",
+      "idUsuario": 7,
+      "dataHora": "2025-04-19T16:30:00Z",
+      "geolocalizaçãoRuaAlagada": [[-19.924885, -43.989210], [-19.923775, -43.990650]],
+      "geolocalizaçãoRotaAlternativa": [[-19.924638, -43.987929], [-19.923005, -43.989935]]
+    },
+    {
+      "id": 12,
+      "rua": "Rua Vila caetana",
+      "descricao": "Rua interditada",
+      "rotaAlternativa": "Avenida dos Andradas",
+      "severidade": "Alta",
+      "idUsuario": 8,
+      "dataHora": "2025-04-19T16:30:00Z",
+      "geolocalizaçãoRuaAlagada": [[-19.924885, -43.989210], [-19.923775, -43.990650]],
+      "geolocalizaçãoRotaAlternativa": [[-19.924638, -43.987929], [-19.923005, -43.989935]]
     }
   ]
-} 
+}
