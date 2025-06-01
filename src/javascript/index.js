@@ -27,10 +27,12 @@ function exibir_opcoes () {
 function visualizar_mapa(lat,lon){
     if (window.map) {window.map.remove();
      }
-    map = L.map('mapa').setView([lat,lon], 16);
+    map = L.map('map').setView([lat,lon], 16);
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
         attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
     }).addTo(map);
+    
+
 }
 
 function drop_opcoes_menu() {

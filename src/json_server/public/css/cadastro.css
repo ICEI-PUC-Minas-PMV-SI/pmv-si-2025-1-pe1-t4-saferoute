@@ -76,7 +76,7 @@ button {color: #FFF;
 }
 
 button:hover {cursor: pointer;
-              background-color: #2921a0
+              background-color: #2921a0;
 }
 
 #div_imagem_usuario{position: relative;
