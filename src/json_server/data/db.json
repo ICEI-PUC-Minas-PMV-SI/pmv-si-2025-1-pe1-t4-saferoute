@@ -221,47 +221,47 @@
     },
     {
       "id": 9,
-      "rua": "Rua Magalhães Pinto",
+      "rua": "Rua Rebelo Horta",
       "descricao": " Alagamento na pista, impossibilitando o tráfego de veículos pesados",
-      "rotaAlternativa": "rua do quebra",
+      "rotaAlternativa": "Alameda dos Coqueiros",
       "severidade": "Alta",
       "idUsuario": 5,
       "dataHora": "2025-04-17T03:55:00Z",
-      "geolocalizaçãoRuaAlagada": [[-19.924885, -43.989210], [-19.923775, -43.990650]],
-      "geolocalizaçãoRotaAlternativa": [[-19.924638, -43.987929], [-19.923005, -43.989935]]
+      "geolocalizaçãoRuaAlagada": [[-19.86076, -43.97047], [-19.86130, -43.97024]],
+      "geolocalizaçãoRotaAlternativa": [[-19.85961, -43.96706], [-19.86016, -43.96685]]
     },
     {
       "id": 10,
-      "rua": "Rua Pirulito do Céu",
+      "rua": "Rua Rebelo Horta",
       "descricao": "buraco na pista",
-      "rotaAlternativa": "Rua a direita Jk",
+      "rotaAlternativa": "Alameda dos Coqueiros",
       "severidade": "Media",
       "idUsuario": 6,
       "dataHora": "2025-04-20T18:20:00Z",
-      "geolocalizaçãoRuaAlagada": [[-19.924885, -43.989210], [-19.923775, -43.990650]],
-      "geolocalizaçãoRotaAlternativa": [[-19.924638, -43.987929], [-19.923005, -43.989935]]
+      "geolocalizaçãoRuaAlagada": [[-19.86137, -43.97022], [-19.86195, -43.97002]],
+      "geolocalizaçãoRotaAlternativa": [[-19.86018, -43.96685], [-19.86082, -43.96662]]
     },
     {
       "id": 11,
-      "rua": "Rua Jk centro",
+      "rua": "Rua Bolivar",
       "descricao": "Alagamento na pista e Buraco no trajeto impossibilitando o tráfego de veículos pesados e leves",
-      "rotaAlternativa": "Rua a esquerda da Jk",
+      "rotaAlternativa": "Rua Lincoln",
       "severidade": "Alta",
       "idUsuario": 7,
       "dataHora": "2025-04-23T11:15:00Z",
-      "geolocalizaçãoRuaAlagada": [[-19.924885, -43.989210], [-19.923775, -43.990650]],
-      "geolocalizaçãoRotaAlternativa": [[-19.924638, -43.987929], [-19.923005, -43.989935]]
+      "geolocalizaçãoRuaAlagada": [[-19.88149, -43.92479], [-19.88273, -43.92563]],
+      "geolocalizaçãoRotaAlternativa": [[-19.88116, -43.92532], [-19.88238, -43.92617]]
     },
     {
       "id": 12,
-      "rua": "Rua Vila caetana",
+      "rua": "Rua Agrelos",
       "descricao": "Rua interditada",
-      "rotaAlternativa": "Avenida dos Andradas",
+      "rotaAlternativa": "Rua Aiuruoca",
       "severidade": "Alta",
       "idUsuario": 8,
       "dataHora": "2025-04-30T00:40:00Z",
-      "geolocalizaçãoRuaAlagada": [[-19.924885, -43.989210], [-19.923775, -43.990650]],
-      "geolocalizaçãoRotaAlternativa": [[-19.924638, -43.987929], [-19.923005, -43.989935]]
+      "geolocalizaçãoRuaAlagada": [[-19.86737, -43.92541], [-19.86882, -43.92498]],
+      "geolocalizaçãoRotaAlternativa": [[-19.86703, -43.92410], [-19.86852, -43.92369]]
     }
   ]
 }
