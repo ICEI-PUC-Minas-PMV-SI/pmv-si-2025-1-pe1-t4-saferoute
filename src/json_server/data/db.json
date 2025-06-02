@@ -34,19 +34,19 @@
        },
     {
       "id": 3,
-      "email": "debora,oliveira@hotmail.com",
+      "email": "debora.oliveira@hotmail.com",
       "senha": "bola123",
       "nome": "debora",
       "sobrenome": "oliveira",
+      "imagem": "debora_oliveira.png",
+      "sexo": "Feminino",
       "cep": "30810060",
       "endereco": "Rua Vicente Longo",
       "numero": "30",
       "complemento": "Casa B",
       "bairro": "Jardim Alvorada",
       "municipio": "Belo Horizonte",
-      "uf": "MG",
-      "sexo": "Feminino",
-      "imagem": "debora_oliveira.png"    
+      "uf": "MG"
     },
     {
       "id": 4,
@@ -54,31 +54,31 @@
       "senha": "bola123",
       "nome": "Sofia",
       "sobrenome": "Bontenpo",
+      "imagem": "sofia_bontempo.png",
+      "sexo": "Feminino",
       "cep": "31720300",
       "endereco": "Avenida Doutor Cristiano Guimarães",
       "numero": "55",
       "complemento": "Casa 407",
       "bairro": "Planalto",
       "municipio": "Belo Horizonte",
-      "uf": "MG",
-      "sexo": "Feminino",
-      "imagem": "sofia_bontempo.png"
+      "uf": "MG"
     },
     {
       "id": 5,
       "email": "perera_santos@gmail.com",
       "senha": "bola123",
-      "nome": "Pereraa",
+      "nome": "Perera",
       "sobrenome": "Santos",
+      "imagem": "perera_santos.png",
+      "sexo": "masculino",
       "cep": "31720-300",
       "endereco": "Rua Marambaia",
       "numero": "22",
       "complemento": "Casa 65",
       "bairro": "Planalto",
       "municipio": "Belo Horizonte",
-      "uf": "MG",
-      "sexo": "masculino",
-      "imagem": "perera_santos.png"
+      "uf": "MG"
     },
     {
       "id": 6,
@@ -86,15 +86,15 @@
       "senha": "bola123",
       "nome": "Flavia",
       "sobrenome": "Silva",
+      "imagem": "flavia_silva.png",
+      "sexo": "Feminino",
       "cep": "31720-300",
       "endereco": "Rua Marambaia",
       "numero": "289",
       "complemento": "Casa 65",
       "bairro": "Planalto",
       "municipio": "Belo Horizonte",
-      "uf": "MG",
-      "sexo": "Feminino",
-      "imagem": "flavia_silva.png"
+      "uf": "MG"     
     },
     {
       "id": 7,
@@ -102,15 +102,15 @@
       "senha": "bola123",
       "nome": "Fabiola",
       "sobrenome": "Silva",
+      "imagem": "fabiola_silva.png",
+      "sexo": "Feminino",
       "cep": "31720-300",
       "endereco": "Rua Marambaia",
       "numero": "245",
       "complemento": "Casa 65",
       "bairro": "Planalto",
       "municipio": "Belo Horizonte",
-      "uf": "MG",
-      "sexo": "Feminino",
-      "imagem": "fabiola_silva.png"
+      "uf": "MG"      
     },
     {
       "id": 8,
@@ -118,18 +118,18 @@
       "senha": "bola123",
       "nome": "Lucas",
       "sobrenome": "Silva",
+      "imagem": "lucas_silva.png",
+      "sexo": "Masculino",
       "cep": "31720-300",
       "endereco": "Rua Marambaia",
       "numero": "220",
       "complemento": "Casa 65",
       "bairro": "Planalto",
       "municipio": "Belo Horizonte",
-      "uf": "MG",
-      "sexo": "Masculino",
-      "imagem": "lucas_silva.png"
+      "uf": "MG"
     }
-  ],
-
+  ]
+,
 "reportes": [
     {
       "id": 1,
@@ -161,8 +161,8 @@
       "severidade": "Baixa",
       "idUsuario": 3,
       "dataHora": "2025-04-19T19:31:00Z" ,
-      "geolocalizaçãoRuaAlagada": "-19.926874, -43.993307, -19.927350, -43.992709",
-      "geolocalizaçãoRotaAlternativa": "-19.927565, -43.994061, -19.928137, -43.993347"
+      "geolocalizaçãoRuaAlagada": [[-19.926874, -43.993307], [-19.927350, -43.992709]],
+      "geolocalizaçãoRotaAlternativa": [[-19.927565, -43.994061], [-19.928137, -43.993347]]
    },     
     {
       "id": 4,

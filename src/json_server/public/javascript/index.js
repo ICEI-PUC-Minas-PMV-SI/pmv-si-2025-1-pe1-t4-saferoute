@@ -300,9 +300,6 @@ function verificar_login_tela_reporar (cookie_login){
       confirmButtonText: 'OK'
     });}           
   }
-
-<<<<<<< HEAD
-=======
   
   function success(pos){
   
@@ -338,7 +335,6 @@ function criando_cookie (){
    
 }
 
->>>>>>> 74a034e5fa57455e797ba81c09164ef13846add5
 window.onload = function() {
     lat = -19.9191
     lon = -43.9386
@@ -358,8 +354,7 @@ window.onload = function() {
         imagem_usuario.style.display='block';
         label_login.style.display='block';
     }
-<<<<<<< HEAD
-=======
+
     buscarPrevisaoTempo();
     if (marcadorPesquisado != true){
       document.cookie = "ruaPesquisada=true; path=/; max-age=0";
@@ -371,5 +366,4 @@ window.onload = function() {
     enableHighAccuracy: true
     
 });}
->>>>>>> 74a034e5fa57455e797ba81c09164ef13846add5
 }
