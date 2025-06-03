@@ -30,28 +30,8 @@ function salvar(){
       Swal.fire({
         icon: 'error',
         text: 'O e-mail informado não coincide com a confirmação do e-mail!',
-        confirmButtonText: 'OK'
-    });
-    return;   
-    }
-    
-    if (document.querySelector('#senha').value !== document.querySelector('#confirmar_senha').value) {
-      Swal.fire({
-        icon: 'error',
-        text: 'A senha informada não coincide com a confirmação da senha!',
-        confirmButtonText: 'OK'
-    });
-    return;   
-    }
-
-    fetch(`http://localhost:3000/usuarios?email=${encodeURIComponent(document.querySelector('#email').value)}`)
-    .then(response => response.json())
-    .then(data => {
-      if (data.length > 0) {
-        Swal.fire({
-        icon: 'error',
-        text: 'E-mail já cadastrado!',
-        confirmButtonText: 'OK'
+        confirmButtonText:
+        :}: 'OK'
         });
         return;
       } else { campos = ["email", "senha", "nome", "sobrenome","cep", "endereco", "numero", "complemento", 
