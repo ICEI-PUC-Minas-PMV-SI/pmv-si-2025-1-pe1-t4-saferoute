@@ -213,7 +213,271 @@ window.onload = function() {
         label_login.style.display='block';
         console.log(document.cookie);
     }
+    
+    
+    adicionarEventListeners();
 }
 
 input_rua.addEventListener('change', function (){if ((input_rua.value).length >0) {
     ver_coodenada();}})
+
+
+
+
+const JSON_SERVER_URL = 'http://localhost:3000';
+
+async function obterProximoId() {
+    try {
+        const response = await fetch(`${JSON_SERVER_URL}/reportes`);
+        const reportes = await response.json();
+        
+        if (reportes.length === 0) {
+            return 1;
+        }
+        
+        const maiorId = Math.max(...reportes.map(reporte => reporte.id));
+        return maiorId + 1;
+    } catch (error) {
+        console.error('Erro ao obter próximo ID:', error);
+        return 1;
+    }
+}
+
+
+function obterIdUsuarioLogado() {
+    
+    
+    var cookies = document.cookie.split(';');
+    var nomeUsuario = '';
+    
+    for (var i = 0; i < cookies.length; i++) {
+        var c = cookies[i].trim();
+        if (c.startsWith('nome=')) {
+            nomeUsuario = decodeURIComponent(c.substring('nome'.length + 1));
+            break;
+        }
+    }
+    
+    
+    if (nomeUsuario) {
+        return nomeUsuario.length + Math.floor(Math.random() * 100); // ID temporário
+    }
+    return 1;
+}
+
+
+function obterDataHoraAtual() {
+    const agora = new Date();
+    return agora.toISOString();
+}
+
+
+function validarFormulario() {
+    const ruaAlagada = document.getElementById('input_rua_alagada').value.trim();
+    const descricao = document.getElementById('txtarea_descricao').value.trim();
+    const rotaAlternativa = document.getElementById('input_rota_alternativa').value.trim();
+    const severidadeRadios = document.querySelectorAll('input[name="severidade"]');
+    
+    let severidadeSelecionada = null;
+    severidadeRadios.forEach(radio => {
+        if (radio.checked) {
+            severidadeSelecionada = radio.value;
+        }
+    });
+
+    
+    if (!ruaAlagada) {
+        Swal.fire({
+            icon: 'error',
+            title: 'Campo obrigatório!',
+            text: 'Por favor, informe a rua/CEP alagada.',
+            confirmButtonText: 'OK'
+        });
+        return false;
+    }
+
+    if (!descricao) {
+        Swal.fire({
+            icon: 'error',
+            title: 'Campo obrigatório!',
+            text: 'Por favor, descreva a situação do alagamento.',
+            confirmButtonText: 'OK'
+        });
+        return false;
+    }
+
+    if (!rotaAlternativa) {
+        Swal.fire({
+            icon: 'error',
+            title: 'Campo obrigatório!',
+            text: 'Por favor, informe uma rota alternativa.',
+            confirmButtonText: 'OK'
+        });
+        return false;
+    }
+
+    if (!severidadeSelecionada) {
+        Swal.fire({
+            icon: 'error',
+            title: 'Campo obrigatório!',
+            text: 'Por favor, selecione o nível de severidade.',
+            confirmButtonText: 'OK'
+        });
+        return false;
+    }
+
+    return {
+        rua: ruaAlagada,
+        descricao: descricao,
+        rotaAlternativa: rotaAlternativa,
+        severidade: severidadeSelecionada
+    };
+}
+
+
+async function enviarReporte(dadosReporte) {
+    try {
+        
+        Swal.fire({
+            title: 'Enviando reporte...',
+            text: 'Por favor, aguarde.',
+            allowOutsideClick: false,
+            showConfirmButton: false,
+            willOpen: () => {
+                Swal.showLoading();
+            }
+        });
+
+        const proximoId = await obterProximoId();
+        const idUsuario = obterIdUsuarioLogado();
+        const dataHora = obterDataHoraAtual();
+
+        const novoReporte = {
+            id: proximoId,
+            rua: dadosReporte.rua,
+            descricao: dadosReporte.descricao,
+            rotaAlternativa: dadosReporte.rotaAlternativa,
+            severidade: dadosReporte.severidade,
+            idUsuario: idUsuario,
+            dataHora: dataHora
+        };
+
+        const response = await fetch(`${JSON_SERVER_URL}/reportes`, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(novoReporte)
+        });
+
+        if (response.ok) {
+            const reporteCriado = await response.json();
+            
+            Swal.fire({
+                icon: 'success',
+                title: 'Reporte enviado com sucesso!',
+                text: `Seu reporte foi registrado com o ID #${reporteCriado.id}`,
+                confirmButtonText: 'OK'
+            }).then(() => {
+                limparFormulario();
+            });
+        } else {
+            throw new Error('Erro ao enviar reporte');
+        }
+
+    } catch (error) {
+        console.error('Erro ao enviar reporte:', error);
+        
+        Swal.fire({
+            icon: 'error',
+            title: 'Erro ao enviar reporte!',
+            text: 'Ocorreu um erro ao tentar enviar seu reporte. Verifique se o JSON Server está rodando e tente novamente.',
+            confirmButtonText: 'OK'
+        });
+    }
+}
+
+
+function limparFormulario() {
+    document.getElementById('input_rua_alagada').value = '';
+    document.getElementById('txtarea_descricao').value = '';
+    document.getElementById('input_rota_alternativa').value = '';
+    
+    
+    const severidadeRadios = document.querySelectorAll('input[name="severidade"]');
+    severidadeRadios.forEach(radio => {
+        radio.checked = false;
+    });
+    
+    
+    if (window.map) {
+        window.map.remove();
+        lat = -19.9191;
+        lon = -43.9386;   
+        marcador = false;
+        visualizar_mapa(lat, lon, false);
+    }
+}
+
+
+function cancelarReporte() {
+    Swal.fire({
+        title: 'Cancelar reporte?',
+        text: 'Todos os dados preenchidos serão perdidos.',
+        icon: 'warning',
+        showCancelButton: true,
+        confirmButtonColor: '#d33',
+        cancelButtonColor: '#6c757d',
+        confirmButtonText: 'Sim, cancelar',
+        cancelButtonText: 'Continuar editando'
+    }).then((result) => {
+        if (result.isConfirmed) {
+            limparFormulario();
+            Swal.fire({
+                icon: 'info',
+                title: 'Formulário limpo!',
+                text: 'Você pode começar um novo reporte.',
+                timer: 2000,
+                showConfirmButton: false
+            });
+        }
+    });
+}
+
+
+function adicionarEventListeners() {
+    
+    const btnEnviar = document.getElementById('btn_enviar');
+    if (btnEnviar) {
+        btnEnviar.addEventListener('click', function(e) {
+            e.preventDefault();
+            
+            
+            if (!cookie_login) {
+                Swal.fire({
+                    icon: 'warning',
+                    title: 'Login necessário!',
+                    text: 'Você precisa estar logado para fazer um reporte.',
+                    confirmButtonText: 'OK'
+                }).then(() => {
+                    window.location.href = 'login.html';
+                });
+                return;
+            }
+            
+            const dadosValidados = validarFormulario();
+            if (dadosValidados) {
+                enviarReporte(dadosValidados);
+            }
+        });
+    }
+
+    
+    const btnCancelar = document.getElementById('btn_cancelar');
+    if (btnCancelar) {
+        btnCancelar.addEventListener('click', function(e) {
+            e.preventDefault();
+            cancelarReporte();
+        });
+    }
+}

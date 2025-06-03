@@ -31,7 +31,7 @@
       "bairro": "Padre Eustáquio",
       "municipio": "Belo Horizonte",
       "uf": "MG"
-       },
+    },
     {
       "id": 3,
       "email": "debora.oliveira@hotmail.com",
@@ -94,7 +94,7 @@
       "complemento": "Casa 65",
       "bairro": "Planalto",
       "municipio": "Belo Horizonte",
-      "uf": "MG"     
+      "uf": "MG"
     },
     {
       "id": 7,
@@ -110,7 +110,7 @@
       "complemento": "Casa 65",
       "bairro": "Planalto",
       "municipio": "Belo Horizonte",
-      "uf": "MG"      
+      "uf": "MG"
     },
     {
       "id": 8,
@@ -144,9 +144,8 @@
       "municipio": "Belo Horizonte",
       "uf": "MG"
     }
-  ]
-,
-"reportes": [
+  ],
+  "reportes": [
     {
       "id": 1,
       "rua": "Rua Padre Pedro Evangelista",
@@ -155,8 +154,26 @@
       "severidade": "Média",
       "idUsuario": 1,
       "dataHora": "2025-04-19T16:30:00Z",
-      "geolocalizaçãoRuaAlagada": [[-19.924885, -43.989210], [-19.923775, -43.990650]],
-      "geolocalizaçãoRotaAlternativa": [[-19.924638, -43.987929], [-19.923005, -43.989935]]
+      "geolocalizaçãoRuaAlagada": [
+        [
+          -19.924885,
+          -43.98921
+        ],
+        [
+          -19.923775,
+          -43.99065
+        ]
+      ],
+      "geolocalizaçãoRotaAlternativa": [
+        [
+          -19.924638,
+          -43.987929
+        ],
+        [
+          -19.923005,
+          -43.989935
+        ]
+      ]
     },
     {
       "id": 2,
@@ -166,8 +183,26 @@
       "severidade": "Alta",
       "idUsuario": 2,
       "dataHora": "2025-04-12T21:37:00Z",
-      "geolocalizaçãoRuaAlagada": [[-19.920715, -43.987876], [-19.921196, -43.987284]],
-      "geolocalizaçãoRotaAlternativa": [[-19.921498, -43.988590], [-19.922018, -43.987926]]
+      "geolocalizaçãoRuaAlagada": [
+        [
+          -19.920715,
+          -43.987876
+        ],
+        [
+          -19.921196,
+          -43.987284
+        ]
+      ],
+      "geolocalizaçãoRotaAlternativa": [
+        [
+          -19.921498,
+          -43.98859
+        ],
+        [
+          -19.922018,
+          -43.987926
+        ]
+      ]
     },
     {
       "id": 3,
@@ -176,10 +211,28 @@
       "rotaAlternativa": "Dom Modesto Augusto",
       "severidade": "Baixa",
       "idUsuario": 3,
-      "dataHora": "2025-04-19T19:31:00Z" ,
-      "geolocalizaçãoRuaAlagada": [[-19.926874, -43.993307], [-19.927350, -43.992709]],
-      "geolocalizaçãoRotaAlternativa": [[-19.927565, -43.994061], [-19.928137, -43.993347]]
-   },     
+      "dataHora": "2025-04-19T19:31:00Z",
+      "geolocalizaçãoRuaAlagada": [
+        [
+          -19.926874,
+          -43.993307
+        ],
+        [
+          -19.92735,
+          -43.992709
+        ]
+      ],
+      "geolocalizaçãoRotaAlternativa": [
+        [
+          -19.927565,
+          -43.994061
+        ],
+        [
+          -19.928137,
+          -43.993347
+        ]
+      ]
+    },
     {
       "id": 4,
       "rua": "Rua Henrique Gorceix - Padre Eustáquio",
@@ -188,8 +241,26 @@
       "severidade": "Alta",
       "idUsuario": 4,
       "dataHora": "2025-04-27T21:10:00Z",
-      "geolocalizaçãoRuaAlagada": [[-19.913684, -43.979678], [-19.914833, -43.979678]],
-      "geolocalizaçãoRotaAlternativa": [[-19.913809, -43.977557], [-19.914897, -43.977607]]
+      "geolocalizaçãoRuaAlagada": [
+        [
+          -19.913684,
+          -43.979678
+        ],
+        [
+          -19.914833,
+          -43.979678
+        ]
+      ],
+      "geolocalizaçãoRotaAlternativa": [
+        [
+          -19.913809,
+          -43.977557
+        ],
+        [
+          -19.914897,
+          -43.977607
+        ]
+      ]
     },
     {
       "id": 5,
@@ -199,8 +270,26 @@
       "severidade": "Alta",
       "idUsuario": 1,
       "dataHora": "2025-04-02T07:30:00Z",
-      "geolocalizaçãoRuaAlagada": [[-19.903849, -43.968414], [-19.905012, -43.968403]],
-      "geolocalizaçãoRotaAlternativa": [[-19.903718, -43.969077], [-19.904980, -43.969061]]
+      "geolocalizaçãoRuaAlagada": [
+        [
+          -19.903849,
+          -43.968414
+        ],
+        [
+          -19.905012,
+          -43.968403
+        ]
+      ],
+      "geolocalizaçãoRotaAlternativa": [
+        [
+          -19.903718,
+          -43.969077
+        ],
+        [
+          -19.90498,
+          -43.969061
+        ]
+      ]
     },
     {
       "id": 6,
@@ -210,8 +299,26 @@
       "severidade": "Média",
       "idUsuario": 2,
       "dataHora": "2025-04-05T15:45:00Z",
-      "geolocalizaçãoRuaAlagada": [[-19.905231, -43.971801], [-19.905998, -43.971596]],
-      "geolocalizaçãoRotaAlternativa": [[-19.905271, -43.970405], [-19.906287, -43.970344]]
+      "geolocalizaçãoRuaAlagada": [
+        [
+          -19.905231,
+          -43.971801
+        ],
+        [
+          -19.905998,
+          -43.971596
+        ]
+      ],
+      "geolocalizaçãoRotaAlternativa": [
+        [
+          -19.905271,
+          -43.970405
+        ],
+        [
+          -19.906287,
+          -43.970344
+        ]
+      ]
     },
     {
       "id": 7,
@@ -221,8 +328,26 @@
       "severidade": "Média",
       "idUsuario": 3,
       "dataHora": "2025-04-09T22:10:00Z",
-      "geolocalizaçãoRuaAlagada": [[-19.910704, -43.964235], [-19.91044, -43.96316]],
-      "geolocalizaçãoRotaAlternativa": [[-19.91132, -43.96416], [-19.91107, -43.96303]]
+      "geolocalizaçãoRuaAlagada": [
+        [
+          -19.910704,
+          -43.964235
+        ],
+        [
+          -19.91044,
+          -43.96316
+        ]
+      ],
+      "geolocalizaçãoRotaAlternativa": [
+        [
+          -19.91132,
+          -43.96416
+        ],
+        [
+          -19.91107,
+          -43.96303
+        ]
+      ]
     },
     {
       "id": 8,
@@ -232,8 +357,26 @@
       "severidade": "Média",
       "idUsuario": 4,
       "dataHora": "2025-04-12T13:05:00Z",
-      "geolocalizaçãoRuaAlagada": [[-19.85597, -43.95546], [-19.85564, -43.95482]],
-      "geolocalizaçãoRotaAlternativa": [[-19.85498, -43.95560], [-19.85511, -43.95401]]
+      "geolocalizaçãoRuaAlagada": [
+        [
+          -19.85597,
+          -43.95546
+        ],
+        [
+          -19.85564,
+          -43.95482
+        ]
+      ],
+      "geolocalizaçãoRotaAlternativa": [
+        [
+          -19.85498,
+          -43.9556
+        ],
+        [
+          -19.85511,
+          -43.95401
+        ]
+      ]
     },
     {
       "id": 9,
@@ -243,8 +386,26 @@
       "severidade": "Alta",
       "idUsuario": 5,
       "dataHora": "2025-04-17T03:55:00Z",
-      "geolocalizaçãoRuaAlagada": [[-19.86076, -43.97047], [-19.86130, -43.97024]],
-      "geolocalizaçãoRotaAlternativa": [[-19.85961, -43.96706], [-19.86016, -43.96685]]
+      "geolocalizaçãoRuaAlagada": [
+        [
+          -19.86076,
+          -43.97047
+        ],
+        [
+          -19.8613,
+          -43.97024
+        ]
+      ],
+      "geolocalizaçãoRotaAlternativa": [
+        [
+          -19.85961,
+          -43.96706
+        ],
+        [
+          -19.86016,
+          -43.96685
+        ]
+      ]
     },
     {
       "id": 10,
@@ -254,8 +415,26 @@
       "severidade": "Media",
       "idUsuario": 6,
       "dataHora": "2025-04-20T18:20:00Z",
-      "geolocalizaçãoRuaAlagada": [[-19.86137, -43.97022], [-19.86195, -43.97002]],
-      "geolocalizaçãoRotaAlternativa": [[-19.86018, -43.96685], [-19.86082, -43.96662]]
+      "geolocalizaçãoRuaAlagada": [
+        [
+          -19.86137,
+          -43.97022
+        ],
+        [
+          -19.86195,
+          -43.97002
+        ]
+      ],
+      "geolocalizaçãoRotaAlternativa": [
+        [
+          -19.86018,
+          -43.96685
+        ],
+        [
+          -19.86082,
+          -43.96662
+        ]
+      ]
     },
     {
       "id": 11,
@@ -265,8 +444,26 @@
       "severidade": "Alta",
       "idUsuario": 7,
       "dataHora": "2025-04-23T11:15:00Z",
-      "geolocalizaçãoRuaAlagada": [[-19.88149, -43.92479], [-19.88273, -43.92563]],
-      "geolocalizaçãoRotaAlternativa": [[-19.88116, -43.92532], [-19.88238, -43.92617]]
+      "geolocalizaçãoRuaAlagada": [
+        [
+          -19.88149,
+          -43.92479
+        ],
+        [
+          -19.88273,
+          -43.92563
+        ]
+      ],
+      "geolocalizaçãoRotaAlternativa": [
+        [
+          -19.88116,
+          -43.92532
+        ],
+        [
+          -19.88238,
+          -43.92617
+        ]
+      ]
     },
     {
       "id": 12,
@@ -276,8 +473,35 @@
       "severidade": "Alta",
       "idUsuario": 8,
       "dataHora": "2025-04-30T00:40:00Z",
-      "geolocalizaçãoRuaAlagada": [[-19.86737, -43.92541], [-19.86882, -43.92498]],
-      "geolocalizaçãoRotaAlternativa": [[-19.86703, -43.92410], [-19.86852, -43.92369]]
+      "geolocalizaçãoRuaAlagada": [
+        [
+          -19.86737,
+          -43.92541
+        ],
+        [
+          -19.86882,
+          -43.92498
+        ]
+      ],
+      "geolocalizaçãoRotaAlternativa": [
+        [
+          -19.86703,
+          -43.9241
+        ],
+        [
+          -19.86852,
+          -43.92369
+        ]
+      ]
+    },
+    {
+      "id": 13,
+      "rua": "rua dos Carijós",
+      "descricao": "Rua pouco alagada",
+      "rotaAlternativa": "Rua dos Guaranis",
+      "severidade": "Baixa",
+      "idUsuario": 81,
+      "dataHora": "2025-06-03T18:49:46.308Z"
     }
   ]
 }
