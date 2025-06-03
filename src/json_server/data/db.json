@@ -127,6 +127,22 @@
       "bairro": "Planalto",
       "municipio": "Belo Horizonte",
       "uf": "MG"
+    },
+    {
+      "id": 9,
+      "email": "veronicacampos@gmail.com",
+      "senha": "bola123",
+      "nome": "veronica",
+      "sobrenome": "campos",
+      "imagem": "veronica_campos.png",
+      "sexo": "Feminino",
+      "cep": "30692-220",
+      "endereco": "Rua Genesio lopes de carvalho",
+      "numero": "26",
+      "complemento": "Casa c",
+      "bairro": "lindeia",
+      "municipio": "Belo Horizonte",
+      "uf": "MG"
     }
   ]
 ,
