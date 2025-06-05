@@ -120,7 +120,7 @@ function ver_coodenada(){
   confirmButtonText: 'OK'
 });}
 		  })})
-        .catch(error => {
+        .catch(() => {
       Swal.fire({
       icon: 'error',
       text: 'Não foi possível localizar o CEP pesquisado!',

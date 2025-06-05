@@ -10,49 +10,49 @@
 </head>
 <body>
 	<header>SAFE ROUTE
-		<img id="botao_opcoes" src="imagens/opcoes.png" onclick="exibir_opcoes()">
-		<a href="login.html">
-			<img src="imagens/usuario.png" id="imagem_usuario">
+		<img id="botao_opcoes" src="imagens/opcoes.png" alt="Opções" title="Abrir opções" onclick="exibir_opcoes()">
+		<a href="login.html" title="Entrar">
+			<img src="imagens/usuario.png" id="imagem_usuario" alt="Usuário" title="Usuário">
 			<p id="label_login">Entrar</p>
 		</a>		
 		<div id="opcoes_login" onclick="drop_opcoes_menu()">
-			<img src="imagens/ulisses_antonio.png" id="img_usuario_logado">
+			<img src="imagens/ulisses_antonio.png" id="img_usuario_logado" alt="Usuário logado" title="Usuário logado">
 			<p id="lbl_usuario_logado">Ulisses Antônio</p>
 		</div>
-		<div id="div_drop_down"">
-			<a href="edicao_cadastro.html">Editar perfil</a>
+		<div id="div_drop_down">
+			<a href="edicao_cadastro.html" title="Editar perfil">Editar perfil</a>
 		</div>
 	</header>
-	<aside id=menu_opcoes>
-		<a href="index.html">
+	<aside id="menu_opcoes">
+		<a href="index.html" title="Página inicial">
 			<div class="botoes_menu" id="botao_pg_inicial">
-			<img id="icone_pagina_inicial" src="imagens/pagina_inicial.png">
+			<img id="icone_pagina_inicial" src="imagens/pagina_inicial.png" alt="Página inicial" title="Página inicial">
 			</div>
 		</a>
-		<a href="reportar_alagamento.html">
+		<a href="reportar_alagamento.html" title="Reportar alagamento">
 			<div class="botoes_menu" id="botao_reportar">
-				<img src="imagens/atencao.png" id="imagem_atencao">
+				<img src="imagens/atencao.png" id="imagem_atencao" alt="Atenção" title="Reportar">
 				<p id="label_reportar">Reportar</p>
 			</div>
 		</a>
-		<a href="historico_reportes.html">
+		<a href="historico_reportes.html" title="Histórico de reportes">
 			<div class="botoes_menu" id="botao_historico">
-				<img src="imagens/historico.png" id="imagem_historico">
+				<img src="imagens/historico.png" id="imagem_historico" alt="Histórico" title="Histórico">
 				<p id="label_historico">Histórico</p>
 			</div>
 		</a>
-		<a href="sobre.html">
+		<a href="sobre.html" title="Sobre">
 			<div class="botoes_menu" id="botao_info">
-				<img src="imagens/info.png" id="imagem_info">
+				<img src="imagens/info.png" id="imagem_info" alt="Informações" title="Sobre">
 				<p id="label_info">Sobre</p>
 			</div>
 		</a>
 		<div class="botoes_menu" id="botao_sair" onclick="sair()">
-			<img src="imagens/sair.png" id="imagem_sair">
+			<img src="imagens/sair.png" id="imagem_sair" alt="Sair" title="Sair">
 			<p id="label_sair">Sair</p>
 		</div>
 	</aside>
-    	<section id="section_formulario">
+		<section id="section_formulario">
 		<form id="form-reporte">
 			<fieldset>
 				<ul>
@@ -64,36 +64,37 @@
 					<li>
 						<label for="input_descricao" id="label_descricao">Descrição:</label>
 						<br>
-						<textarea id="txtarea_descricao"></textarea>
+						<textarea id="txtarea_descricao" placeholder="Descreva a situação" title="Descrição do alagamento"></textarea>
 					</li>
 					<li>
 						<label for="input_rota_alternativa" id="label_rota_alternativa">Rota alternativa:</label>
 						<br>
 						<input type="text" id="input_rota_alternativa">
 					</li>
-					Severidade:
 					<li>
-					<br>			
-					<div class="opcoes_severidade">
-						<div class="div_radio">
-							<input type="radio" id="radio_alta" name="severidade" value="Alta">
-							<label class="opcoes_radio" for="radio_alta" id="lable_radio_alta">Alta</label>
+						<label id="label_severidade">Severidade:</label>
+						<br>			
+						<div class="opcoes_severidade">
+							<div class="div_radio">
+								<input type="radio" id="radio_alta" name="severidade" value="Alta">
+								<label class="opcoes_radio" for="radio_alta" id="lable_radio_alta">Alta</label>
+							</div>
+							<div class="div_radio" id="div_rd_media">
+								<input type="radio" id="radio_media" name="severidade" value="Média">
+								<label class="opcoes_radio" for="radio_media" id="label_radio_media">Média</label>
+							</div>
+							<div class="div_radio" id="div_rd_baixa">
+								<input type="radio" id="radio_baixa" name="severidade" value="Baixa">
+								<label class="opcoes_radio" for="radio_baixa" id="label_radio_baixa">Baixa</label>						
+							</div>
 						</div>
-						<div class="div_radio" id="div_rd_media">
-							<input type="radio" id="radio_media" name="severidade" value="Média">
-							<label class="opcoes_radio" for="radio_media" id="label_radio_media">Média</label>
-						</div>
-						<div class="div_radio" id="div_rd_baixa">
-							<input type="radio" id="radio_baixa" name="severidade" value="Baixa">
-							<label class="opcoes_radio" for="radio_baixa" id="label_radio_baixa">Baixa</label>						
-						</div>
-					</div>
+					</li>
 				</ul>
 			</fieldset>
-			<button id="btn_enviar">Enviar</button>
-			<button id="btn_cancelar">Cancelar</button>
+			<button id="btn_enviar" type="submit">Enviar</button>
+			<button id="btn_cancelar" type="button">Cancelar</button>
 		</form>
-    </section>
+	</section>
 	<section id="section_mapa">
 		<div id="mapa"></div>
 	</section>
