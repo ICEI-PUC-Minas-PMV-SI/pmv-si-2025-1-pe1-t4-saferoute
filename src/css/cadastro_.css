@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f4f6fa;
+    color: #222;
+    min-height: 100vh;
+}
+
+#container {
+    max-width: 480px;
+    margin: 40px auto;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+    padding: 32px 28px 24px 28px;
+}
+
+header {
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: #0D0576;
+    text-align: center;
+    margin-bottom: 18px;
+    letter-spacing: 2px;
+}
+
+#span_cadastro {
+    display: block;
+    font-size: 1.3rem;
+    color: #0D0576;
+    font-weight: 500;
+    margin-bottom: 18px;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.campos_formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+label {
+    font-size: 1rem;
+    color: #0D0576;
+    margin-bottom: 2px;
+}
+
+input[type="text"],
+input[type="password"] {
+    padding: 9px 12px;
+    border: 1px solid #b6c6d6;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: border 0.2s;
+    background: #f9fbfd;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    border-color: #0D0576;
+    outline: none;
+    background: #fff;
+}
+
+#div_sexo {
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+#span_sexo {
+    font-size: 1rem;
+    color: #0D0576;
+    margin-right: 10px;
+}
+
+#selecao_sexo {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+#selecao_sexo label {
+    font-size: 1rem;
+    color: #444;
+    margin-left: 4px;
+}
+
+input[type="radio"] {
+    accent-color: #0D0576;
+}
+
+#div_imagem_usuario {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin: 12px 0 8px 0;
+}
+
+#img_usuario_cadastro {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #b6c6d6;
+    background: #f4f6fa;
+}
+
+#btn_alterar_imagem {
+    padding: 7px 16px;
+    background: #e6eef7;
+    color: #0D0576;
+    border: 1px solid #b6c6d6;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.98rem;
+    transition: background 0.2s, color 0.2s;
+}
+
+#btn_alterar_imagem:hover {
+    background: #0D0576;
+    color: #fff;
+}
+
+.botoes_edicao {
+    margin-top: 10px;
+    padding: 10px 0;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.08rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+}
+
+#btn_salvar {
+    background: #0D0576;
+    color: #fff;
+    margin-bottom: 8px;
+}
+
+#btn_salvar:hover {
+    background: #1b3e5a;
+}
+
+#btn_cancelar {
+    background: #e6eef7;
+    color: #0D0576;
+}
+
+#btn_cancelar:hover {
+    background: #b6c6d6;
+    color: #1b3e5a;
+}
+
+
+@media (max-width: 600px) {
+    #container {
+        padding: 18px 6px 14px 6px;
+        max-width: 98vw;
+    }
+    #img_usuario_cadastro {
+        width: 44px;
+        height: 44px;
+    }
+}

@@ -63,18 +63,19 @@
       </div>
       
       <div class="form-group">
-        <input type="file" name="imagem" accept="image/*">
+        <label for="imagem">Imagem do Alagamento:</label>
+        <input type="file" id="imagem" name="imagem" accept="image/*" title="Selecione uma imagem do alagamento">
       </div>
       
       <div class="form-group urgency">
-        <div style="text-align: center;">
-          <label style="display: inline-block; margin-right: 10px;">
+        <div class="urgency-center">
+          <label class="urgency-label urgency-label-margin">
             <input type="radio" name="urgency" value="Alta"> Alta
           </label>
-          <label style="display: inline-block; margin-right: 10px;">
+          <label class="urgency-label urgency-label-margin">
             <input type="radio" name="urgency" value="Média"> Média
           </label>
-          <label style="display: inline-block;">
+          <label class="urgency-label">
             <input type="radio" name="urgency" value="Baixa"> Baixa
           </label>
         </div>

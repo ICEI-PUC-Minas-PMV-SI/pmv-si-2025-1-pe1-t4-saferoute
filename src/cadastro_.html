@@ -2,6 +2,7 @@
 <html lang="pt-BR">
 <head>
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="icon" href="imagens/logo_cidade.ico">
 	<link rel="stylesheet" href="css/cadastro_.css">
 	<title>Safe Route</title>
@@ -47,14 +48,14 @@
 		<div id="div_cep" class="campos_formulario">
 			<label for="cep" id="label_cep">CEP:</label>
 			<input type="text" id="cep" placeholder="Digite seu CEP" required>
-		</div>
 		<div id="div_endereco" class="campos_formulario">
 			<label for="endereco" id="label_endereco">Endereço:</label>
 			<input type="text" id="endereco" placeholder="Digite seu endereço" required>
 		</div>
 		<div id="div_numero" class="campos_formulario">
-			<label for="numero" id="label_endereco">Número:</label>
+			<label for="numero" id="label_numero">Número:</label>
 			<input type="text" id="numero" placeholder="Digite o nº do seu endereço" required>
+		</div>
 		</div>
 		<div id="div_complemento" class="campos_formulario">
 			<label for="complemento" id="label_complemento">Complemento:</label>
@@ -72,13 +73,13 @@
 			<label for="uf" id="label_uf">UF:</label>
 			<input type="text" id="uf" placeholder="Digite o estado onde mora" required>
 		</div>
-
 		<div id="div_imagem_usuario">
-			<img src="imagens/usuario.png" id="img_usuario_cadastro">
-			<button id="btn_alterar_imagem">Alterar imagem</button>
+			<img src="imagens/usuario.png" id="img_usuario_cadastro" alt="Imagem do usuário">
+			<button id="btn_alterar_imagem" type="button">Alterar imagem</button>
 		</div>
-		<button id="btn_salvar" class="botoes_edicao">Salvar</button>
-		<button id="btn_cancelar" class="botoes_edicao">Cancelar</button>
+		<button id="btn_salvar" class="botoes_edicao" type="submit">Salvar</button>
+		<button id="btn_cancelar" class="botoes_edicao" type="button">Cancelar</button>
+	</form>
 	</form>
 	</div>
 	</section>

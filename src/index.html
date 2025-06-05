@@ -10,45 +10,46 @@
 </head>
 <body>
 	<header>SAFE ROUTE
-		<img id="botao_opcoes" src="imagens/opcoes.png" onclick="exibir_opcoes()">
-		<a href="login.html">
-			<img src="imagens/usuario.png" id="imagem_usuario">
+		<img id="botao_opcoes" src="imagens/opcoes.png" onclick="exibir_opcoes()" alt="Opções" title="Abrir opções">
+		<a href="login.html" title="Entrar">
+			<img src="imagens/usuario.png" id="imagem_usuario" alt="Usuário" title="Usuário">
 			<p id="label_login">Entrar</p>
 		</a>		
 		<div id="opcoes_login" onclick="drop_opcoes_menu()">
-			<img src="imagens/ulisses_antonio.png" id="img_usuario_logado">
+			<img src="imagens/ulisses_antonio.png" id="img_usuario_logado" alt="Usuário logado" title="Usuário logado">
 			<p id="lbl_usuario_logado">Ulisses Antônio</p>
 		</div>
-		<div id="div_drop_down"">
-			<a href="edicao_cadastro.html">Editar perfil</a>
+		<div id="div_drop_down">
+			<a href="edicao_cadastro.html" title="Editar perfil">Editar perfil</a>
 		</div>
 	</header>
-	<aside id=menu_opcoes>
-		<a href="index.html">
+	<aside id="menu_opcoes">
+		<a href="index.html" title="Página inicial">
 			<div class="botoes_menu" id="botao_pg_inicial">
-			<img id="icone_pagina_inicial" src="imagens/pagina_inicial.png">
+			<img id="icone_pagina_inicial" src="imagens/pagina_inicial.png" alt="Página inicial" title="Página inicial">
+			<span class="sr-only">Página inicial</span>
 			</div>
 		</a>
-		<a href="reportar_conforme_template.html">
+		<a href="reportar_conforme_template.html" title="Reportar">
 			<div class="botoes_menu" id="botao_reportar">
-				<img src="imagens/atencao.png" id="imagem_atencao">
+				<img src="imagens/atencao.png" id="imagem_atencao" alt="Reportar" title="Reportar">
 				<p id="label_reportar">Reportar</p>
 			</div>
 		</a>
-		<a href="historico_reportes.html">
+		<a href="historico_reportes.html" title="Histórico">
 			<div class="botoes_menu" id="botao_historico">
-				<img src="imagens/historico.png" id="imagem_historico">
+				<img src="imagens/historico.png" id="imagem_historico" alt="Histórico" title="Histórico">
 				<p id="label_historico">Histórico</p>
 			</div>
 		</a>
-		<a href="sobre.html">
+		<a href="sobre.html" title="Sobre">
 			<div class="botoes_menu" id="botao_info">
-				<img src="imagens/info.png" id="imagem_info">
+				<img src="imagens/info.png" id="imagem_info" alt="Sobre" title="Sobre">
 				<p id="label_info">Sobre</p>
 			</div>
 		</a>
 		<div class="botoes_menu" id="botao_sair" onclick="sair()">
-			<img src="imagens/sair.png" id="imagem_sair">
+			<img src="imagens/sair.png" id="imagem_sair" alt="Sair" title="Sair">
 			<p id="label_sair">Sair</p>
 		</div>
 	</aside>
@@ -63,7 +64,10 @@
 				<input type="text" id="input_cep" placeholder="Digite o CEP">
 			</div>
 		</form>
-		<button id="btn_pesquisar" onclick="ver_coodenada()"><img src="imagens/lupa.png" id="img_lupa"></button>
+		<button id="btn_pesquisar" type="submit" onclick="ver_coodenada()" title="Pesquisar">
+			<img src="imagens/lupa.png" id="img_lupa" alt="Pesquisar" title="Pesquisar">
+			<span class="sr-only">Pesquisar</span>
+		</button>
 	</section>
 	<section id="section_mapa">
 		<div id="mapa"></div>

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,51 +9,53 @@
 	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
 	<title>Safe Route</title>
 </head>
+
 <body>
 	<header>Histórico de reportes
-		<img id="botao_opcoes" src="imagens/opcoes.png" onclick="exibir_opcoes()">
-		<a href="login.html">
-			<img src="imagens/usuario.png" id="imagem_usuario">
+		<img id="botao_opcoes" src="imagens/opcoes.png" onclick="exibir_opcoes()" alt="Opções" title="Abrir opções">
+		<a href="login.html" title="Ir para login">
+			<img src="imagens/usuario.png" id="imagem_usuario" alt="Usuário" title="Usuário">
 			<p id="label_login">Entrar</p>
-		</a>		
+		</a>
 		<div id="opcoes_login" onclick="drop_opcoes_menu()">
-			<img src="imagens/ulisses_antonio.png" id="img_usuario_logado">
+			<img src="imagens/ulisses_antonio.png" id="img_usuario_logado" alt="Usuário logado" title="Usuário logado">
 			<p id="lbl_usuario_logado">Ulisses Antônio</p>
 		</div>
-		<div id="div_drop_down"">
-			<a href="edicao_cadastro.html">Editar perfil</a>
+		<div id="div_drop_down">
+			<a href="edicao_cadastro.html" title="Editar perfil">Editar perfil</a>
 		</div>
 	</header>
-	<aside id=menu_opcoes>
-		<a href="index.html">
+	<aside id="menu_opcoes">
+		<a href="index.html" title="Página inicial">
 			<div class="botoes_menu" id="botao_pg_inicial">
-			<img id="icone_pagina_inicial" src="imagens/pagina_inicial.png">
+				<img id="icone_pagina_inicial" src="imagens/pagina_inicial.png" alt="Página inicial"
+					title="Página inicial">
 			</div>
 		</a>
-		<a href="reportar_conforme_template.html">
+		<a href="reportar_conforme_template.html" title="Reportar">
 			<div class="botoes_menu" id="botao_reportar">
-				<img src="imagens/atencao.png" id="imagem_atencao">
+				<img src="imagens/atencao.png" id="imagem_atencao" alt="Atenção" title="Reportar">
 				<p id="label_reportar">Reportar</p>
 			</div>
 		</a>
-		<a href="historico_reportes.html">
+		<a href="historico_reportes.html" title="Histórico">
 			<div class="botoes_menu" id="botao_historico">
-				<img src="imagens/historico.png" id="imagem_historico">
+				<img src="imagens/historico.png" id="imagem_historico" alt="Histórico" title="Histórico">
 				<p id="label_historico">Histórico</p>
 			</div>
 		</a>
-		<a href="sobre.html">
+		<a href="sobre.html" title="Sobre">
 			<div class="botoes_menu" id="botao_info">
-				<img src="imagens/info.png" id="imagem_info">
+				<img src="imagens/info.png" id="imagem_info" alt="Sobre" title="Sobre">
 				<p id="label_info">Sobre</p>
 			</div>
 		</a>
 		<div class="botoes_menu" id="botao_sair" onclick="sair()">
-			<img src="imagens/sair.png" id="imagem_sair">
+			<img src="imagens/sair.png" id="imagem_sair" alt="Sair" title="Sair">
 			<p id="label_sair">Sair</p>
 		</div>
 	</aside>
-		<section>
+	<section>
 		<form>
 			<div id="div_endereco">
 				<label for="input_endereco" id="label_endereco">Endereço:</label>
@@ -63,94 +66,229 @@
 				<input type="text" id="input_cep" placeholder="Digite o CEP">
 			</div>
 		</form>
-		<button id="btn_pesquisar" onclick="ver_coodenada()"><img src="imagens/lupa.png" id="img_lupa"></button>
+		<button id="btn_pesquisar" type="button" onclick="ver_coodenada()" title="Pesquisar">
+			<img src="imagens/lupa.png" id="img_lupa" alt="Pesquisar" title="Pesquisar">
+			<span class="sr-only">Pesquisar</span>
+		</button>
 	</section>
 	<section id="section_mapa">
 		<div id="mapa"></div>
 	</section>
 	<section id="historico_reportes_usuario">
 		<p id="p_reportes_usuarios">Reportes informados pelos usuários</p>
+		<div id="div_img_reporte_001">
+			<img class="img_usuario_reporte" id="img_usu_rep_01" src="imagens/usuario.png" alt="Usuário 1"
+				title="Usuário 1">
+		</div>
+		<div id="div_p_reporte_001">
+			<p>
+			<pre>19/04/25 - 20:50   Alagamento com interseção na rua Padre Pedro Evangelista
+Descrição: Automóveis trafegando com dificuldade
+Severidade: Média
+Rota Alternativa: Padre Rossini Cândido
+			</pre>
+			</p>
+		</div>
+		<br>
 		<div id="div_img_reporte_01">
-			<img class="img_usuario_reporte" id="img_usu_rep_01" src="imagens/usuario.png">
+			<img class="img_usuario_reporte" id="img_usu_rep_02" src="imagens/usuario.png" alt="Usuário 2"
+				title="Usuário 1">
 		</div>
 		<div id="div_p_reporte_01">
-			<p><pre>19/04/25 - 20:50     Alagamento na interseção com a rua Padre Pedro Evangelista</pre></p>
+			<p>
+			<pre>19/04/25 - 18:30     Automóveis trafegando com dificuldade na Rua Dom João Antônio dos Santos
+Descrição: Rua interditada
+Rota Alternativa: Rua Dom José Pereira Lara
+Severidade: Alta
+			</pre>
+			</p>
 		</div>
 		<br>
 		<div id="div_img_reporte_02">
-			<img class="img_usuario_reporte" id="img_usu_rep_02" src="imagens/usuario.png">
+			<img class="img_usuario_reporte" id="img_usu_rep_03" src="imagens/usuario.png" alt="Usuário 3"
+				title="Usuário 2">
 		</div>
 		<div id="div_p_reporte_02">
-			<p><pre>19/04/25 - 18:30     Automóveis trafegando com dificuldade</pre></p>
+			<p>
+			<pre>19/04/25 - 18:00     Alagamento com interseção na rua Dom João Pimenta
+Descrição: Automóveis trafegando com dificuldade.
+Severidade: Baixo
+Rota Alternativa: Dom Modesto Augusto
+			</pre>
+			</p>
 		</div>
 		<br>
 		<div id="div_img_reporte_03">
-			<img class="img_usuario_reporte" id="img_usu_rep_03" src="imagens/usuario.png">
+			<img class="img_usuario_reporte" id="img_usu_rep_04" src="imagens/usuario.png" alt="Usuário 4"
+				title="Usuário 3">
 		</div>
 		<div id="div_p_reporte_03">
-			<p><pre>19/04/25 - 18:00     Alagamento na interseção com a rua Padre Demerval Gomes</pre></p>
+			<p>
+			<pre>19/04/25 - 17:40     Alagamento com interseção na Rua Henrique Gorceix - Padre Eustáquio
+Descrição: Rua interditada
+Rota Alternativa: Rua Francisco Bicalho
+Severidade: Alta
+			</pre>
+			</p>
 		</div>
 		<br>
 		<div id="div_img_reporte_04">
-			<img class="img_usuario_reporte" id="img_usu_rep_04" src="imagens/usuario.png">
+			<img class="img_usuario_reporte" id="img_usu_rep_05" src="imagens/usuario.png" alt="Usuário 5"
+				title="Usuário 4">
 		</div>
 		<div id="div_p_reporte_04">
-			<p><pre>19/04/25 - 17:40     Alagamento na interseção com a rua Dom Aristides Pôrtos</pre></p>
+			<p>
+			<pre>19/04/25 - 17:25     Alagamento com interseção na Rua Marambaia
+Descrição: Rua interditada
+Rota Alternativa: Rua Tietê
+Severidade: Alta
+			</pre>
+			</p>
 		</div>
 		<br>
 		<div id="div_img_reporte_05">
-			<img class="img_usuario_reporte" id="img_usu_rep_05" src="imagens/usuario.png">
+			<img class="img_usuario_reporte" id="img_usu_rep_06" src="imagens/usuario.png" alt="Usuário 6"
+				title="Usuário 5">
 		</div>
 		<div id="div_p_reporte_05">
-			<p><pre>19/04/25 - 17:25     Alagamento na interseção com a rua Dom João Pimenta</pre></p>
+			<p>
+			<pre>19/04/25 - 17:25     Alagamento com interseção na Rua R. Manhumirim
+Descrição: Automóveis trafegando com dificuldade.
+Rota Alternativa: Rua Guaíra
+Severidade: Média
+			</pre>
+			</p>
 		</div>
 		<br>
 		<div id="div_img_reporte_06">
-			<img class="img_usuario_reporte" id="img_usu_rep_06" src="imagens/usuario.png">
+			<img class="img_usuario_reporte" id="img_usu_rep_07" src="imagens/usuario.png" alt="Usuário 7"
+				title="Usuário 6">
 		</div>
 		<div id="div_p_reporte_06">
-			<p><pre>19/04/25 - 17:25     Alagamento na interseção com a rua Dom Modesto Augusto</pre></p>
+			<p>
+			<pre>19/04/25 - 17:00     Alagamento com interseção na Rua Cambuquira
+Descrição: Automóveis trafegando com lentidão.
+Rota Alternativa: Rua Três Pontas
+Severidade: Média
+			</pre>
+			</p>
 		</div>
 		<br>
 		<div id="div_img_reporte_07">
-			<img class="img_usuario_reporte" id="img_usu_rep_07" src="imagens/usuario.png">
+			<img class="img_usuario_reporte" id="img_usu_rep_08" src="imagens/usuario.png" alt="Usuário 8"
+				title="Usuário 7">
 		</div>
 		<div id="div_p_reporte_07">
-			<p><pre>19/04/25 - 17:00     Alagamento na interseção com a rua Padre Pedro Evangelista</pre></p>
+			<p>
+			<pre>19/04/25 - 16:50  Automóveis trafegando com dificuldade na Rua Boaventura
+Descrição: Automóveis trafegando com lentidão
+Rota Alternativa: Praça Santo Antônio
+Severidade: Média
+			</pre>
+			</p>
 		</div>
 		<br>
 		<div id="div_img_reporte_08">
-			<img class="img_usuario_reporte" id="img_usu_rep_08" src="imagens/usuario.png">
+			<img class="img_usuario_reporte" id="img_usu_rep_09" src="imagens/usuario.png" alt="Usuário 9"
+				title="Usuário 8">
 		</div>
 		<div id="div_p_reporte_08">
-			<p><pre>19/04/25 - 16:50     Automóveis trafegando com dificuldade</pre></p>
+			<p>
+			<pre>19/04/25 - 16:40    Alagamento com interseção Rua Rebelo Horta
+Descrição: Alagamento na pista, impossibilitando o tráfego de veículos pesados
+Rota Alternativa: Alameda dos Coqueiros
+Severidade: Alta
+			</pre>
+			</p>
 		</div>
 		<br>
-		<div id="div_img_reporte_09">
-			<img class="img_usuario_reporte" id="img_usu_rep_09" src="imagens/usuario.png">
+		<div id="div_img_reporte_9">
+			<img class="img_usuario_reporte" id="img_usu_rep_10" src="imagens/usuario.png" alt="Usuário 10"
+				title="Usuário 9">
 		</div>
-		<div id="div_p_reporte_09">
-			<p><pre>19/04/25 - 16:40     Alagamento na interseção com a rua Padre Demerval Gomes</pre></p>
+		<div id="div_p_reporte_9">
+			<p>
+			<pre>19/04/25 - 16:30     Alagamento com interseção Rua Rebelo Horta
+Descrição: buraco na pista
+Rota Alternativa: Alameda dos Coqueiros
+Severidade: Média
+			</pre>
+			</p>
 		</div>
 		<br>
 		<div id="div_img_reporte_10">
-			<img class="img_usuario_reporte" id="img_usu_rep_10" src="imagens/usuario.png">
+			<img class="img_usuario_reporte" id="img_usu_rep_10" src="imagens/usuario.png" alt="Usuário 11"
+				title="Usuário 10">
 		</div>
 		<div id="div_p_reporte_10">
-			<p><pre>19/04/25 - 16:30     Alagamento na interseção com a rua Dom Aristides Pôrtos</pre></p>
+			<p>
+			<pre>19/04/25 - 16:30     Alagamento com interseção Rua Bolivar
+Descrição: Alagamento na pista e Buraco no trajeto impossibilitando o tráfego de veículos pesados e leves
+Rota Alternativa: Rua Lincoln
+Severidade: Alta
+			</pre>
+			</p>
 		</div>
+		<br>
+		<div id="div_img_reporte_11">
+			<img class="img_usuario_reporte" id="img_usu_rep_11" src="imagens/usuario.png" alt="Usuário 11"
+				title="Usuário 11">
+		</div>
+		<div id="div_p_reporte_11">
+			<p>
+			<pre>19/04/25 - 16:30     Alagamento com interseção Rua Bolivar
+Descrição: Alagamento na pista e Buraco no trajeto impossibilitando o tráfego de veículos pesados e leves
+Rota Alternativa: Rua Lincoln
+Severidade: Alta
+			</pre>
+			</p>
+			<br>
+			<div id="div_img_rota_alternativa_12">
+				<img class="img_usuario_reporte" id="img_rota_alt_13" src="imagens/usuario.png"
+					alt="Usuário rota alternativa 12" title="Usuário rota alternativa 13">
+			</div>
+			<div id="div_p_rota_alternativa_12">
+				<p>
+				<pre>19/04/25 - 19:50   Rua Agrelos
+Descrição: Rua interditada
+Rota Alternativa: Rua Aiuruoca
+Severidade: Alta
+			</pre>
+				</p>
+			</div>
+			<div id="div_img_rota_alternativa_13">
+				<img class="img_usuario_reporte" id="img_rota_alt_12" src="imagens/usuario.png"
+					alt="Usuário rota alternativa 12" title="Usuário rota alternativa 12">
+			</div>
+			<div id="div_p_rota_alternativa_13">
+				<p>
+				<pre>19/04/25 - 20:20   Rua dos Carijós
+Descrição: Rua pouco alagada
+Rota Alternativa: Rua dos Guaranis
+Severidade: Baixa
+			</pre>
+				</p>
+			</div>
 	</section>
 	<section id="section_rotas_alternativas">
 		<p id="p_rotas_alternativas">Rotas alternativas</p>
 
 		<div id="div_img_rota_alternativa_01">
-			<img class="img_usuario_reporte" id="img_usu_rep_01" src="imagens/usuario.png">
+			<img class="img_usuario_reporte" id="img_rota_alt_01" src="imagens/usuario.png"
+				alt="Usuário rota alternativa 1" title="Usuário rota alternativa 1">
 		</div>
 		<div id="div_p_rota_alternativa_01">
-			<p><pre>19/04/25 - 20:50     Rua Dom Joaquim Silvério</pre></p>
+			<p>
+			<pre>19/04/25 - 20:50    Rua Bolivar
+Descrição: Alagamento na pista e Buraco no trajeto impossibilitando o tráfego de veículos pesados e leves
+Rota Alternativa: Rua Lincoln
+Severidade: Alta
+			</pre>
+			</p>
 		</div>
 	</section>
-<script src="javascript/historico.js"></script>
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+	<script src="javascript/historico.js"></script>
+	<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 </body>
+
 </html>
