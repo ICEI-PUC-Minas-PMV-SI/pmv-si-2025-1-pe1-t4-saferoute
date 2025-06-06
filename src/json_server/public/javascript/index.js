@@ -32,14 +32,26 @@ function exibir_opcoes () {
         map.invalidateSize();
     }
 }
-    function getColor(severidade) {
+
+function getColor(severidade) {
         switch (severidade.toLowerCase()) {
             case 'alta': return 'red';
             case 'média': return 'orange';
-            case 'baixa': return 'green';
-            
+            case 'baixa': return 'green';           
         }
     }
+
+function toggleLegenda() {
+    const content = document.getElementById("legend-content");
+    const toggle = document.getElementById("legend-toggle");
+    if (content.style.display === "none") {
+        content.style.display = "block";
+        toggle.innerText = "−";
+    } else {
+        content.style.display = "none";
+        toggle.innerText = "+";
+    }
+}
 
 function visualizar_mapa(lat, lon, marcador) {
     if (window.map) {
@@ -73,19 +85,6 @@ function visualizar_mapa(lat, lon, marcador) {
 
 legenda.addTo(map);
 
-
-function toggleLegenda() {
-    const content = document.getElementById("legend-content");
-    const toggle = document.getElementById("legend-toggle");
-    if (content.style.display === "none") {
-        content.style.display = "block";
-        toggle.innerText = "−";
-    } else {
-        content.style.display = "none";
-        toggle.innerText = "+";
-    }
-}
-
     if (marcador) {
         if (marcadorAtual){ 
           marcadorAtual.remove(map);
@@ -94,7 +93,6 @@ function toggleLegenda() {
         criando_cookie();
     
     }
-
 
     fetch('http://localhost:3000/reportes')
         .then(response => response.json())

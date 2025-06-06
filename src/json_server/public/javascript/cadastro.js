@@ -17,6 +17,22 @@ function sair() {
 
 
 function salvar(){
+    if (document.querySelector('#senha').value.length ===0) {
+    Swal.fire({
+      icon: 'error',
+      text: 'Favor informar a senha !',
+      confirmButtonText: 'OK'
+    });
+    return;
+  }
+  if (document.querySelector('#senha').value != document.querySelector('#confirmar_senha').value) {
+    Swal.fire({
+      icon: 'error',
+      text: 'A senha informada diverge da confirmada!',
+      confirmButtonText: 'OK'
+    });
+    return;
+  }
     const email_regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;   
     if (!email_regex.test(document.querySelector('#email').value)) {
     Swal.fire({
@@ -30,8 +46,7 @@ function salvar(){
       Swal.fire({
         icon: 'error',
         text: 'O e-mail informado não coincide com a confirmação do e-mail!',
-        confirmButtonText:
-        :}: 'OK'
+        confirmButtonText: 'OK' 
         });
         return;
       } else { campos = ["email", "senha", "nome", "sobrenome","cep", "endereco", "numero", "complemento", 
@@ -91,8 +106,8 @@ function salvar(){
            if (result.isConfirmed) {
         window.location.href = "login.html"
         }})});}
-      }})  
-      }
+      }}  
+
  
 function cancelar(){
   window.location.href = "login.html"
