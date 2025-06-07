@@ -78,6 +78,85 @@ function verifica_login (cookie_login){
     }
 }
 
+function alterar_imagem(){
+   const btnAlterarImagem = document.querySelector("#btn_alterar_imagem");
+   const inputImagem = document.querySelector("#input_imagem"); 
+   const imgUsuarioCadastro = document.querySelector("#img_usuario_cadastro")
+
+   btnAlterarImagem.addEventListener('click', () => {
+   inputImagem.click();  
+  });
+
+    inputImagem.addEventListener('change', () => {
+    const arquivoSelecionado = inputImagem.files[0];
+    const arquivoSelecionadoNome = arquivoSelecionado.name;
+
+    console.log('Arquivo selecionado:', arquivoSelecionado);
+    console.log(arquivoSelecionadoNome);
+
+    if (arquivoSelecionadoNome.toLowerCase().endsWith(".jpg") || arquivoSelecionadoNome.toLowerCase().endsWith(".png")){  
+      console.log(URL.createObjectURL(arquivoSelecionado));
+      const urlImagem = URL.createObjectURL(arquivoSelecionado); 
+      imgUsuarioCadastro.src = urlImagem;
+      } else {Swal.fire({
+        icon: 'error',
+        text: 'A imagem selecionada deve ser um arquivo .png ou .jpg!',
+        confirmButtonText: 'OK'
+        }); 
+      }
+  });
+}
+
+function salvar(){
+  campos = ["nome", "sobrenome","cep", "endereco", "numero", "complemento", 
+              "bairro", "municipio", "uf"]
+   
+  let usuario = {};
+
+  campos.forEach(campo => {
+    usuario[campo] = document.querySelector('#'+campo).value
+  })
+  
+  usuario["sexo"] = document.querySelector('input[name="radio_sexo"]:checked').value
+
+ fetch("http://localhost:3000/usuarios/" + idUsuario, {
+  method: "PATCH",
+  headers: {
+    "Content-Type": "application/json"
+  },
+  body: JSON.stringify(usuario)
+})
+.then(response => response.json())
+.then(data => {Swal.fire({
+        icon: 'info',
+        text: 'Usuário atualizado com sucesso!',
+        confirmButtonText: 'OK'
+        })})
+      }
+
+function cancelar(){
+  /*  obter_dados_usuario();
+    obter_dados_usuario().then(data => {
+    nome.value=data[0].nome
+    sobrenome.value= data[0].sobrenome;
+    cep.value = data[0].cep;
+    endereco.value = data[0].endereco;
+    municipio.value = data[0].municipio;
+    uf.value = data[0].uf;
+    bairro.value = data[0].bairro;
+    numero.value = data[0].numero;
+    complemento.value = data[0].complemento;
+    if (data[0].sexo==="masculino"){
+       masculino.checked = true;
+    } else {feminino.checked=true;}
+    img_usuario_cadastro.src='imagens/'+data[0].imagem
+     
+})
+*/
+window.location.href = "index.html"
+}
+
+
 window.onload = function() {
     obterCookie();
     console.log(cookie_login);

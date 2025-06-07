@@ -228,6 +228,8 @@ form input {border-radius: 5px;
 	background-color: #0D0576;
 }
 
+#input_imagem{display: none;}
+
 .botoes_edicao {width: 100px;
 	color: #FFF;
 	background-color: #0D0576;
@@ -235,14 +237,16 @@ form input {border-radius: 5px;
 	width: 150px;
 	border-radius: 5px;
 	font-size: 15px;
+	position: relative;
+	top: 600px;
 }
 
 #btn_salvar {position: absolute;
-	left: 20px;
+	left: 380px;
 }
 
 #btn_cancelar {position: absolute;
-				left: 270px;
+				left: 600px;
 }
 
 button:hover {cursor: pointer;

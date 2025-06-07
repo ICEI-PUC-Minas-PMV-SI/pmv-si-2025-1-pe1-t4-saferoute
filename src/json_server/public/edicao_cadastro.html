@@ -53,7 +53,8 @@
 	</aside>
 	<div id="div_imagem">
 		<img src="imagens/ulisses_antonio.png" id="img_usuario_cadastro" alt="Imagem do usuário" title="Imagem do usuário">
-		<button id="btn_alterar_imagem" type="button">Alterar imagem</button>
+		<button id="btn_alterar_imagem" type="button" onclick="alterar_imagem()">Alterar imagem</button>
+		<input type="file" id="input_imagem">
 	</div>
 	<form>
 		<div id="div_nome" class="campos_formulario">
@@ -109,9 +110,10 @@
 			<input type="text" id="uf" placeholder="Digite o estado onde mora)" required>
 		</div>
 		<br>
-		<button id="btn_salvar" class="botoes_edicao" type="submit">Salvar</button>
-		<button id="btn_cancelar" class="botoes_edicao" type="button">Cancelar</button>
 	</form>
-<script src="javascript/edicao_cadastro.js"></script>
+	<button id="btn_salvar" class="botoes_edicao" onclick="salvar()">Salvar</button>
+	<button id="btn_cancelar" class="botoes_edicao" onclick="cancelar()">Cancelar</button>
+	<script src="javascript/edicao_cadastro.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 </html>
