@@ -58,20 +58,34 @@ header {background-color: #0D0576;
 				display: none;
 			}
 
+#imagem_usuario {width: 30px;
+	 height: auto;
+	 border-radius: 50%;
+	 position: absolute;
+	 right: 30px;
+	 top: 18px;
+}
+
 #img_usuario_logado {width: 30px;
 	height: auto;
 	border-radius: 50%;
 	position: absolute;
 	right: 30px;
 	top: 18px;
-	display: block;
+	display: none;
+}
+
+#label_login {position: absolute;
+  top: 43px;
+  right: 30px;
+  font-size: 12px;
 }
 
 #lbl_usuario_logado {position: absolute;
 	top: 43px;
 	right: 5px;
 	font-size: 12px;
-	display: block;
+	display: none;
   }
 
 #botao_pg_inicial {border-top: 1px solid #dcdcdc;		  
