@@ -18,6 +18,7 @@ var cookie_login;
 let marcadorAtual;
 let marcadorPesquisado;
 let cookieRuaPesquisada;
+let rua_pesquisada_reporte;
 
 /*function exibir_opcoes () {
     var aside  = document.getElementById('menu_opcoes');
@@ -192,6 +193,7 @@ function ver_coodenada(){
     cep=document.getElementById('input_cep').value;
     if (rua) {
         endereco =  rua + ', Belo Horizonte';
+        rua_pesquisada_reporte = rua;
         url = 'https://nominatim.openstreetmap.org/search?q=${'+ endereco + '}&format=json&limit=1';
         console.log(url)
                 fetch(url)
@@ -213,6 +215,8 @@ function ver_coodenada(){
           lon = data[0].lon;
           marcador = true
           visualizar_mapa(lat,lon,marcador)
+          exibir_reportes();
+          exibir_rota_alternativa();
         } else {lat=undefined;
                   lon=undefined;
             Swal.fire({
@@ -237,6 +241,7 @@ function ver_coodenada(){
         .then(data => {
     rua = data.logradouro;
     endereco =  rua + ', Belo Horizonte';
+    rua_pesquisada_reporte = rua;
     url = 'https://nominatim.openstreetmap.org/search?q=${'+ endereco + '}&format=json&limit=1';    
             fetch(url)
         .then(response => response.json())
@@ -246,6 +251,8 @@ function ver_coodenada(){
           lon = data[0].lon;
           marcador=true
           visualizar_mapa(lat,lon,marcador)
+          exibir_reportes();
+          exibir_rota_alternativa();
          } else {lat=undefined;
                   lon=undefined;
             Swal.fire({
@@ -332,11 +339,130 @@ function criando_cookie (){
    
 }
 
+
+function obter_reportes(){
+    if (rua_pesquisada_reporte){
+    return fetch("http://localhost:3000/reportes?rua="+rua_pesquisada_reporte)
+      .then(response => response.json())
+      .then(reportes => {
+    console.log(reportes)
+        return reportes.sort((a, b) => new Date(b.dataHora) - new Date(a.dataHora));})
+      } else {
+    return fetch("http://localhost:3000/reportes")
+      .then(response => response.json())
+      .then(reportes => {
+    return reportes.sort((a, b) => new Date(b.dataHora) - new Date(a.dataHora));})
+      }
+     }
+
+function exibir_reportes(){
+    let quant_reportes = 0
+    let divs_reportes = document.querySelectorAll('.div_reporte');
+
+const container = document.getElementById("historico_reportes_usuario");
+const brs = container.querySelectorAll("br");
+brs.forEach(br => br.remove())
+
+divs_reportes.forEach(div => {
+  div.remove();
+});
+
+    obter_reportes().then(reportes => {
+    reportes.forEach((reporte) => {
+        quant_reportes += 1
+        console.log(reporte);
+        const divImg = document.createElement("div");
+
+        const dataObj = new Date(reporte.dataHora);
+        const dia = String(dataObj.getDate()).padStart(2, '0');
+        const mes = String(dataObj.getMonth() + 1).padStart(2, '0');
+        const ano = String(dataObj.getFullYear()).slice(-2);  // dois últimos dígitos
+        const horas = String(dataObj.getHours()).padStart(2, '0');
+        const minutos = String(dataObj.getMinutes()).padStart(2, '0');
+        const dataHoraFormatada = `${dia}/${mes}/${ano} - ${horas}:${minutos}`;
+
+        divImg.id = `div_img_reporte_${quant_reportes}`;
+        url = "http://localhost:3000/usuarios?id="+reporte.idUsuario
+        console.log(url)
+        fetch("http://localhost:3000/usuarios?id="+reporte.idUsuario)
+              .then(response => response.json())
+              .then(data => {
+            divImg.innerHTML = `<img class="img_usuario_reporte" id="img_usu_rep_${quant_reportes}" src="imagens/${data[0].imagem}">`;
+    })
+        
+        const divTexto = document.createElement("div");
+        divTexto.id = `div_p_reporte_${quant_reportes}`;
+        divTexto.classList.add("div_reporte");
+        divImg.classList.add("div_reporte");
+        divTexto.innerHTML = `<p><pre>${dataHoraFormatada}     ${reporte.descricao}</pre></p>`;
+        console.log(reporte.descricao)
+        
+      historico_reportes_usuario.appendChild(divImg);
+      historico_reportes_usuario.appendChild(divTexto);
+      historico_reportes_usuario.appendChild(document.createElement("br"));
+    });
+  });
+}
+
+
+function exibir_rota_alternativa(){
+    let quant_rota_alternativa = 0
+    let divs_rotas = document.querySelectorAll('.div_rota');
+
+const container = document.getElementById("section_rotas_alternativas");
+const brs = container.querySelectorAll("br");
+brs.forEach(br => br.remove())
+
+divs_rotas.forEach(div => {
+  div.remove();
+});
+
+    obter_reportes().then(reportes => {
+    reportes.forEach((reporte) => {
+        quant_rota_alternativa += 1
+        const divImg = document.createElement("div");
+
+        const dataObj = new Date(reporte.dataHora);
+        const dia = String(dataObj.getDate()).padStart(2, '0');
+        const mes = String(dataObj.getMonth() + 1).padStart(2, '0');
+        const ano = String(dataObj.getFullYear()).slice(-2);  // dois últimos dígitos
+        const horas = String(dataObj.getHours()).padStart(2, '0');
+        const minutos = String(dataObj.getMinutes()).padStart(2, '0');
+        const dataHoraFormatada = `${dia}/${mes}/${ano} - ${horas}:${minutos}`;
+
+        divImg.id = `div_img_reporte_${quant_rota_alternativa}`;
+        url = "http://localhost:3000/usuarios?id="+reporte.idUsuario
+        console.log(url)
+        fetch("http://localhost:3000/usuarios?id="+reporte.idUsuario)
+              .then(response => response.json())
+              .then(data => {
+            divImg.innerHTML = `<img class="img_usuario_reporte" id="img_usu_rep_${quant_rota_alternativa}" src="imagens/${data[0].imagem}">`;
+    })
+        
+        const divTexto = document.createElement("div");
+        divTexto.id = `div_p_rota_alternativa_${quant_rota_alternativa}`;
+        divTexto.classList.add("div_rota");
+        divImg.classList.add("div_rota");
+        divTexto.innerHTML = `<p><pre>${dataHoraFormatada}     ${reporte.rotaAlternativa}</pre></p>`;
+        console.log(reporte.descricao)
+        
+      section_rotas_alternativas.appendChild(divImg);
+      section_rotas_alternativas.appendChild(divTexto);
+      section_rotas_alternativas.appendChild(document.createElement("br"));
+    });
+  });
+}
+
+
+
 window.onload = function() {
     lat = -19.9191
     lon = -43.9386   
     marcador = false
+    rua_pesquisada_reporte=undefined
     visualizar_mapa(lat,lon,false);
+    exibir_reportes();
+    exibir_rota_alternativa();
     obterCookie();
     verifica_login (cookie_login);
     if (cookie_login===true) {img_usuario_logado.style.display='block';
