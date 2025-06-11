@@ -72,7 +72,6 @@ A documentação dos testes é dividida nas seguintes seções:
 **Caso de Teste** | **CT08 - Cadastro de usuário**
  :--------------: | ------------
 **Procedimento**  | 1) Acesse a página inicial (index.html) <br> 2) Clique no botão entrar <br> 3) Na tela de login, clique em "Cadastre-se" <br> 4) Digite os campos do cadastro <br> 
-5) Clique no botão salvar <br> 
 **Requisitos associados** | RF-015 
 **Resultado esperado** | Espera-se que apareça uma tela evidenciando que o cadastro foi bem sucedido e a aplicação seja redirecionada para tela de login.
 **Dados de entrada** | -
