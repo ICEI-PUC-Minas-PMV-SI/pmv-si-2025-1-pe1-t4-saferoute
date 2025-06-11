@@ -121,7 +121,7 @@ A documentação dos testes é dividida nas seguintes seções:
  :--------------: | ------------
 **Procedimento**  | 1) Acesse a página inicial (index.html) <br> 2) Efetue o login <br> 3)Clique no ícone do usuário <br> 4) Selecione a opção editar perfil <br> 5) Altere algum dado <br> 6) Clique em salvar <br>
 **Requisitos associados** | RF-006 e RF-007 
-**Resultado esperado** |Espera-se que seja exibida uma tela iindicando que os dados do usuário foram atualizados com sucesso.
+**Resultado esperado** |Espera-se que seja exibida uma tela indicando que os dados do usuário foram atualizados com sucesso.
 **Dados de entrada** | -
 **Resultado obtido** | Sucesso
 
