@@ -22,6 +22,7 @@ As tabelas que se seguem apresentam os requisitos funcionais e não-funcionais q
 |RF-012| Após 5 horas do último reporte de uma rua como afetada por alagamento ou como rota alternativa, a informação desta rua será removida da consolidação, a não ser que haja outros reportes para atualização do status. | Aleph | index.html e historico.html |
 |RF-013| A tela inicial de demonstrar a previsão do tempo para Belo Horizonte no horário da visualização da tela | Yuri | index.html |
 |RF-014| Login de usuário |  | login.html |
+|RF-015| Cadastro de usuário |  | cadastro.html |
 
 
 ## Descrição das estruturas:
