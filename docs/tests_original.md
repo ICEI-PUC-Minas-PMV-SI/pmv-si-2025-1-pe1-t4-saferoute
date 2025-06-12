@@ -1,5 +1,12 @@
 # Testes
 
+Neste projeto serão realizados dois tipos de testes:
+
+ - O **Teste de Software**, que utiliza uma abordadem de caixa preta, e tem por objetivo verificar a conformidade do software com os requisitos funcionais e não funcionais do sistema.
+ - O **Teste de Usabilidade**, que busca avaliar a qualidade do uso do sistema por um usuário do público alvo. 
+
+Se quiser conhecer um pouco mais sobre os tipos de teste de software, leia o documento [Teste de Software: Conceitos e tipos de testes](https://blog.onedaytesting.com.br/teste-de-software/).
+
 A documentação dos testes é dividida nas seguintes seções:
 
  - [Plano de Testes de Software](#plano-de-testes-de-software)
@@ -11,120 +18,28 @@ A documentação dos testes é dividida nas seguintes seções:
 
 # Teste de Software
 
+Nesta seção o grupo deverá documentar os testes de software que verificam a correta implementação dos requisitos funcionais e não funcionais do software.
+
 ## Plano de Testes de Software
 
-**Caso de Teste** | **CT01 - Recolhimento do menu e visualização - botão hamburguer**
+Preencha a tabela com o plano dos testes. Para cada Caso de Teste (CT), associe qual o Requisito Funcional ou não funcional que ele está verificando. Associe também a página (ou artefato) onde o teste será realizado e descreva o cenário do teste. Veja a tabela de exemplo.
+
+
+**Caso de Teste** | **CT01 - Criar conta parte 1**
  :--------------: | ------------
-**Procedimento**  | 1) Acesse a página inicial <br> 2) Clique no botão hambuguer <br> 3) Clique novamente no botão hamburger.
+**Procedimento**  | 1) Acesse o endereço www.teste.com.br <br> 2) Clique em criar conta <br> 2) Preencha todos os campos do formulário <br> 3) Clique no botão "Continuar".
 **Requisitos associados** | RF-001
-**Resultado esperado** | No primeiro clique, espera-se que o menu seja recolhido. Após o segundo clique, espera-se que o menu seja novamente exibido.
-**Dados de entrada** | -
+**Resultado esperado** | Prosseguir para a parte 2 do cadastro
+**Dados de entrada** | Inserção de dados válidos no formulário de cadastro
 **Resultado obtido** | Sucesso
 
-**Caso de Teste** | **CT02 - Visualização na geolocalização do usuário**
+**Caso de Teste** | **CT02 - Criar conta parte 2**
  :--------------: | ------------
-**Procedimento**  | 1) Acesse a página inicial (index.html) <br> 
-**Requisitos associados** | RF-004
-**Resultado esperado** | Espera-se que ao acessar à página inicial, o mapa seja direcionado para apontar a localização do usuário que está acessando a página.
-**Dados de entrada** | -
+**Procedimento**  | 1) Preencha todos os campos do formulário <br> 2) Clique no botão "Criar conta" <br> 
+**Requisitos associados** | RF-001
+**Resultado esperado** | Usuário cadastrado
+**Dados de entrada** | Inserção de dados válidos no formulário de cadastro
 **Resultado obtido** | Sucesso
-
-**Caso de Teste** | **CT03 - Visualização da rua pesquisada**
- :--------------: | ------------
-**Procedimento**  | 1) Acesse a página inicial (index.html) <br> 2) Digite um nome de rua válido de Belo Horizonte no campo correspondente <br> 3) Clique no botão pesquisar <br> 
-**Requisitos associados** | RF-005
-**Resultado esperado** | Espera-se que o mapa exiba a rua pesquisada.
-**Dados de entrada** | -
-**Resultado obtido** | Sucesso
-
-**Caso de Teste** | **CT04 - Visualização da rua do CEP pesquisado**
- :--------------: | ------------
-**Procedimento**  | 1) Acesse a página inicial (index.html) <br> 2) Digite o número de um CEP válido de Belo Horizonte no campo correspondente <br> 3) Clique no botão pesquisar <br> 
-**Requisitos associados** | RF-005
-**Resultado esperado** | Espera-se que o mapa exiba a rua correspondete ao CEP pesquisado.
-**Dados de entrada** | -
-**Resultado obtido** | Sucesso
-
-**Caso de Teste** | **CT05 - Visualização da previsão do tempo**
- :--------------: | ------------
-**Procedimento**  | 1) Acesse a página inicial (index.html) <br>
-**Requisitos associados** | RF-013
-**Resultado esperado** | Espera-se que a previsão do tempo da cidade de Belo Horizonte apareça junto ao mapa.
-**Dados de entrada** | -
-**Resultado obtido** | Sucesso
-
-**Caso de Teste** | **CT06 - Visualização dos alertas no mapa**
- :--------------: | ------------
-**Procedimento**  | 1) Acesse a página inicial (index.html) <br> 2) Digite um nome de rua que possua alerta de alagamento no campo correspondente <br> 3) Clique no botão pesquisar <br> 
-**Requisitos associados** | RF-013
-**Resultado esperado** | Espera-se que o mapa exiba a rua pesquisada. A ruas com alerta de severidade grave devem aparecer no mapa na cor vermelha. As ruas com severidade média devem ser evidenciadas com a cor laranja. Já as ruas com severidade baixa devem aparecer na cor verde. Por fim, as ruas reportadas como rota alternativa devem ser evidenciadas com a cor azul. O mapa deve evidenciar uma legenda com o significado das cores.
-**Dados de entrada** | -
-**Resultado obtido** | Sucesso
-
-**Caso de Teste** | **CT07 - Login**
- :--------------: | ------------
-**Procedimento**  | 1) Acesse a página inicial (index.html) <br> 2) Clique no botão entrar <br> 3) Na tela de login, digite um e-mail cadastrado <br> 4) Digite a senha do usuário <br> 
-**Requisitos associados** | RF-014 
-**Resultado esperado** | Espera-se que a aplicação seja redirecionada para tela principal evidenciando a foto e o nome do usuário logado.
-**Dados de entrada** | -
-**Resultado obtido** | Sucesso
-
-**Caso de Teste** | **CT08 - Cadastro de usuário**
- :--------------: | ------------
-**Procedimento**  | 1) Acesse a página inicial (index.html) <br> 2) Clique no botão entrar <br> 3) Na tela de login, clique em "Cadastre-se" <br> 4) Digite os campos do cadastro <br> 
-**Requisitos associados** | RF-015 
-**Resultado esperado** | Espera-se que apareça uma tela evidenciando que o cadastro foi bem sucedido e a aplicação seja redirecionada para tela de login.
-**Dados de entrada** | -
-**Resultado obtido** | Sucesso
-
-**Caso de Teste** | **CT09 - Visualização do histórico de reportes**
- :--------------: | ------------
-**Procedimento**  | 1) Acesse a página inicial (index.html) <br> 2) Clique no botão histórico <br> 
-**Requisitos associados** | RF-008 
-**Resultado esperado** | Espera-se que tela evidencie a relação completa das ruas cadastradas como alagadas, bem como a sugestão das rotas alternativas ordenadas em ordem decrescente de data de reporte.
-**Dados de entrada** | -
-**Resultado obtido** | Sucesso
-
-**Caso de Teste** | **CT10 - Visualização do histórico de reportes de uma rua pesquisada**
- :--------------: | ------------
-**Procedimento**  | 1) Acesse a página inicial (index.html) <br> 2) Clique no botão histórico <br> 3)Digite um nome de rua válido de Belo Horizonte no campo correspondente <br> 3) Clique no botão pesquisar <br>
-**Requisitos associados** | RF-008 
-**Resultado esperado** |Espera-se que tela evidencie a relação dos reportes de alagamento para a ruas pesquida bem como as ruas cadastradas como rota alternativa para ela. 
-**Dados de entrada** | -
-**Resultado obtido** | Sucesso
-
-**Caso de Teste** | **CT11 - Visualização do histórico de reportes de um CEP pesquisado**
- :--------------: | ------------
-**Procedimento**  | 1) Acesse a página inicial (index.html) <br> 2) Clique no botão histórico <br> 3)Digite o número de um CEP válido de Belo Horizonte no campo correspondente <br> 3) Clique no botão pesquisar <br>
-**Requisitos associados** | RF-008 
-**Resultado esperado** |Espera-se que tela evidencie a relação dos reportes de alagamento para a ruas do CEP pesquido bem como as ruas cadastradas como rota alternativa para ela. 
-**Dados de entrada** | -
-**Resultado obtido** | Sucesso
-
-**Caso de Teste** | **CT12 - Reportar alagamento deslogado**
- :--------------: | ------------
-**Procedimento**  | 1) Acesse a página inicial (index.html) <br> 2) Estando deslogado, Clique no botão reportar <br> 
-**Requisitos associados** | RF-006 e RF-007 
-**Resultado esperado** |Espera-se que seja exibida uma tela indicando que o usuário deve estar logado para acessar a funcionalidade de reportar alagamentos. 
-**Dados de entrada** | -
-**Resultado obtido** | Sucesso
-
-**Caso de Teste** | **CT13 - Reportar alagamento logado**
- :--------------: | ------------
-**Procedimento**  | 1) Acesse a página inicial (index.html) <br> 2) Efetue o login <br> 3)Clique no botão reportar <br> 4) Preencha os dados do reporte <br> 5) Clique no botão enviar <br>
-**Requisitos associados** | RF-006 e RF-007 
-**Resultado esperado** |Espera-se que seja exibida uma tela indicando que o reporte foi enviado com sucesso. 
-**Dados de entrada** | -
-**Resultado obtido** | Sucesso
-
-**Caso de Teste** | **CT14 - Edição do perfil do usuário**
- :--------------: | ------------
-**Procedimento**  | 1) Acesse a página inicial (index.html) <br> 2) Efetue o login <br> 3)Clique no ícone do usuário <br> 4) Selecione a opção editar perfil <br> 5) Altere algum dado <br> 6) Clique em salvar <br>
-**Requisitos associados** | RF-006 e RF-007 
-**Resultado esperado** |Espera-se que seja exibida uma tela indicando que os dados do usuário foram atualizados com sucesso.
-**Dados de entrada** | -
-**Resultado obtido** | Sucesso
-
 
 ## Registro dos Testes de Software
 
@@ -145,6 +60,9 @@ Esta seção deve apresentar o relatório com as evidências dos testes de softw
 
 Discorra sobre os resultados do teste. Ressaltando pontos fortes e fracos identificados na solução. Comente como o grupo pretende atacar esses pontos nas próximas iterações. Apresente as falhas detectadas e as melhorias geradas a partir dos resultados obtidos nos testes.
 
+## Testes de unidade automatizados (Opcional)
+
+Se o grupo tiver interesse em se aprofundar no desenvolvimento de testes de software, ele podera desenvolver testes automatizados de software que verificam o funcionamento das funções JavaScript desenvolvidas. Para conhecer sobre testes unitários em JavaScript, leia 0 documento  [Ferramentas de Teste para Java Script](https://geekflare.com/javascript-unit-testing/).
 
 # Testes de Usabilidade
 

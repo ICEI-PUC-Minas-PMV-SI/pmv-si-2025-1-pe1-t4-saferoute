@@ -58,20 +58,34 @@ header {background-color: #0D0576;
 				display: none;
 			}
 
+#imagem_usuario {width: 30px;
+	 height: auto;
+	 border-radius: 50%;
+	 position: absolute;
+	 right: 30px;
+	 top: 18px;
+}
+
 #img_usuario_logado {width: 30px;
 	height: auto;
 	border-radius: 50%;
 	position: absolute;
 	right: 30px;
 	top: 18px;
-	display: block;
+	display: none;
+}
+
+#label_login {position: absolute;
+  top: 43px;
+  right: 30px;
+  font-size: 12px;
 }
 
 #lbl_usuario_logado {position: absolute;
 	top: 43px;
 	right: 5px;
 	font-size: 12px;
-	display: block;
+	display: none;
   }
 
 #botao_pg_inicial {border-top: 1px solid #dcdcdc;		  
@@ -214,6 +228,8 @@ form input {border-radius: 5px;
 	background-color: #0D0576;
 }
 
+#input_imagem{display: none;}
+
 .botoes_edicao {width: 100px;
 	color: #FFF;
 	background-color: #0D0576;
@@ -221,14 +237,16 @@ form input {border-radius: 5px;
 	width: 150px;
 	border-radius: 5px;
 	font-size: 15px;
+	position: relative;
+	top: 600px;
 }
 
 #btn_salvar {position: absolute;
-	left: 20px;
+	left: 380px;
 }
 
 #btn_cancelar {position: absolute;
-				left: 270px;
+				left: 600px;
 }
 
 button:hover {cursor: pointer;

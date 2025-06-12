@@ -36,8 +36,8 @@
       "id": "3",
       "email": "debora.oliveira@hotmail.com",
       "senha": "bola123",
-      "nome": "debora",
-      "sobrenome": "oliveira",
+      "nome": "Debora",
+      "sobrenome": "Oliveira",
       "imagem": "debora_oliveira.png",
       "sexo": "Feminino",
       "cep": "30810060",
@@ -149,7 +149,7 @@
     {
       "id": "1",
       "rua": "Rua Padre Pedro Evangelista",
-      "descricao": " Automóveis trafegando com dificuldade",
+      "descricao": "Automóveis trafegando com dificuldade",
       "rotaAlternativa": "Padre Rossini Cândido",
       "severidade": "Média",
       "idUsuario": 1,
@@ -205,7 +205,7 @@
       ]
     },
     {
-      "id": "3",
+      "id": 3,
       "rua": "Dom João Pimenta",
       "descricao": " Automóveis trafegando com dificuldade",
       "rotaAlternativa": "Dom Modesto Augusto",
@@ -236,7 +236,7 @@
     {
       "id": "4",
       "rua": "Rua Henrique Gorceix - Padre Eustáquio",
-      "descricao": " Rua interditada",
+      "descricao": "Rua interditada",
       "rotaAlternativa": "Rua Francisco Bicalho",
       "severidade": "Alta",
       "idUsuario": 4,
@@ -265,7 +265,7 @@
     {
       "id": "5",
       "rua": "Rua Marambaia",
-      "descricao": " Rua interditada",
+      "descricao": "Rua interditada",
       "rotaAlternativa": "Rua Tietê",
       "severidade": "Alta",
       "idUsuario": 1,
@@ -294,7 +294,7 @@
     {
       "id": "6",
       "rua": "Rua R. Manhumirim",
-      "descricao": " Automóveis trafegando com dificuldade",
+      "descricao": "Automóveis trafegando com dificuldade",
       "rotaAlternativa": "Rua Guaíra",
       "severidade": "Média",
       "idUsuario": 2,
@@ -323,7 +323,7 @@
     {
       "id": "7",
       "rua": "Rua Cambuquira",
-      "descricao": " Automóveis trafegando com lentidão",
+      "descricao": "Automóveis trafegando com lentidão",
       "rotaAlternativa": "Rua Três Pontas",
       "severidade": "Média",
       "idUsuario": 3,
@@ -352,7 +352,7 @@
     {
       "id": "8",
       "rua": "Rua Boaventura",
-      "descricao": " Automóveis trafegando com lentidão",
+      "descricao": "Automóveis trafegando com lentidão",
       "rotaAlternativa": "Praça Santo Antônio",
       "severidade": "Média",
       "idUsuario": 4,
@@ -381,7 +381,7 @@
     {
       "id": "9",
       "rua": "Rua Rebelo Horta",
-      "descricao": " Alagamento na pista, impossibilitando o tráfego de veículos pesados",
+      "descricao": "Alagamento na pista, impossibilitando o tráfego de veículos pesados",
       "rotaAlternativa": "Alameda dos Coqueiros",
       "severidade": "Alta",
       "idUsuario": 5,
@@ -410,7 +410,7 @@
     {
       "id": "10",
       "rua": "Rua Rebelo Horta",
-      "descricao": "buraco na pista",
+      "descricao": "Buraco na pista",
       "rotaAlternativa": "Alameda dos Coqueiros",
       "severidade": "Media",
       "idUsuario": 6,
@@ -495,12 +495,12 @@
       ]
     },
     {
-      "id": "13",
+      "id": 13,
       "rua": "rua dos Carijós",
       "descricao": "Rua pouco alagada",
       "rotaAlternativa": "Rua dos Guaranis",
       "severidade": "Baixa",
-      "idUsuario": 81,
+      "idUsuario": 1,
       "dataHora": "2025-06-03T18:49:46.308Z"
     },
     {
