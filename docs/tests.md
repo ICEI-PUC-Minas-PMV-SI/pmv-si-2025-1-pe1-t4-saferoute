@@ -133,7 +133,7 @@ Esta seção deve apresentar o relatório com as evidências dos testes de softw
 |*Caso de Teste*                                 |*CT01 - Criar conta parte 1*                                         |
 |---|---|
 |Requisito Associado | RF-001 - A aplicação deve permitir que os usuários criem uma conta e gerenciem seu cadastro|
-|Link do vídeo do teste realizado: | https://1drv.ms/u/s!AhD2JqpOUvJChapRtRSQ9vPzbNLwGA?e=mxZs6t| 
+|Link do vídeo do teste realizado: |https://drive.google.com/file/d/1HGf3zeL3bQQE_kWWNXf2usApngBq_ddA/view?usp=sharing| 
 
 |*Caso de Teste*                                 |*CT02 - Criar conta parte 2*                                        |
 |---|---|
