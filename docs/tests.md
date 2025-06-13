@@ -177,44 +177,86 @@ Apresente os cenários de testes utilizados na realização dos testes de usabil
 
 | Nº do Cenário | Descrição do cenário |
 |---------------|----------------------|
-| 1             | Você é uma pessoa que deseja comprar um iphone. Encontre no site um iphone e veja detalhes de localização e contato da loja que anunciando. |
-| 2             | Você é uma pessoa que deseja comprar um smartphone até R$ 2.000,00. Encontre no site smartphone's nessa faixa de preço. |
+| 1             | Você é uma pessoa que deseja pesquisar a situação de uma determinada rua. |
+| 2             | Você é uma pessoa que deseja pesquisar o historico de reportes. |
+| 3             | Você é uma pessoa que deseja fazer a realização de um reporte determinada rua. |
 
 
 
 ## Registro de Testes de Usabilidade
 
-Cenário 1: Você é uma pessoa que deseja comprar um iphone. Encontre no site um iphone e veja detalhes de localização e contato da loja que anunciando.
+Cenário 1: Você é uma pessoa que deseja pesquisar a situação de uma determinada rua.
 
 | Usuário | Taxa de sucesso | Satisfação subjetiva | Tempo para conclusão do cenário |
 |---------|-----------------|----------------------|---------------------------------|
-| 1       | SIM             | 5                    | 27.87 segundos                  |
+| 1       | SIM             | 4                    | 27.87 segundos                  |
 | 2       | SIM             | 5                    | 17.11 segundos                  |
-| 3       | SIM             | 5                    | 39.09 segundos                  |
+| 3       | SIM             | 4                    | 22.09 segundos                  |
+| 4       | SIM             | 4                    | 17.11 segundos                  |
+| 5       | SIM             | 5                    | 18.09 segundos                  |
+
 |  |  |  |  |
-| **Média**     | 100%           | 5                | 28.02 segundos                           |
-| **Tempo para conclusão pelo especialista** | SIM | 5 | 8.66 segundos |
+| **Média**     | 100%           | 4.4                 | 20.45 segundos|
+| **Tempo para conclusão pelo especialista** | SIM | 5 | 8.46 segundos |
 
 
-    Comentários dos usuários: Achei o site muito bom e intuitivo. 
-    Não tive dificuldades e acho que ficou bem intuitivo.
+    Comentários dos usuários: 
+
+ 1. A busca funcionou como esperado, mas senti falta do botão enter, não sendo necessario clicar na lupa.(Demorou mais tempo 
+ devido um erro na digitação)
+ 2. Gostei da interface, as informações estavam bem visíveis. (Usou a pesquisa por cep)
+ 3. A busca funcionou como esperado, mas poderia poder colocar numeros para uma possivel referência.(Demorou mais tempo 
+ devido querer inserir um número)
+ 4. O layout é limpo, mas acho que o botão de pesquisa poderia estar mais evidente.
+ 5. O sistema é simples e direto, consegui realizar a tarefa sem precisar de ajuda. 
 
 
-Cenário 2: Você é uma pessoa que deseja comprar um smartphone até R$ 2.000,00. Encontre no site smartphone's nessa faixa de preço.
+Cenário 2: Você é uma pessoa que deseja pesquisar o historico de reportes.
 
 | Usuário | Taxa de sucesso | Satisfação subjetiva | Tempo para conclusão do cenário |
 |---------|-----------------|----------------------|---------------------------------|
-| 1       | SIM             | 5                    | 22.54 segundos                          |
-| 2       | SIM             | 5                    | 31.42 segundos                          |
-| 3       | SIM             | 4                    | 36.21 segundos                          |
+| 1       | SIM             | 5                    | 18.87 segundos                  |
+| 2       | SIM             | 5                    | 17.15 segundos                  |
+| 3       | SIM             | 4                    | 19.05 segundos                  |
+| 4       | SIM             | 4                    | 17.28 segundos                  |
+| 5       | SIM             | 5                    | 18.09 segundos                  |
+
 |  |  |  |  |
-| **Média**     | 100%           | 4.67                | 30.05 segundos                           |
-| **Tempo para conclusão pelo especialista** | SIM | 5 | 13.57 segundos |
+| **Média**     | 100%           | 4.6                 | 18.09 segundos|
+| **Tempo para conclusão pelo especialista** | SIM | 5 | 8.72 segundos |
 
 
-    Comentários dos usuários: O site é fácil de acessar, mas algumas páginas poderiam 
-    redirecionar a gente automaticamente para outras. Senti a falta de mais opções de filtros, 
-    tanto na hora da pesquisa, quanto depois dela, nos resultados.
+    Comentários dos usuários: 
+
+ 1. A ideia é otima e a experiência é boa.
+ 2. Gostei da rapidez e das cores.
+ 3. Levei um tempinho para entender que tinha que rolar a pagina.
+ 4. Funcionou bem, mas os resultados poderiam aparecer com mais destaque visual.
+ 5. Tudo funcionou conforme o esperado. 
+
+
+Cenário 3: Você é uma pessoa que deseja fazer a realização de um reporte determinada rua.
+
+| Usuário | Taxa de sucesso | Satisfação subjetiva | Tempo para conclusão do cenário |
+|---------|-----------------|----------------------|---------------------------------|
+| 1       | SIM             | 5                    | 41.02 segundos                  |
+| 2       | SIM             | 5                    | 37.14 segundos                  |
+| 3       | SIM             | 5                    | 39.07 segundos                  |
+| 4       | SIM             | 4                    | 35.31 segundos                  |
+| 5       | SIM             | 5                    | 36.49 segundos                  |
+
+|  |  |  |  |
+| **Média**     | 100%           | 4.8                 | 37.81 segundos|
+| **Tempo para conclusão pelo especialista** | SIM | 5 | 26.36 segundos|
+
+
+    Comentários dos usuários: 
+
+ 1. A funcionalidade de reporte está bem desenvolvida, parabéns pelo trabalho!
+ 2. O sistema é bem intuitivo e fácil de usar, consegui concluir o reporte rapidamente.
+ 3. Seria interessante permitir anexar fotos ao fazer o reporte da rua.
+ 4. A interface está clara, porém senti falta de uma confirmação final após o envio do reporte.
+ 5. Gostei da experiência. As etapas são claras e não precisei de ajuda para entender o processo.
 
 ## Avaliação dos Testes de Usabilidade
 
@@ -224,7 +266,8 @@ Além disso, a aplicação obteve também uma elevada satisfação subjetiva dos
 
 Com relação ao tempo para conclusão de cada tarefa/cenário, notamos discrepância entre a média de tempo dos usuários e o tempo do especialista/desenvolvedor em todos os cenários. Tal discrepância, em certa medida, é esperada, tendo em vista que o desenvolvedor já tem prévio conhecimento de toda a interface da aplicação, do posicionamento dos elementos, lógica de organização das páginas, etc.
 
-Contudo, tendo em vista que a diferença foi relevante (por exemplo, 113 segundos — média usuários — contra 25 segundos — especialista — no cenário três), e ainda os comentários feitos por alguns usuários, entendemos haver oportunidades de melhoria na usabilidade da aplicação.
+Os testes indicam que o sistema tem excelente usabilidade. Os usuários conseguiram realizar todas as tarefas com sucesso, rapidez e alta satisfação. As sugestões de melhoria são pontuais e fáceis de implementar, indicando que a aplicação está em um nível maduro de usabilidade, mas ainda com espaço para pequenos ajustes para excelência total.
+
 
 
 
