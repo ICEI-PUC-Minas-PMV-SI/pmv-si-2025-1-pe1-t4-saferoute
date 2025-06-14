@@ -6,6 +6,7 @@ var map;
 var lat;
 var lon;
 var rua;
+var cep;
 var url;
 var endereco;
 var rua_api;
@@ -18,12 +19,22 @@ var cookie_login;
 let marcadorAtual;
 let marcadorPesquisado;
 let cookieRuaPesquisada;
-
+let rua_api_sem_tratamento;
+let rua_alagada_api;
+let blRotaAlternativa;
+let rota_alternativa_api;
+let coord_rua_alagada_api;
+let coord_rota_alternativa_api;
 
 input_rua = document.getElementById('input_rua_alagada');
 
 function exibir_opcoes () {
     var aside  = document.getElementById('menu_opcoes');
+    console.log(rua_alagada_api);
+    console.log(coord_rua_alagada_api);
+    console.log(rota_alternativa_api);
+    console.log(coord_rota_alternativa_api);
+
     if (aside.style.display==='none') {
         aside.style.display='block';
     } else {
@@ -167,12 +178,13 @@ function isValidCEP(cep) {
   return /^\d{5}-?\d{3}$/.test(cep);
 }
 
-function ver_coodenada(){
-    rua = undefined;
+
+function ver_coodenada(blRotaAlternativa,rua,cep){
+    /*rua = undefined;
     cep = undefined;
-    endereco = undefined    
     rua=input_rua.value;
-    cep=input_rua.value;
+    cep=input_rua.value;*/
+    endereco = undefined;
     valida_cep = isValidCEP(cep);
     console.log(valida_cep);
     console.log(rua);
@@ -185,6 +197,7 @@ function ver_coodenada(){
         .then(data => {
         if (data.length > 0) {
         rua_api = data[0].name;
+        rua_api_sem_tratamento = rua_api;
         rua_api = rua_api.toLowerCase();
         rua_api = rua_api.replace(/^(rua|av(enida)?|trav(essa)?|al(ameda)?|estr(ada)?|praça|pç\.?|largo|lg\.?|beco|viel(a)?|rod(ovia)?|via|boulevard|serv(idão)?|caminho|pass(agem|arela)?)[\s\.]+/i, '');
         rua_api = rua_api.trim();
@@ -197,8 +210,24 @@ function ver_coodenada(){
         if (rua===rua_api){
           lat = data[0].lat;
           lon = data[0].lon;
-          marcador = true
-          visualizar_mapa(lat,lon,marcador)
+          marcador = true;
+
+          if (blRotaAlternativa) {
+           rota_alternativa_api = rua_api_sem_tratamento;
+           coord_rota_alternativa_api = data[0].boundingbox;
+           coord_rota_alternativa_api = [
+  [parseFloat(coord_rota_alternativa_api[0]), parseFloat(coord_rota_alternativa_api[2])],
+  [parseFloat(coord_rota_alternativa_api[1]), parseFloat(coord_rota_alternativa_api[3])]
+];
+        } else {
+           rua_alagada_api = rua_api_sem_tratamento;
+           coord_rua_alagada_api = data[0].boundingbox;
+          coord_rua_alagada_api = [
+  [parseFloat(coord_rua_alagada_api[0]), parseFloat(coord_rua_alagada_api[2])],
+  [parseFloat(coord_rua_alagada_api[1]), parseFloat(coord_rua_alagada_api[3])]
+]; }     
+
+        visualizar_mapa(lat,lon,marcador)
         } else {lat=undefined;
                   lon=undefined;
             Swal.fire({
@@ -231,6 +260,24 @@ function ver_coodenada(){
             lat = data[0].lat;
           lon = data[0].lon;
           marcador=true
+
+        if (blRotaAlternativa) {
+           rota_alternativa_api = data[0].name;
+           coord_rota_alternativa_api = data[0].boundingbox;
+          coord_rota_alternativa_api = [
+  [parseFloat(coord_rota_alternativa_api[0]), parseFloat(coord_rota_alternativa_api[2])],
+  [parseFloat(coord_rota_alternativa_api[1]), parseFloat(coord_rota_alternativa_api[3])]
+];
+
+        } else {
+           rua_alagada_api = data[0].name;
+           coord_rua_alagada_api = data[0].boundingbox;
+           coord_rua_alagada_api = [
+  [parseFloat(coord_rua_alagada_api[0]), parseFloat(coord_rua_alagada_api[2])],
+  [parseFloat(coord_rua_alagada_api[1]), parseFloat(coord_rua_alagada_api[3])]
+];
+        }       
+
           visualizar_mapa(lat,lon,marcador)
          } else {lat=undefined;
                   lon=undefined;
@@ -319,6 +366,7 @@ function criando_cookie (){
 }
 
 window.onload = function() {
+   adicionarEventListeners();
     lat = -19.9191
     lon = -43.9386   
     marcador = false
@@ -346,9 +394,16 @@ window.onload = function() {
 }
 
 input_rua.addEventListener('change', function (){if ((input_rua.value).length >0) {
-    ver_coodenada();}})
+    blRotaAlternativa = false;
+    rua=input_rua.value;
+    cep=input_rua.value;
+    ver_coodenada(blRotaAlternativa,rua,cep);}})
 
-
+input_rota_alternativa.addEventListener('change', function (){if ((input_rota_alternativa.value).length >0) {
+    blRotaAlternativa = true;
+    rua=input_rota_alternativa.value;
+    cep=input_rota_alternativa.value;
+    ver_coodenada(blRotaAlternativa,rua,cep);}})
 
 
 const JSON_SERVER_URL = 'http://localhost:3000';
@@ -481,12 +536,14 @@ async function enviarReporte(dadosReporte) {
 
         const novoReporte = {
             id: proximoId,
-            rua: dadosReporte.rua,
+            rua: rua_alagada_api,
             descricao: dadosReporte.descricao,
-            rotaAlternativa: dadosReporte.rotaAlternativa,
+            rotaAlternativa: rota_alternativa_api,
             severidade: dadosReporte.severidade,
             idUsuario: idUsuario,
-            dataHora: dataHora
+            dataHora: dataHora,
+            geolocalizaçãoRuaAlagada: coord_rua_alagada_api,
+            geolocalizaçãoRotaAlternativa: coord_rota_alternativa_api
         };
 
         const response = await fetch(`${JSON_SERVER_URL}/reportes`, {
