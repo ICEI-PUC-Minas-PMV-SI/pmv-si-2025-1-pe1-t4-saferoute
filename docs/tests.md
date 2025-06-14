@@ -130,33 +130,33 @@ A documentação dos testes é dividida nas seguintes seções:
 
 Esta seção deve apresentar o relatório com as evidências dos testes de software realizados no sistema pela equipe, baseado no plano de testes pré-definido. Documente cada caso de teste apresentando um vídeo ou animação que comprove o funcionamento da funcionalidade. Veja os exemplos a seguir.
 
-|*Caso de Teste*                                 |*CT01 - Recolhimento do menu e visualização - botão hamburguer*                                         |
+|*Caso de Teste*                                 |*CT01 - Recolhimento do menu e visualização - botão hamburguer*                            |
 |---|---|
 |Requisito Associado | RF-001 - A aplicação deve permitir que os usuários vejam as opções da aplicação|
 |Link do vídeo do teste realizado: |https://drive.google.com/file/d/1m5fTAOpYy9kCeRuu9XyzMv-UedoEwxus/view?usp=sharing| 
 
 
-|*Caso de Teste*                                 |*CT02 - Visualização na geolocalização do usuário*                                         |
+|*Caso de Teste*                                 |*CT02 - Visualização na geolocalização do usuário*                                        |
 |---|---|
 |Requisito Associado | RF-001 - A aplicação deve solicitar o endereço do usuário e plotar no mapa|
 |Link do vídeo do teste realizado: |https://drive.google.com/file/d/1m5fTAOpYy9kCeRuu9XyzMv-UedoEwxus/view?usp=sharing| 
 
-|*Caso de Teste*                                 |*CT03 - Visualização da rua pesquisada*                                        |
+|*Caso de Teste*                                 |*CT03 - Visualização da rua pesquisada*                                                   |
 |---|---|
 |Requisito Associado | RF-001 - A aplicação deve permitir que os usuários pesquisem endereços|
 |Link do vídeo do teste realizado: | https://drive.google.com/file/d/10TVR67WLAT7QAkrkMLmt5btdWFcmF2H1/view?usp=sharing | 
 
-|*Caso de Teste*                                 |*CT04 - Visualização da rua do CEP pesquisado*                                        |
+|*Caso de Teste*                                 |*CT04 - Visualização da rua do CEP pesquisado*                                            |
 |---|---|
 |Requisito Associado | RF-001 - A aplicação deve permitir que os usuários encontrem um endereço a partir de um cep pesquisado|
 |Link do vídeo do teste realizado: | https://drive.google.com/file/d/1Y8GlD-igY_av4R7z4g-FHlb68iNTlDvz/view?usp=sharing | 
 
-|*Caso de Teste*                                 |*CT05 - Visualização da previsão do tempo*                                        |
+|*Caso de Teste*                                 |*CT05 - Visualização da previsão do tempo*                                                |
 |---|---|
 |Requisito Associado | RF-001 - A aplicação deve permitir que os usuários visualizem a previsão do tempo na cidade de Belo Horizonte|
 |Link do vídeo do teste realizado: | https://drive.google.com/file/d/1Y8GlD-igY_av4R7z4g-FHlb68iNTlDvz/view?usp=sharing | 
 
-|*Caso de Teste*                                 |*CT06 - Visualização dos alertas no mapa*                                        |
+|*Caso de Teste*                                 |*CT06 - Visualização dos alertas no mapa*                                                 |
 |---|---|
 |Requisito Associado | RF-001 - A aplicação deve permitir que os usuários visualizem as rotas informadas como inundadas e as rotas alternativas|
 |Link do vídeo do teste realizado: | https://drive.google.com/file/d/1LNV_pk9GtQO8E9G39cmyRw6JJziWqkY6/view?usp=sharing | 
