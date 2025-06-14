@@ -139,12 +139,12 @@ Esta seção deve apresentar o relatório com as evidências dos testes de softw
 |*Caso de Teste*                                 |*CT02 - Visualização na geolocalização do usuário*                                        |
 |---|---|
 |Requisito Associado | RF-001 - A aplicação deve solicitar o endereço do usuário e plotar no mapa|
-|Link do vídeo do teste realizado: |https://drive.google.com/file/d/1m5fTAOpYy9kCeRuu9XyzMv-UedoEwxus/view?usp=sharing| 
+|Link do vídeo do teste realizado: |https://drive.google.com/file/d/1gjsV-sdAoc0wkLLGS0Fdz3goQPruaITd/view?usp=sharing| 
 
 |*Caso de Teste*                                 |*CT03 - Visualização da rua pesquisada*                                                   |
 |---|---|
 |Requisito Associado | RF-001 - A aplicação deve permitir que os usuários pesquisem endereços|
-|Link do vídeo do teste realizado: | https://drive.google.com/file/d/10TVR67WLAT7QAkrkMLmt5btdWFcmF2H1/view?usp=sharing | 
+|Link do vídeo do teste realizado: | https://drive.google.com/file/d/1qh9lfc19MMxM7b-mIrgnfTm1Zv05s557/view?usp=sharing | 
 
 |*Caso de Teste*                                 |*CT04 - Visualização da rua do CEP pesquisado*                                            |
 |---|---|
@@ -154,7 +154,7 @@ Esta seção deve apresentar o relatório com as evidências dos testes de softw
 |*Caso de Teste*                                 |*CT05 - Visualização da previsão do tempo*                                                |
 |---|---|
 |Requisito Associado | RF-001 - A aplicação deve permitir que os usuários visualizem a previsão do tempo na cidade de Belo Horizonte|
-|Link do vídeo do teste realizado: | https://drive.google.com/file/d/1Y8GlD-igY_av4R7z4g-FHlb68iNTlDvz/view?usp=sharing | 
+|Link do vídeo do teste realizado: | https://drive.google.com/file/d/1gjsV-sdAoc0wkLLGS0Fdz3goQPruaITd/view?usp=sharing | 
 
 |*Caso de Teste*                                 |*CT06 - Visualização dos alertas no mapa*                                                 |
 |---|---|
