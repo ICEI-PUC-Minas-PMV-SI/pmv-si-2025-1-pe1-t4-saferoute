@@ -162,12 +162,12 @@ Esta seção deve apresentar o relatório com as evidências dos testes de softw
 |Link do vídeo do teste realizado: | https://drive.google.com/file/d/1LNV_pk9GtQO8E9G39cmyRw6JJziWqkY6/view?usp=sharing | 
 
 
-|*Caso de Teste*                                 |*CT07 - Login*                                        |
+|*Caso de Teste*                                 |*CT07 - Login*                                                                            |
 |---|---|
 |Requisito Associado | RF-001 - A aplicação deve permitir que os usuários entrem com uma conta já cadastrada|
 |Link do vídeo do teste realizado: | https://drive.google.com/file/d/1dNFKWODSAkeRV6wnJ2kXP_gmboYACVt7/view?usp=sharing | 
 
-|*Caso de Teste*                                 |*CT08 - Cadastro de usuário*                                        |
+|*Caso de Teste*                                 |*CT08 - Cadastro de usuário*                                                              |
 |---|---|
 |Requisito Associado | RF-001 - A aplicação deve permitir que os usuários criem uma conta e gerenciem seu cadastro|
 |Link do vídeo do teste realizado: | https://drive.google.com/file/d/14-k2wmQCf7T8KYym_nV6wCtwe6AKNPAp/view?usp=sharing | 
