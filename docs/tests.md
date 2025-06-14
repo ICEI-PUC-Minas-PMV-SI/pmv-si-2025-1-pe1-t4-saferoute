@@ -195,7 +195,7 @@ Esta seção deve apresentar o relatório com as evidências dos testes de softw
 |*Caso de Teste*                                 |*CT13 - Reportar alagamento logado*|
 |---|---|
 |Requisito Associado | RF-001 - A aplicação deve permitir que os usuários reportem ruas inundadas e rotas alternativas|
-|Link do vídeo do teste realizado: | https://drive.google.com/file/d/1Q0Ma0PCLIcMSElR8Z58E98IRV66xg1T7/view?usp=sharing | 
+|Link do vídeo do teste realizado: | https://drive.google.com/file/d/1WcbvdUZqkRWHHvKft0dZMPskyT_sF63D/view?usp=sharing | 
 
 ## Avaliação dos Testes de Software
 
