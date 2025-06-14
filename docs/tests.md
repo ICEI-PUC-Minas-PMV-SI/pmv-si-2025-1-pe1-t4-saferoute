@@ -187,7 +187,7 @@ Esta seção deve apresentar o relatório com as evidências dos testes de softw
 |Requisito Associado | RF-001 - A aplicação deve permitir que os usuários visualizem o histórico de um CEP pesquisado|
 |Link do vídeo do teste realizado: | https://drive.google.com/file/d/1Xx3t2zKx3qdWM2OBkZNOzCRZL91mofWN/view?usp=sharing | 
 
-|*Caso de Teste*                                 |*CT12 - Reportar alagamento deslogado*                                        |
+|*Caso de Teste*                                 |*CT12 - Reportar alagamento deslogado*|
 |---|---|
 |Requisito Associado | RF-001 - A aplicação deve apenas permitir o reporte de ruas inundadas e rotas alternativas se o usuário estiver logado|
 |Link do vídeo do teste realizado: | https://drive.google.com/file/d/1heNhOawJOsH6HpbPeM2VJNF8f_k0oF18/view?usp=sharing | 
