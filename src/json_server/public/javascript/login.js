@@ -11,7 +11,11 @@ function criando_cookie (nome_usuario_logado,sobrenome_usuario,imagem_usuario_lo
     document.cookie = `nome=${nome_usuario_logado} ${sobrenome_usuario}; path=/;`;
     document.cookie = `imagem=${encodeURIComponent(imagem_usuario_logado)}; path=/;`;
     document.cookie = `idUsuario=${encodeURIComponent(idUsuario)}; path=/;`;
+    if (document.referrer==='http://localhost:3000/cadastro.html'){
+      window.location.href = "index.html";
+    } else {
     window.history.back();
+    }
 }
 
 function verificar_login (){
