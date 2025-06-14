@@ -192,7 +192,7 @@ Esta seção deve apresentar o relatório com as evidências dos testes de softw
 |Requisito Associado | RF-001 - A aplicação deve apenas permitir o reporte de ruas inundadas e rotas alternativas se o usuário estiver logado|
 |Link do vídeo do teste realizado: | https://drive.google.com/file/d/1heNhOawJOsH6HpbPeM2VJNF8f_k0oF18/view?usp=sharing | 
 
-|*Caso de Teste*                                 |*CT13 - Reportar alagamento logado*                                        |
+|*Caso de Teste*                                 |*CT13 - Reportar alagamento logado*|
 |---|---|
 |Requisito Associado | RF-001 - A aplicação deve permitir que os usuários reportem ruas inundadas e rotas alternativas|
 |Link do vídeo do teste realizado: | https://drive.google.com/file/d/1Q0Ma0PCLIcMSElR8Z58E98IRV66xg1T7/view?usp=sharing | 
