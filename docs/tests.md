@@ -130,21 +130,78 @@ A documentação dos testes é dividida nas seguintes seções:
 
 Esta seção deve apresentar o relatório com as evidências dos testes de software realizados no sistema pela equipe, baseado no plano de testes pré-definido. Documente cada caso de teste apresentando um vídeo ou animação que comprove o funcionamento da funcionalidade. Veja os exemplos a seguir.
 
-|*Caso de Teste*                                 |*CT01 - Criar conta parte 1*                                         |
+|*Caso de Teste*                                 |*CT01 - Recolhimento do menu e visualização - botão hamburguer*                            |
+|---|---|
+|Requisito Associado | RF-001 - A aplicação deve permitir que os usuários vejam as opções da aplicação|
+|Link do vídeo do teste realizado: |https://drive.google.com/file/d/1m5fTAOpYy9kCeRuu9XyzMv-UedoEwxus/view?usp=sharing| 
+
+
+|*Caso de Teste*                                 |*CT02 - Visualização na geolocalização do usuário*                                        |
+|---|---|
+|Requisito Associado | RF-001 - A aplicação deve solicitar o endereço do usuário e plotar no mapa|
+|Link do vídeo do teste realizado: |https://drive.google.com/file/d/1gjsV-sdAoc0wkLLGS0Fdz3goQPruaITd/view?usp=sharing| 
+
+|*Caso de Teste*                                 |*CT03 - Visualização da rua pesquisada*                                                   |
+|---|---|
+|Requisito Associado | RF-001 - A aplicação deve permitir que os usuários pesquisem endereços|
+|Link do vídeo do teste realizado: | https://drive.google.com/file/d/1qh9lfc19MMxM7b-mIrgnfTm1Zv05s557/view?usp=sharing | 
+
+|*Caso de Teste*                                 |*CT04 - Visualização da rua do CEP pesquisado*                                            |
+|---|---|
+|Requisito Associado | RF-001 - A aplicação deve permitir que os usuários encontrem um endereço a partir de um cep pesquisado|
+|Link do vídeo do teste realizado: | https://drive.google.com/file/d/1Y8GlD-igY_av4R7z4g-FHlb68iNTlDvz/view?usp=sharing | 
+
+|*Caso de Teste*                                 |*CT05 - Visualização da previsão do tempo*                                                |
+|---|---|
+|Requisito Associado | RF-001 - A aplicação deve permitir que os usuários visualizem a previsão do tempo na cidade de Belo Horizonte|
+|Link do vídeo do teste realizado: | https://drive.google.com/file/d/1gjsV-sdAoc0wkLLGS0Fdz3goQPruaITd/view?usp=sharing | 
+
+|*Caso de Teste*                                 |*CT06 - Visualização dos alertas no mapa*                                                 |
+|---|---|
+|Requisito Associado | RF-001 - A aplicação deve permitir que os usuários visualizem as rotas informadas como inundadas e as rotas alternativas|
+|Link do vídeo do teste realizado: | https://drive.google.com/file/d/1LNV_pk9GtQO8E9G39cmyRw6JJziWqkY6/view?usp=sharing | 
+
+
+|*Caso de Teste*                                 |*CT07 - Login*                                                                            |
+|---|---|
+|Requisito Associado | RF-001 - A aplicação deve permitir que os usuários entrem com uma conta já cadastrada|
+|Link do vídeo do teste realizado: | https://drive.google.com/file/d/1dNFKWODSAkeRV6wnJ2kXP_gmboYACVt7/view?usp=sharing | 
+
+|*Caso de Teste*                                 |*CT08 - Cadastro de usuário*                                                              |
 |---|---|
 |Requisito Associado | RF-001 - A aplicação deve permitir que os usuários criem uma conta e gerenciem seu cadastro|
-|Link do vídeo do teste realizado: |https://drive.google.com/file/d/1HGf3zeL3bQQE_kWWNXf2usApngBq_ddA/view?usp=sharing| 
+|Link do vídeo do teste realizado: | https://drive.google.com/file/d/14-k2wmQCf7T8KYym_nV6wCtwe6AKNPAp/view?usp=sharing | 
 
-|*Caso de Teste*                                 |*CT02 - Criar conta parte 2*                                        |
+|*Caso de Teste*                                 |*CT09 - Visualização do histórico de reportes*                                        |
 |---|---|
-|Requisito Associado | RF-001 - A aplicação deve permitir que os usuários criem uma conta e gerenciem seu cadastro|
-|Link do vídeo do teste realizado: | https://drive.google.com/file/d/10TVR67WLAT7QAkrkMLmt5btdWFcmF2H1/view?usp=sharing | 
+|Requisito Associado | RF-001 - A aplicação deve permitir que os usuários visualizem o histórico das ruas inundadas|
+|Link do vídeo do teste realizado: | https://drive.google.com/file/d/1Xx3t2zKx3qdWM2OBkZNOzCRZL91mofWN/view?usp=sharing | 
 
+|*Caso de Teste*                                 |*CT10 - Visualização do histórico de reportes de uma rua pesquisada*                                        |
+|---|---|
+|Requisito Associado | RF-001 - A aplicação deve permitir que os usuários visualizem o histórico de uma rua pesquisada|
+|Link do vídeo do teste realizado: | https://drive.google.com/file/d/1Xx3t2zKx3qdWM2OBkZNOzCRZL91mofWN/view?usp=sharing | 
+
+|*Caso de Teste*                                 |*CT11 - Visualização do histórico de reportes de um CEP pesquisado*                                        |
+|---|---|
+|Requisito Associado | RF-001 - A aplicação deve permitir que os usuários visualizem o histórico de um CEP pesquisado|
+|Link do vídeo do teste realizado: | https://drive.google.com/file/d/1Xx3t2zKx3qdWM2OBkZNOzCRZL91mofWN/view?usp=sharing | 
+
+|*Caso de Teste*                                 |*CT12 - Reportar alagamento deslogado*|
+|---|---|
+|Requisito Associado | RF-001 - A aplicação deve apenas permitir o reporte de ruas inundadas e rotas alternativas se o usuário estiver logado|
+|Link do vídeo do teste realizado: | https://drive.google.com/file/d/1heNhOawJOsH6HpbPeM2VJNF8f_k0oF18/view?usp=sharing | 
+
+|*Caso de Teste*                                 |*CT13 - Reportar alagamento logado*|
+|---|---|
+|Requisito Associado | RF-001 - A aplicação deve permitir que os usuários reportem ruas inundadas e rotas alternativas|
+|Link do vídeo do teste realizado: | https://drive.google.com/file/d/1Q0Ma0PCLIcMSElR8Z58E98IRV66xg1T7/view?usp=sharing | 
 
 ## Avaliação dos Testes de Software
 
-Discorra sobre os resultados do teste. Ressaltando pontos fortes e fracos identificados na solução. Comente como o grupo pretende atacar esses pontos nas próximas iterações. Apresente as falhas detectadas e as melhorias geradas a partir dos resultados obtidos nos testes.
+Durante a realização dos testes na aplicação, foram identificados diversos pontos positivos, bem como aspectos que precisam ser aprimorados. Entre os destaques, estão a funcionalidade de busca por endereço ou CEP, que se mostrou eficiente e de fácil uso, e a visualização das rotas seguras por meio do mapa interativo com Leaflet, que proporcionou uma experiência clara e acessível para o usuário. A inclusão da previsão do tempo agregou valor à solução, auxiliando o usuário a se planejar melhor em relação às condições climáticas. A organização dos dados em db.json também facilitou o teste e a verificação das informações apresentadas no mapa.
 
+Por outro lado, os testes revelaram algumas falhas importantes. A principal limitação está na atualização manual dos dados de alagamento, o que impede que a aplicação reflita rapidamente as mudanças nas condições das vias. Também foi identificada a necessidade de adaptar melhor a interface para dispositivos móveis, já que alguns elementos não se comportaram adequadamente em telas menores. Além disso, a ausência de alertas visuais ou mensagens de aviso ao digitar um endereço com alagamento limita a capacidade do sistema de orientar o usuário de forma proativa. Para resolver essas questões, o grupo pretende, nas próximas iterações, melhorar o design responsivo da interface, adicionar mensagens e alertas automáticos baseados nos dados do db.json e criar uma interface administrativa simples para facilitar a atualização manual dos dados, garantindo maior agilidade sem depender de integração em tempo real.
 
 # Testes de Usabilidade
 
