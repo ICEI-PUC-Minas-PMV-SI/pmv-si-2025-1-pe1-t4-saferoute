@@ -183,7 +183,7 @@ window.onload = function() {
     bairro.value = data[0].bairro;
     numero.value = data[0].numero;
     complemento.value = data[0].complemento;
-    if (data[0].sexo==="masculino"){
+    if (data[0].sexo==="Masculino"){
        masculino.checked = true;
     } else {feminino.checked=true;}
     img_usuario_cadastro.src='imagens/'+data[0].imagem

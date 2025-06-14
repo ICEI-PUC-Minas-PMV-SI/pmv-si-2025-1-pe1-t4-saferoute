@@ -267,14 +267,19 @@ button:hover {cursor: pointer;
 	form{top:580px;
 		left: 150px;}
 	#menu_opcoes{height: 990px;}
-
+	.botoes_edicao{top: 1030px;
+	}
+	#btn_salvar{left: 180px;}
+	#btn_cancelar{left: 400px;}
 }
 
 @media(max-width: 630px) {
 	#menu_opcoes{height: 1030px;}
 	form input {width: 35vw;}
-	#btn_salvar{left: 0px;}
-	#btn_cancelar{left: 170px;}
+	.botoes_edicao{top: 1070px;
+	}
+	#btn_salvar{left: 130px;}
+	#btn_cancelar{left: 330px;}
 	#div_sexo{padding-top: 20px;
 		padding-bottom: 20px;}
 	#radio_masculino{top:90px;
