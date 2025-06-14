@@ -1,7 +1,7 @@
 {
   "usuarios": [
     {
-      "id": 1,
+      "id": "1",
       "email": "ulisses_antonio@gmail.com",
       "senha": "bola123",
       "nome": "Ulisses",
@@ -17,7 +17,7 @@
       "uf": "MG"
     },
     {
-      "id": 2,
+      "id": "2",
       "email": "gualter.fortes@hotmail.com",
       "senha": "bola123",
       "nome": "Gualter",
@@ -33,7 +33,7 @@
       "uf": "MG"
     },
     {
-      "id": 3,
+      "id": "3",
       "email": "debora.oliveira@hotmail.com",
       "senha": "bola123",
       "nome": "Debora",
@@ -49,7 +49,7 @@
       "uf": "MG"
     },
     {
-      "id": 4,
+      "id": "4",
       "email": "sofiabontempo@gmail.com",
       "senha": "bola123",
       "nome": "Sofia",
@@ -65,7 +65,7 @@
       "uf": "MG"
     },
     {
-      "id": 5,
+      "id": "5",
       "email": "perera_santos@gmail.com",
       "senha": "bola123",
       "nome": "Perera",
@@ -81,7 +81,7 @@
       "uf": "MG"
     },
     {
-      "id": 6,
+      "id": "6",
       "email": "flavia@gmail.com",
       "senha": "bola123",
       "nome": "Flavia",
@@ -97,7 +97,7 @@
       "uf": "MG"
     },
     {
-      "id": 7,
+      "id": "7",
       "email": "fabiola@gmail.com",
       "senha": "bola123",
       "nome": "Fabiola",
@@ -113,7 +113,7 @@
       "uf": "MG"
     },
     {
-      "id": 8,
+      "id": "8",
       "email": "lucas@gmail.com",
       "senha": "bola123",
       "nome": "Lucas",
@@ -129,7 +129,7 @@
       "uf": "MG"
     },
     {
-      "id": 9,
+      "id": "9",
       "email": "veronicacampos@gmail.com",
       "senha": "bola123",
       "nome": "veronica",
@@ -147,7 +147,7 @@
   ],
   "reportes": [
     {
-      "id": 1,
+      "id": "1",
       "rua": "Rua Padre Pedro Evangelista",
       "descricao": "Automóveis trafegando com dificuldade",
       "rotaAlternativa": "Padre Rossini Cândido",
@@ -176,7 +176,7 @@
       ]
     },
     {
-      "id": 2,
+      "id": "2",
       "rua": "Rua Dom João Antônio dos Santos",
       "descricao": "Rua interditada",
       "rotaAlternativa": "Rua Dom José Pereira Lara",
@@ -206,9 +206,9 @@
     },
     {
       "id": 3,
-      "rua": "Rua Dom João Pimenta",
-      "descricao": "Automóveis trafegando com dificuldade",
-      "rotaAlternativa": "Rua Dom Modesto Augusto",
+      "rua": "Dom João Pimenta",
+      "descricao": " Automóveis trafegando com dificuldade",
+      "rotaAlternativa": "Dom Modesto Augusto",
       "severidade": "Baixa",
       "idUsuario": 3,
       "dataHora": "2025-04-19T19:31:00Z",
@@ -234,7 +234,7 @@
       ]
     },
     {
-      "id": 4,
+      "id": "4",
       "rua": "Rua Henrique Gorceix - Padre Eustáquio",
       "descricao": "Rua interditada",
       "rotaAlternativa": "Rua Francisco Bicalho",
@@ -263,7 +263,7 @@
       ]
     },
     {
-      "id": 5,
+      "id": "5",
       "rua": "Rua Marambaia",
       "descricao": "Rua interditada",
       "rotaAlternativa": "Rua Tietê",
@@ -292,7 +292,7 @@
       ]
     },
     {
-      "id": 6,
+      "id": "6",
       "rua": "Rua R. Manhumirim",
       "descricao": "Automóveis trafegando com dificuldade",
       "rotaAlternativa": "Rua Guaíra",
@@ -321,7 +321,7 @@
       ]
     },
     {
-      "id": 7,
+      "id": "7",
       "rua": "Rua Cambuquira",
       "descricao": "Automóveis trafegando com lentidão",
       "rotaAlternativa": "Rua Três Pontas",
@@ -350,7 +350,7 @@
       ]
     },
     {
-      "id": 8,
+      "id": "8",
       "rua": "Rua Boaventura",
       "descricao": "Automóveis trafegando com lentidão",
       "rotaAlternativa": "Praça Santo Antônio",
@@ -379,7 +379,7 @@
       ]
     },
     {
-      "id": 9,
+      "id": "9",
       "rua": "Rua Rebelo Horta",
       "descricao": "Alagamento na pista, impossibilitando o tráfego de veículos pesados",
       "rotaAlternativa": "Alameda dos Coqueiros",
@@ -408,7 +408,7 @@
       ]
     },
     {
-      "id": 10,
+      "id": "10",
       "rua": "Rua Rebelo Horta",
       "descricao": "Buraco na pista",
       "rotaAlternativa": "Alameda dos Coqueiros",
@@ -437,7 +437,7 @@
       ]
     },
     {
-      "id": 11,
+      "id": "11",
       "rua": "Rua Bolivar",
       "descricao": "Alagamento na pista e Buraco no trajeto impossibilitando o tráfego de veículos pesados e leves",
       "rotaAlternativa": "Rua Lincoln",
@@ -466,7 +466,7 @@
       ]
     },
     {
-      "id": 12,
+      "id": "12",
       "rua": "Rua Agrelos",
       "descricao": "Rua interditada",
       "rotaAlternativa": "Rua Aiuruoca",
@@ -496,12 +496,21 @@
     },
     {
       "id": 13,
-      "rua": "Rua dos Carijós",
+      "rua": "rua dos Carijós",
       "descricao": "Rua pouco alagada",
       "rotaAlternativa": "Rua dos Guaranis",
       "severidade": "Baixa",
       "idUsuario": 1,
       "dataHora": "2025-06-03T18:49:46.308Z"
+    },
+    {
+      "id": 14,
+      "rua": "30140-008",
+      "descricao": "Alagamento",
+      "rotaAlternativa": "boa viagem",
+      "severidade": "Alta",
+      "idUsuario": 109,
+      "dataHora": "2025-06-05T19:28:29.418Z"
     }
   ]
 }

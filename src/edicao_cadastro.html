@@ -9,46 +9,46 @@
 </head>
 <body>
 	<header>SAFE ROUTE
-		<img id="botao_opcoes" src="imagens/opcoes.png" onclick="exibir_opcoes()">
+		<img id="botao_opcoes" src="imagens/opcoes.png" alt="Botão de opções" onclick="exibir_opcoes()">
 		<div id="opcoes_login" onclick="drop_opcoes_menu()">
-			<img src="imagens/ulisses_antonio.png" id="img_usuario_logado">
+			<img src="imagens/ulisses_antonio.png" id="img_usuario_logado" alt="Foto do usuário Ulisses Antônio">
 			<p id="lbl_usuario_logado">Ulisses Antônio</p>
 		</div>
-		<div id="div_drop_down"">
+		<div id="div_drop_down">
 			<a href="edicao_cadastro.html">Editar perfil</a>
 		</div>
 	</header>
 	<aside id=menu_opcoes>
 		<a href="index.html">
 			<div class="botoes_menu" id="botao_pg_inicial">
-			<img id="icone_pagina_inicial" src="imagens/pagina_inicial.png">
+			<img id="icone_pagina_inicial" src="imagens/pagina_inicial.png" alt="Página inicial">
 			</div>
 		</a>
 		<a href="reportar_alagamento.html">
 			<div class="botoes_menu" id="botao_reportar">
-				<img src="imagens/atencao.png" id="imagem_atencao">
+				<img src="imagens/atencao.png" id="imagem_atencao" alt="Ícone de atenção">
 				<p id="label_reportar">Reportar</p>
 			</div>
 		</a>
 		<a href="historico_reportes.html">
 			<div class="botoes_menu" id="botao_historico">
-				<img src="imagens/historico.png" id="imagem_historico">
+				<img src="imagens/historico.png" id="imagem_historico" alt="Ícone de histórico">
 				<p id="label_historico">Histórico</p>
 			</div>
 		</a>
 		<a href="sobre.html">
 			<div class="botoes_menu" id="botao_info">
-				<img src="imagens/info.png" id="imagem_info">
+				<img src="imagens/info.png" id="imagem_info" alt="Ícone de informações">
 				<p id="label_info">Sobre</p>
 			</div>
 		</a>
 		<div class="botoes_menu" id="botao_sair" onclick="sair()">
-			<img src="imagens/sair.png" id="imagem_sair">
+			<img src="imagens/sair.png" id="imagem_sair" alt="Ícone de sair">
 			<p id="label_sair">Sair</p>
 		</div>
 	</aside>
 	<div id="div_imagem">
-		<img src="imagens/ulisses_antonio.png" id="img_usuario_cadastro">
+		<img src="imagens/ulisses_antonio.png" id="img_usuario_cadastro" alt="Foto do usuário Ulisses Antônio">
 		<button id="btn_alterar_imagem">Alterar imagem</button>
 	</div>
 	<form>
@@ -105,8 +105,8 @@
 			<input type="text" id="uf" placeholder="Digite o estado onde mora)" required>
 		</div>
 		<br>
-		<button id="btn_salvar" class="botoes_edicao">Salvar</button>
-		<button id="btn_cancelar" class="botoes_edicao">Cancelar</button>
+		<button id="btn_salvar" class="botoes_edicao" type="submit">Salvar</button>
+		<button id="btn_cancelar" class="botoes_edicao" type="button">Cancelar</button>
 	</form>
 <script src="javascript/edicao_cadastro.js"></script>
 </body>

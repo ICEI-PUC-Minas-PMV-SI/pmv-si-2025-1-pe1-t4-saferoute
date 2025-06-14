@@ -13,16 +13,16 @@ As tabelas que se seguem apresentam os requisitos funcionais e não-funcionais q
 |RF-003| Visualização das ruas em estado regular. Ficarão na cor verde | Aleph | index.html e historico.html |
 |RF-004| Visualização do mapa em Belo-Horizonte na geolocalização do IP do usuário | Aleph | index.html e historico.html |
 |RF-005| Visualização do mapa em Belo-Horizonte na rua ou CEP pesquisado | Roberto | index.html e historico.html |
-|RF-006| Envio e armazenamento de pontos críticos de alagamentos ou enchentes | Victor | reportar.html e historico.html |
-|RF-007| Envio e armazenamento de ruas em estado regular | Victor | reportar.html |
-|RF-008| Visualização dos avisos registrados na aplicação em ordem decrescente de cadastro | Victor | historico.html |
+|RF-006| Envio e armazenamento de pontos críticos de alagamentos ou enchentes | Vitor | reportar.html e historico.html |
+|RF-007| Envio e armazenamento de ruas em estado regular | Vitor | reportar.html |
+|RF-008| Visualização dos avisos registrados na aplicação em ordem decrescente de cadastro | Vitor | historico.html |
 |RF-009| O cadastro do alerta de uma rua com alagamento deve sobrescrever eventual indicação desta rua como rota alternativa | Igor | reportar.html |
 |RF-010| O cadastro posterior de uma rua como rota alternativa deve sobrepor a indicação da rua como afetada por alagamento ou enchente | Igor | reportar.html |
 |RF-011| O cadastro como área alagada ou como rota alternativa dependerá de ao menos 2 indicações diferentes. | Igor | reportar.html |
 |RF-012| Após 5 horas do último reporte de uma rua como afetada por alagamento ou como rota alternativa, a informação desta rua será removida da consolidação, a não ser que haja outros reportes para atualização do status. | Aleph | index.html e historico.html |
 |RF-013| A tela inicial de demonstrar a previsão do tempo para Belo Horizonte no horário da visualização da tela | Yuri | index.html |
-|RF-014| Login de usuário |  | login.html |
-|RF-015| Cadastro de usuário |  | cadastro.html |
+|RF-014| Login de usuário | Vitor | login.html |
+|RF-015| Cadastro de usuário | Vitor | cadastro.html |
 
 
 ## Descrição das estruturas:
