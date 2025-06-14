@@ -199,8 +199,9 @@ Esta seção deve apresentar o relatório com as evidências dos testes de softw
 
 ## Avaliação dos Testes de Software
 
-Discorra sobre os resultados do teste. Ressaltando pontos fortes e fracos identificados na solução. Comente como o grupo pretende atacar esses pontos nas próximas iterações. Apresente as falhas detectadas e as melhorias geradas a partir dos resultados obtidos nos testes.
+Durante a realização dos testes na aplicação, foram identificados diversos pontos positivos, bem como aspectos que precisam ser aprimorados. Entre os destaques, estão a funcionalidade de busca por endereço ou CEP, que se mostrou eficiente e de fácil uso, e a visualização das rotas seguras por meio do mapa interativo com Leaflet, que proporcionou uma experiência clara e acessível para o usuário. A inclusão da previsão do tempo agregou valor à solução, auxiliando o usuário a se planejar melhor em relação às condições climáticas. A organização dos dados em db.json também facilitou o teste e a verificação das informações apresentadas no mapa.
 
+Por outro lado, os testes revelaram algumas falhas importantes. A principal limitação está na atualização manual dos dados de alagamento, o que impede que a aplicação reflita rapidamente as mudanças nas condições das vias. Também foi identificada a necessidade de adaptar melhor a interface para dispositivos móveis, já que alguns elementos não se comportaram adequadamente em telas menores. Além disso, a ausência de alertas visuais ou mensagens de aviso ao digitar um endereço com alagamento limita a capacidade do sistema de orientar o usuário de forma proativa. Para resolver essas questões, o grupo pretende, nas próximas iterações, melhorar o design responsivo da interface, adicionar mensagens e alertas automáticos baseados nos dados do db.json e criar uma interface administrativa simples para facilitar a atualização manual dos dados, garantindo maior agilidade sem depender de integração em tempo real.
 
 # Testes de Usabilidade
 
